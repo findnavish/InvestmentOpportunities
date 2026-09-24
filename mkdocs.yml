@@ -1,0 +1,56 @@
+site_name: Investment Opportunities
+site_description: Research notebooks that apply Bodie-Kane-Marcus "Investments" methods to real markets.
+site_url: https://findnavish.github.io/InvestmentOpportunities/
+repo_url: https://github.com/findnavish/InvestmentOpportunities
+repo_name: findnavish/InvestmentOpportunities
+edit_uri: ""
+
+theme:
+  name: material
+  icon:
+    logo: material/chart-line
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: teal
+      toggle: { icon: material/weather-night, name: Dark mode }
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: teal
+      toggle: { icon: material/weather-sunny, name: Light mode }
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - search.highlight
+    - search.suggest
+
+markdown_extensions:
+  - tables
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc: { permalink: true }
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.arithmatex: { generic: true }
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - Home: index.md
+  - Analyses:
+      - Silicon Supply Chain — Top 30: silicon-supply-chain/index.md
+  - Methodology: methodology.md
+  - Changelog: changelog.md
