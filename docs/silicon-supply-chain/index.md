@@ -1,7 +1,7 @@
 # Silicon Supply Chain — Top 30 Key Players
 ### Price history, textbook-grade analysis (Bodie-Kane-Marcus *Investments* 13e) and PEST
 
-**Prices as of:** 2026-09-24 close (USD unless noted; foreign listings converted at spot FX) · **Statistics window:** 2021-09..2026-08 (60m) monthly USD returns · **Risk-free:** 13-wk T-bill 4.03%, 10-yr UST 5.11% · **Assumed MRP:** 5.5%
+**Prices as of:** 2026-09-24 close (USD unless noted; foreign listings converted at spot FX) · **Statistics window:** 2021-09..2026-08 (60m) monthly USD returns · **Risk-free:** 13-wk T-bill 4.07%, 10-yr UST 5.16% · **Assumed MRP:** 5.5%
 
 > ⚠️ Educational analysis, not investment advice. Data from Yahoo Finance and the Kenneth French Data Library; some fundamental fields from data vendors contain errors (flagged where detected). Past returns are noisy estimates of expected returns (BKM ch.5).
 
@@ -14,11 +14,11 @@
 
 ## 1. Executive summary
 
-1. **The AI capex supercycle has turned the whole chain into a high-beta, momentum-driven asset class.** SOXX gained **111% in 1Y / 273% in 5Y** vs SPY 17% / 85%. Memory had the biggest gains: SK hynix **1,543%**, Micron **1,384%** over 5Y in USD. The five weakest over 1Y: SMIC -18%, CDNS -13%, SNPS -12%, Disco 3%, AVGO 5%.
+1. **The AI capex supercycle has turned the whole chain into a high-beta, momentum-driven asset class.** SOXX gained **111% in 1Y / 273% in 5Y** vs SPY 17% / 85%. Memory had the biggest gains: SK hynix **1,543%**, Micron **1,396%** over 5Y in USD. The five weakest over 1Y: SMIC -18%, CDNS -10%, SNPS -9%, Disco 3%, AVGO 4%.
 2. **Risk is dominated by firm-specific risk, not market risk (ch.8).** Betas vs the S&P 500 range from 0.41 (SMIC) to 3.85 (Arm), but the median R² is only 0.32. Most volatility is idiosyncratic, so diversifying *within* the chain has real value (σ falls from 53% for a single stock to 38% for 30 names). It cannot fall below the sector's common-factor floor, though.
 3. **Jensen's alphas look huge but are mostly not statistically significant (ch.9, 11, 24).** Against the CAPM, only NVDA (t=2.05), AVGO (t=2.08) clear t≈2. Against Fama-French 5 factors plus momentum, only NVDA, AVGO, Advantest and SK hynix do. Five years of data is too short to separate skill or structural advantage from luck.
-4. **Valuation mostly prices in growth rather than current earnings (ch.18).** Outside memory, 53%–96% of each price is PVGO (present value of growth opportunities). The reverse DCF says the market needs stage-1 cash-flow growth of 16%–117% p.a. The most demanding: ARM (~117%), INTC (~87%), MRVL (~76%), Advantest (~75%). NVIDIA needs only ~26% despite ROE×b above 100%, and Broadcom ~16%.
-5. **Memory shows the classic cyclical-peak signature (ch.17–18).** Samsung trades at a forward P/E of 4.0, SK hynix at 3.9 and MU at 6.7, against a no-growth P/E of 1/k ≈ 6.5–8.0. That means PVGO is negative: the market is pricing a fall in peak HBM/DRAM earnings. A low P/E at the top of the cycle is a trap unless the cycle turns out to be structurally longer.
+4. **Valuation mostly prices in growth rather than current earnings (ch.18).** Outside memory, 53%–95% of each price is PVGO (present value of growth opportunities). The reverse DCF says the market needs stage-1 cash-flow growth of 16%–114% p.a. The most demanding: ARM (~114%), INTC (~88%), Advantest (~76%), MRVL (~76%). NVIDIA needs only ~26% despite ROE×b above 100%, and Broadcom ~16%.
+5. **Memory shows the classic cyclical-peak signature (ch.17–18).** Samsung trades at a forward P/E of 4.0, SK hynix at 3.9 and MU at 6.8, against a no-growth P/E of 1/k ≈ 6.5–8.0. That means PVGO is negative: the market is pricing a fall in peak HBM/DRAM earnings. A low P/E at the top of the cycle is a trap unless the cycle turns out to be structurally longer.
 6. **Political risk is now a first-order return driver (PEST).** Three dates matter: Section 232 chip tariffs (in force since 15 Jan 2026), the expiry of China's gallium/germanium export-control suspension on 27 Nov 2026, and the CHIPS tax-credit sunset for fab starts after 31 Dec 2026. The US government is also now an Intel shareholder.
 
 ---
@@ -29,35 +29,35 @@ The chain runs **design IP/EDA → fabless → foundry/IDM (+ memory) ← equipm
 
 | # | Company | Ticker | Segment | HQ | Mkt cap (USD bn) | Why it's crucial |
 |---|---|---|---|---|---|---|
-| 1 | NVIDIA | NVDA | Fabless - AI/GPU | US | 5,445 | Dominant AI accelerator (GPU + CUDA + NVLink); largest single consumer of CoWoS & HBM |
-| 2 | Broadcom | AVGO | Fabless - Networking/Custom ASIC | US | 1,695 | Custom AI ASICs (TPU-class XPUs) for hyperscalers + Ethernet/switch silicon |
-| 3 | Advanced Micro Devices | AMD | Fabless - CPU/GPU | US | 1,003 | #2 merchant AI GPU (Instinct) and x86 CPU share gainer |
-| 4 | Qualcomm | QCOM | Fabless - Mobile/Edge | US | 211 | Mobile SoC/modem leader; edge-AI, auto and PC (Arm) diversification |
-| 5 | Marvell Technology | MRVL | Fabless - Data Infra/Custom ASIC | US | 234 | Custom ASICs, electro-optics/DSPs for AI data-center interconnect |
-| 6 | Arm Holdings | ARM | IP - CPU Architecture | UK | 355 | Instruction-set/IP licensor in ~all mobile and a rising share of data-center CPUs |
-| 7 | Synopsys | SNPS | EDA & IP | US | 79 | EDA + interface IP duopolist (post-Ansys: simulation); no chip gets designed without it |
-| 8 | Cadence Design Systems | CDNS | EDA & IP | US | 85 | EDA duopolist (analog/custom, verification hardware, system analysis) |
-| 9 | TSMC | TSM | Foundry - Leading Edge | Taiwan | 2,316 | ~70%+ foundry share, ~all leading-edge (N3/N2/A16) logic + CoWoS packaging — the system's chokepoint |
-| 10 | Samsung Electronics | 005930.KS | IDM - Memory/Foundry | South Korea | 1,371 | Memory #1-2 (DRAM/NAND/HBM) + #2 foundry; Korea's national champion |
-| 11 | Intel | INTC | IDM - Logic/Foundry | US | 648 | x86 IDM rebuilding foundry (18A/14A); US-government equity stake; CHIPS flagship |
+| 1 | NVIDIA | NVDA | Fabless - AI/GPU | US | 5,423 | Dominant AI accelerator (GPU + CUDA + NVLink); largest single consumer of CoWoS & HBM |
+| 2 | Broadcom | AVGO | Fabless - Networking/Custom ASIC | US | 1,672 | Custom AI ASICs (TPU-class XPUs) for hyperscalers + Ethernet/switch silicon |
+| 3 | Advanced Micro Devices | AMD | Fabless - CPU/GPU | US | 1,027 | #2 merchant AI GPU (Instinct) and x86 CPU share gainer |
+| 4 | Qualcomm | QCOM | Fabless - Mobile/Edge | US | 207 | Mobile SoC/modem leader; edge-AI, auto and PC (Arm) diversification |
+| 5 | Marvell Technology | MRVL | Fabless - Data Infra/Custom ASIC | US | 233 | Custom ASICs, electro-optics/DSPs for AI data-center interconnect |
+| 6 | Arm Holdings | ARM | IP - CPU Architecture | UK | 327 | Instruction-set/IP licensor in ~all mobile and a rising share of data-center CPUs |
+| 7 | Synopsys | SNPS | EDA & IP | US | 81 | EDA + interface IP duopolist (post-Ansys: simulation); no chip gets designed without it |
+| 8 | Cadence Design Systems | CDNS | EDA & IP | US | 89 | EDA duopolist (analog/custom, verification hardware, system analysis) |
+| 9 | TSMC | TSM | Foundry - Leading Edge | Taiwan | 2,340 | ~70%+ foundry share, ~all leading-edge (N3/N2/A16) logic + CoWoS packaging — the system's chokepoint |
+| 10 | Samsung Electronics | 005930.KS | IDM - Memory/Foundry | South Korea | 1,376 | Memory #1-2 (DRAM/NAND/HBM) + #2 foundry; Korea's national champion |
+| 11 | Intel | INTC | IDM - Logic/Foundry | US | 673 | x86 IDM rebuilding foundry (18A/14A); US-government equity stake; CHIPS flagship |
 | 12 | GlobalFoundries | GFS | Foundry - Specialty/Mature | US | 26 | Largest US-HQ specialty/mature-node foundry (RF, FD-SOI, silicon photonics) |
 | 13 | SMIC | 0981.HK | Foundry - China | China | 69 | China's largest foundry; spearhead of Chinese self-sufficiency under export controls |
-| 14 | Texas Instruments | TXN | IDM - Analog | US | 249 | Analog/embedded leader with 300mm US fabs; industrial/auto bellwether |
-| 15 | Infineon Technologies | IFX.DE | IDM - Power/Auto | Germany | 86 | #1 power semis (SiC/GaN) & auto MCUs; Europe's anchor for AI data-center power |
-| 16 | Micron Technology | MU | Memory - DRAM/HBM/NAND | US | 1,211 | Only US memory maker; HBM3E/HBM4 supplier; CHIPS-funded US DRAM fabs |
-| 17 | SK hynix | 000660.KS | Memory - DRAM/HBM | South Korea | 967 | HBM leader (primary HBM supplier to NVIDIA); DRAM #1-2 |
-| 18 | ASML Holding | ASML | Equipment - Lithography (EUV) | Netherlands | 670 | Monopoly in EUV (and High-NA EUV) lithography — irreplaceable chokepoint |
+| 14 | Texas Instruments | TXN | IDM - Analog | US | 247 | Analog/embedded leader with 300mm US fabs; industrial/auto bellwether |
+| 15 | Infineon Technologies | IFX.DE | IDM - Power/Auto | Germany | 85 | #1 power semis (SiC/GaN) & auto MCUs; Europe's anchor for AI data-center power |
+| 16 | Micron Technology | MU | Memory - DRAM/HBM/NAND | US | 1,220 | Only US memory maker; HBM3E/HBM4 supplier; CHIPS-funded US DRAM fabs |
+| 17 | SK hynix | 000660.KS | Memory - DRAM/HBM | South Korea | 970 | HBM leader (primary HBM supplier to NVIDIA); DRAM #1-2 |
+| 18 | ASML Holding | ASML | Equipment - Lithography (EUV) | Netherlands | 662 | Monopoly in EUV (and High-NA EUV) lithography — irreplaceable chokepoint |
 | 19 | Applied Materials | AMAT | Equipment - Deposition/Etch | US | 376 | Largest WFE vendor: deposition, etch, implant, GAA/backside-power tooling |
-| 20 | Lam Research | LRCX | Equipment - Etch/Deposition | US | 385 | Etch/deposition leader; critical for 3D NAND, HBM TSVs, GAA |
-| 21 | KLA Corp | KLAC | Equipment - Process Control | US | 245 | Process control/inspection near-monopoly; yield is its product |
-| 22 | Tokyo Electron | 8035.T | Equipment - Coat/Develop/Etch | Japan | 155 | Coater/developer monopoly on EUV tracks + etch/deposition; Japan's WFE champion |
+| 20 | Lam Research | LRCX | Equipment - Etch/Deposition | US | 384 | Etch/deposition leader; critical for 3D NAND, HBM TSVs, GAA |
+| 21 | KLA Corp | KLAC | Equipment - Process Control | US | 244 | Process control/inspection near-monopoly; yield is its product |
+| 22 | Tokyo Electron | 8035.T | Equipment - Coat/Develop/Etch | Japan | 162 | Coater/developer monopoly on EUV tracks + etch/deposition; Japan's WFE champion |
 | 23 | ASM International | ASM.AS | Equipment - ALD/Epitaxy | Netherlands | 47 | ALD and epitaxy leader — key to GAA transistors |
-| 24 | Advantest | 6857.T | Equipment - Test | Japan | 151 | SoC/HBM test leader (AI GPU test is its growth engine) |
+| 24 | Advantest | 6857.T | Equipment - Test | Japan | 155 | SoC/HBM test leader (AI GPU test is its growth engine) |
 | 25 | Disco Corp | 6146.T | Equipment - Dicing/Grinding | Japan | 37 | Dicing/grinding/polishing near-monopoly; essential for HBM stacking & advanced packaging |
 | 26 | Teradyne | TER | Equipment - Test | US | 61 | SoC/memory test #2; robotics; AI compute test exposure |
 | 27 | Shin-Etsu Chemical | 4063.T | Materials - Silicon Wafers/Photoresist | Japan | 68 | #1 silicon wafer supplier + photoresists/photomask blanks |
 | 28 | Entegris | ENTG | Materials - Specialty Chem/Filtration | US | 23 | Ultra-pure materials, filtration, CMP — contamination control for advanced nodes |
-| 29 | ASE Technology | ASX | OSAT - Advanced Packaging | Taiwan | 114 | #1 OSAT (ASE/SPIL); CoWoS-like advanced packaging & test overflow for TSMC |
+| 29 | ASE Technology | ASX | OSAT - Advanced Packaging | Taiwan | 113 | #1 OSAT (ASE/SPIL); CoWoS-like advanced packaging & test overflow for TSMC |
 | 30 | Amkor Technology | AMKR | OSAT - Advanced Packaging | US | 13 | #2 OSAT; building the first large US advanced-packaging site (Arizona) |
 
 *Omitted for size or data reasons, but important:* Nexperia, Kioxia, Lasertec, BESI (hybrid bonding), Ibiden (substrates), SUMCO, Soitec, Linde and Air Liquide (gases), JSR/TOK (resists), Zeiss (EUV optics, private), UMC, Rapidus (private), Hua Hong, Naura/AMEC (China WFE).
@@ -71,39 +71,39 @@ The chain runs **design IP/EDA → fabless → foundry/IDM (+ memory) ← equipm
 
 | Ticker | Local px | 1M | YTD | 1Y | 3Y | 5Y | vs 52w high | Max DD (5Y) |
 |---|---|---|---|---|---|---|---|---|
-| NVDA | 225.51 USD | 6% | 21% | 28% | 436% | 926% | -4% | -66% |
-| AVGO | 354.99 USD | -0% | 3% | 5% | 340% | 668% | -26% | -41% |
-| AMD | 614.61 USD | 28% | 187% | 282% | 531% | 481% | -1% | -65% |
-| QCOM | 197.24 USD | 24% | 17% | 16% | 90% | 64% | -21% | -44% |
-| MRVL | 260.90 USD | 9% | 207% | 226% | 400% | 318% | -18% | -62% |
-| ARM | 332.56 USD | 38% | 204% | 130% | 511% | – | -24% | -54% |
-| SNPS | 413.06 USD | 1% | -12% | -12% | -8% | 28% | -23% | -43% |
-| CDNS | 309.09 USD | -7% | -1% | -13% | 34% | 89% | -26% | -34% |
-| TSM | 446.57 USD | 7% | 48% | 61% | 439% | 318% | -6% | -56% |
+| NVDA | 224.58 USD | 6% | 21% | 27% | 433% | 922% | -5% | -66% |
+| AVGO | 350.36 USD | -2% | 2% | 4% | 334% | 658% | -27% | -41% |
+| AMD | 629.26 USD | 31% | 194% | 291% | 546% | 495% | 0% | -65% |
+| QCOM | 194.26 USD | 22% | 15% | 14% | 87% | 62% | -22% | -44% |
+| MRVL | 258.95 USD | 8% | 205% | 224% | 397% | 315% | -18% | -62% |
+| ARM | 306.34 USD | 27% | 180% | 112% | 463% | – | -30% | -54% |
+| SNPS | 424.91 USD | 4% | -10% | -9% | -5% | 32% | -21% | -43% |
+| CDNS | 322.00 USD | -3% | 3% | -10% | 39% | 97% | -23% | -34% |
+| TSM | 451.15 USD | 8% | 50% | 62% | 444% | 323% | -5% | -56% |
 | 005930.KS | 285,500.00 KRW | 14% | 154% | 249% | 330% | 255% | -11% | -54% |
-| INTC | 122.60 USD | 40% | 232% | 293% | 264% | 145% | -13% | -71% |
-| GFS | 46.42 USD | 1% | 33% | 40% | -19% | – | -48% | -62% |
-| 0981.HK | 63.55 HKD | -6% | -12% | -18% | 220% | 187% | -31% | -54% |
-| TXN | 272.62 USD | 5% | 60% | 52% | 85% | 57% | -18% | -33% |
-| IFX.DE | 57.89 EUR | 3% | 50% | 68% | 105% | 56% | -36% | -56% |
-| MU | 1,071.88 USD | 15% | 276% | 564% | 1,480% | 1,384% | -12% | -58% |
+| INTC | 127.39 USD | 46% | 245% | 308% | 278% | 155% | -10% | -71% |
+| GFS | 47.05 USD | 2% | 35% | 42% | -18% | – | -48% | -62% |
+| 0981.HK | 63.80 HKD | -6% | -11% | -18% | 221% | 189% | -30% | -54% |
+| TXN | 270.65 USD | 4% | 59% | 51% | 83% | 55% | -18% | -33% |
+| IFX.DE | 56.26 EUR | 0% | 45% | 63% | 99% | 52% | -37% | -56% |
+| MU | 1,080.53 USD | 16% | 279% | 569% | 1,493% | 1,396% | -11% | -58% |
 | 000660.KS | 1,862,000.00 KRW | 13% | 205% | 438% | 1,508% | 1,543% | -28% | -57% |
-| ASML | 1,744.61 USD | 0% | 64% | 85% | 205% | 110% | -12% | -57% |
-| AMAT | 474.38 USD | -1% | 85% | 137% | 256% | 248% | -34% | -55% |
-| LRCX | 307.28 USD | -2% | 80% | 141% | 408% | 429% | -29% | -56% |
-| KLAC | 187.86 USD | 2% | 55% | 77% | 322% | 434% | -38% | -44% |
+| ASML | 1,722.50 USD | -1% | 62% | 83% | 201% | 108% | -13% | -57% |
+| AMAT | 474.25 USD | -1% | 85% | 137% | 255% | 248% | -34% | -55% |
+| LRCX | 307.16 USD | -2% | 80% | 140% | 407% | 429% | -29% | -56% |
+| KLAC | 187.11 USD | 2% | 55% | 76% | 321% | 432% | -38% | -44% |
 | 8035.T | 53,920.00 JPY | -2% | 56% | 88% | 156% | 134% | -30% | -58% |
-| ASM.AS | 841.00 EUR | -1% | 58% | 63% | 140% | 140% | -23% | -57% |
+| ASM.AS | 833.20 EUR | -2% | 57% | 61% | 138% | 138% | -23% | -57% |
 | 6857.T | 33,060.00 JPY | -4% | 66% | 101% | 663% | 764% | -12% | -55% |
 | 6146.T | 53,320.00 JPY | -12% | 10% | 3% | 90% | 259% | -39% | -61% |
-| TER | 389.14 USD | 6% | 101% | 193% | 308% | 232% | -20% | -59% |
+| TER | 387.70 USD | 6% | 101% | 192% | 306% | 231% | -20% | -59% |
 | 4063.T | 5,903.00 JPY | -1% | 20% | 19% | 30% | 12% | -24% | -47% |
-| ENTG | 150.93 USD | 9% | 80% | 62% | 67% | 16% | -18% | -59% |
-| ASX | 43.93 USD | 18% | 176% | 285% | 528% | 545% | -2% | -46% |
-| AMKR | 53.32 USD | 10% | 36% | 83% | 150% | 111% | -43% | -66% |
-| SOXX | 565.72 USD | 10% | 88% | 111% | 269% | 273% | -14% | -46% |
-| SPY | 767.81 USD | 0% | 13% | 17% | 84% | 85% | -1% | -24% |
-| ACWI | 160.22 USD | -1% | 14% | 18% | 80% | 70% | -1% | -26% |
+| ENTG | 148.63 USD | 7% | 77% | 60% | 64% | 14% | -19% | -59% |
+| ASX | 43.50 USD | 17% | 173% | 281% | 522% | 539% | -3% | -46% |
+| AMKR | 52.69 USD | 8% | 34% | 81% | 147% | 109% | -44% | -66% |
+| SOXX | 566.07 USD | 10% | 88% | 111% | 269% | 273% | -14% | -46% |
+| SPY | 767.18 USD | 0% | 13% | 17% | 84% | 85% | -1% | -24% |
+| ACWI | 160.08 USD | -1% | 14% | 18% | 80% | 70% | -1% | -26% |
 
 **Reading the tape**
 - **Leadership rotated.** In 2023–24 the story was "GPU + TSMC". In 2025–26 the gains broadened to **memory (HBM)**, **Samsung**, **test (Advantest, Teradyne)**, **OSAT (ASE)** and a speculative **Intel/AMD/Arm** rally. Broadcom and EDA lagged.
@@ -164,36 +164,36 @@ $R_i = \alpha_i + \beta_i R_M + e_i$ (monthly excess returns vs SPY), Blume-adju
 | Ticker | β (SPY) | Adj. β | β (SOXX) | α (ann.) | t(α) | R² | σ(e) | CAPM k |
 |---|---|---|---|---|---|---|---|---|
 | NVDA | 2.21 | 1.81 | 0.90 | 34.0% | 2.05 | 0.48 | 36% | 15.1% |
-| AVGO | 1.44 | 1.29 | 0.64 | 33.1% | 2.08 | 0.30 | 35% | 12.2% |
+| AVGO | 1.44 | 1.29 | 0.64 | 33.1% | 2.08 | 0.30 | 35% | 12.3% |
 | AMD | 2.49 | 1.99 | 1.55 | 21.9% | 0.85 | 0.33 | 56% | 16.1% |
-| QCOM | 1.68 | 1.46 | 0.84 | -5.4% | -0.32 | 0.35 | 36% | 13.1% |
-| MRVL | 2.26 | 1.84 | 1.35 | 20.0% | 0.79 | 0.29 | 55% | 15.2% |
+| QCOM | 1.68 | 1.46 | 0.84 | -5.4% | -0.32 | 0.35 | 36% | 13.2% |
+| MRVL | 2.26 | 1.84 | 1.35 | 20.0% | 0.79 | 0.29 | 55% | 15.3% |
 | ARM | 3.85 | 2.90 | 1.51 | 12.9% | 0.26 | 0.28 | 78% | 21.1% |
 | SNPS | 1.24 | 1.16 | 0.51 | -4.1% | -0.31 | 0.31 | 29% | 11.5% |
-| CDNS | 1.14 | 1.09 | 0.49 | 4.5% | 0.40 | 0.35 | 24% | 11.1% |
+| CDNS | 1.14 | 1.09 | 0.49 | 4.5% | 0.40 | 0.35 | 24% | 11.2% |
 | TSM | 1.37 | 1.25 | 0.75 | 16.5% | 1.22 | 0.35 | 30% | 12.0% |
-| 005930.KS | 1.50 | 1.33 | 0.88 | 15.5% | 0.83 | 0.25 | 41% | 12.4% |
+| 005930.KS | 1.50 | 1.33 | 0.88 | 15.5% | 0.83 | 0.25 | 41% | 12.5% |
 | INTC | 2.24 | 1.82 | 1.34 | 6.4% | 0.23 | 0.25 | 61% | 15.2% |
-| GFS | 1.80 | 1.53 | 1.06 | -8.0% | -0.37 | 0.27 | 47% | 13.5% |
-| 0981.HK | 0.41 | 0.61 | 0.32 | 26.5% | 1.15 | 0.02 | 50% | 8.4% |
-| TXN | 1.34 | 1.22 | 0.67 | -2.0% | -0.16 | 0.37 | 27% | 11.8% |
+| GFS | 1.80 | 1.53 | 1.06 | -8.0% | -0.37 | 0.27 | 47% | 13.6% |
+| 0981.HK | 0.41 | 0.61 | 0.32 | 26.5% | 1.15 | 0.02 | 50% | 8.5% |
+| TXN | 1.34 | 1.22 | 0.67 | -2.0% | -0.16 | 0.37 | 27% | 11.9% |
 | IFX.DE | 2.22 | 1.82 | 1.10 | -3.9% | -0.23 | 0.48 | 37% | 15.1% |
-| MU | 2.23 | 1.82 | 1.40 | 47.1% | 1.77 | 0.27 | 58% | 15.1% |
-| 000660.KS | 2.31 | 1.88 | 1.50 | 48.7% | 1.76 | 0.27 | 60% | 15.4% |
+| MU | 2.23 | 1.82 | 1.40 | 47.1% | 1.77 | 0.27 | 58% | 15.2% |
+| 000660.KS | 2.31 | 1.88 | 1.50 | 48.7% | 1.76 | 0.27 | 60% | 15.5% |
 | ASML | 1.78 | 1.52 | 0.88 | 3.1% | 0.21 | 0.43 | 32% | 13.5% |
 | AMAT | 1.59 | 1.39 | 1.00 | 17.6% | 0.91 | 0.26 | 42% | 12.8% |
-| LRCX | 1.85 | 1.57 | 1.11 | 23.4% | 1.32 | 0.36 | 39% | 13.7% |
-| KLAC | 1.44 | 1.29 | 0.91 | 26.5% | 1.48 | 0.25 | 39% | 12.2% |
-| 8035.T | 1.85 | 1.56 | 1.08 | 12.0% | 0.62 | 0.32 | 42% | 13.7% |
-| ASM.AS | 1.99 | 1.66 | 1.07 | 7.5% | 0.42 | 0.40 | 39% | 14.2% |
-| 6857.T | 2.02 | 1.68 | 1.12 | 41.8% | 1.68 | 0.26 | 54% | 14.3% |
-| 6146.T | 1.54 | 1.36 | 0.90 | 21.6% | 1.08 | 0.24 | 44% | 12.6% |
+| LRCX | 1.85 | 1.57 | 1.11 | 23.4% | 1.32 | 0.36 | 39% | 13.8% |
+| KLAC | 1.44 | 1.29 | 0.91 | 26.5% | 1.48 | 0.25 | 39% | 12.3% |
+| 8035.T | 1.85 | 1.56 | 1.08 | 12.0% | 0.62 | 0.32 | 42% | 13.8% |
+| ASM.AS | 1.99 | 1.66 | 1.07 | 7.5% | 0.42 | 0.40 | 39% | 14.3% |
+| 6857.T | 2.02 | 1.68 | 1.12 | 41.8% | 1.68 | 0.26 | 54% | 14.4% |
+| 6146.T | 1.54 | 1.36 | 0.90 | 21.6% | 1.08 | 0.24 | 44% | 12.7% |
 | TER | 1.79 | 1.52 | 0.97 | 13.0% | 0.70 | 0.32 | 41% | 13.5% |
 | 4063.T | 1.32 | 1.22 | 0.56 | -6.4% | -0.55 | 0.41 | 25% | 11.8% |
-| ENTG | 1.36 | 1.24 | 0.91 | -3.1% | -0.16 | 0.20 | 43% | 11.9% |
+| ENTG | 1.36 | 1.24 | 0.91 | -3.1% | -0.16 | 0.20 | 43% | 12.0% |
 | ASX | 1.70 | 1.47 | 1.04 | 23.0% | 1.33 | 0.34 | 38% | 13.2% |
-| AMKR | 2.23 | 1.82 | 1.20 | 2.2% | 0.11 | 0.39 | 44% | 15.1% |
-| SOXX | 1.80 | 1.53 | 1.00 | 10.5% | 0.93 | 0.57 | 25% | 13.5% |
+| AMKR | 2.23 | 1.82 | 1.20 | 2.2% | 0.11 | 0.39 | 44% | 15.2% |
+| SOXX | 1.80 | 1.53 | 1.00 | 10.5% | 0.93 | 0.57 | 25% | 13.6% |
 
 ![SML](charts/03_security_market_line.png)
 
@@ -298,23 +298,23 @@ $1 + r_{USD} = (1 + r_{local})(1 + r_{FX})$
 
 | Ticker | Window | Ccy | Local return | FX vs USD | USD return | FX contribution |
 |---|---|---|---|---|---|---|
-| 005930.KS | 1Y | KRW | 241% | 1.6% | 247% | 5% |
-| 005930.KS | 5Y | KRW | 308% | -13.6% | 252% | -56% |
+| 005930.KS | 1Y | KRW | 241% | 2.0% | 248% | 7% |
+| 005930.KS | 5Y | KRW | 308% | -13.3% | 253% | -54% |
 | 0981.HK | 1Y | HKD | -17% | -0.9% | -18% | -1% |
-| 0981.HK | 5Y | HKD | 190% | -0.7% | 187% | -2% |
-| IFX.DE | 1Y | EUR | 74% | -3.6% | 68% | -6% |
-| IFX.DE | 5Y | EUR | 61% | -2.9% | 56% | -5% |
-| 000660.KS | 1Y | KRW | 417% | 1.6% | 426% | 8% |
-| 000660.KS | 5Y | KRW | 1,762% | -13.6% | 1,508% | -254% |
-| 8035.T | 1Y | JPY | 102% | -6.8% | 88% | -14% |
+| 0981.HK | 5Y | HKD | 191% | -0.7% | 189% | -2% |
+| IFX.DE | 1Y | EUR | 69% | -3.7% | 63% | -6% |
+| IFX.DE | 5Y | EUR | 57% | -3.1% | 52% | -5% |
+| 000660.KS | 1Y | KRW | 417% | 2.0% | 428% | 10% |
+| 000660.KS | 5Y | KRW | 1,762% | -13.3% | 1,514% | -248% |
+| 8035.T | 1Y | JPY | 102% | -6.7% | 88% | -14% |
 | 8035.T | 5Y | JPY | 236% | -30.3% | 134% | -102% |
-| ASM.AS | 1Y | EUR | 69% | -3.6% | 63% | -6% |
-| ASM.AS | 5Y | EUR | 148% | -2.9% | 140% | -7% |
-| 6857.T | 1Y | JPY | 115% | -6.8% | 101% | -15% |
+| ASM.AS | 1Y | EUR | 67% | -3.7% | 61% | -6% |
+| ASM.AS | 5Y | EUR | 145% | -3.1% | 138% | -7% |
+| 6857.T | 1Y | JPY | 115% | -6.7% | 101% | -14% |
 | 6857.T | 5Y | JPY | 1,140% | -30.3% | 764% | -376% |
-| 6146.T | 1Y | JPY | 10% | -6.8% | 3% | -7% |
+| 6146.T | 1Y | JPY | 10% | -6.7% | 3% | -7% |
 | 6146.T | 5Y | JPY | 416% | -30.3% | 259% | -156% |
-| 4063.T | 1Y | JPY | 27% | -6.8% | 19% | -9% |
+| 4063.T | 1Y | JPY | 27% | -6.7% | 19% | -9% |
 | 4063.T | 5Y | JPY | 60% | -30.3% | 12% | -49% |
 
 - **Yen weakness (−30% vs USD over 5Y)** cost US investors a lot: Advantest made +1,140% in yen but only +764% in USD, and Shin-Etsu's +53% in yen became +6%.
@@ -336,7 +336,7 @@ $ROE = \underbrace{\tfrac{NI}{PTI}}_{\text{tax}} \times \underbrace{\tfrac{PTI}{
 | ARM | 2026-03 | 98% | 18% | 0.78 | 1.27 | 0.50 | 1.30 | 12% | 56% | 12% | 1.05 | -0.063 | 0.4 | – | 2.3 |
 | SNPS | 2025-10 | 77% | 26% | 0.96 | 0.76 | 0.23 | 1.64 | 7% | 35% | 2% | 1.01 | -0.006 | 1.2 | 4 | -11.4 |
 | CDNS | 2025-12 | 86% | 31% | 0.73 | 0.93 | 0.55 | 1.88 | 22% | 33% | 3% | 1.43 | -0.065 | 0.8 | 14 | 0.4 |
-| TSM | 2025-12 | 60% | 54% | 0.83 | 0.99 | 0.52 | 1.52 | 35% | 6% | 34% | 0.58 | -0.079 | 1.4 | 166 | 53.5 |
+| TSM | 2025-12 | 60% | 54% | 0.83 | 0.99 | 0.52 | 1.52 | 35% | 6% | 34% | 0.58 | -0.079 | 1.4 | 166 | 53.6 |
 | 005930.KS | 2025-12 | 39% | 15% | 0.89 | 0.99 | 0.62 | 1.33 | 11% | 11% | 16% | 0.75 | -0.076 | 2.8 | 83 | 23.9 |
 | INTC | 2025-12 | 35% | 5% | -0.17 | 0.59 | 0.26 | 1.91 | -0% | 26% | 28% | – | -0.049 | – | 2 | -32.3 |
 | GFS | 2025-12 | 25% | 14% | 0.97 | 0.95 | 0.40 | 1.49 | 8% | 8% | 11% | 1.14 | -0.050 | – | 19 | 0.1 |
@@ -354,7 +354,7 @@ $ROE = \underbrace{\tfrac{NI}{PTI}}_{\text{tax}} \times \underbrace{\tfrac{PTI}{
 | 6857.T | 2026-03 | 64% | 46% | 0.73 | 0.99 | 1.11 | 1.56 | 58% | – | 3% | 0.80 | 0.040 | 2.8 | 189 | 2.0 |
 | 6146.T | 2026-03 | 70% | 42% | 0.74 | 0.99 | 0.63 | 1.29 | 25% | – | 8% | 0.73 | 0.003 | 1.0 | – | – |
 | TER | 2025-12 | 58% | 21% | 0.85 | 0.99 | 0.81 | 1.41 | 20% | 16% | 7% | 0.81 | -0.031 | 0.6 | 96 | 0.0 |
-| 4063.T | 2026-03 | 34% | 28% | 0.67 | 1.00 | 0.46 | 1.24 | 10% | – | 14% | 0.75 | -0.042 | – | 263 | 8.9 |
+| 4063.T | 2026-03 | 34% | 28% | 0.67 | 1.00 | 0.46 | 1.24 | 10% | – | 14% | 0.75 | -0.042 | – | 263 | 9.0 |
 | ENTG | 2025-12 | 44% | 14% | 0.93 | 0.56 | 0.38 | 2.19 | 6% | 10% | 9% | 1.68 | -0.055 | – | 2 | -3.4 |
 | ASX | 2025-12 | 18% | 9% | 0.78 | 0.87 | 0.79 | 2.46 | 12% | 5% | 26% | -0.59 | -0.125 | 2.5 | 8 | -5.4 |
 | AMKR | 2025-12 | 14% | 8% | 0.84 | 0.85 | – | – | 9% | 2% | 13% | 0.51 | – | 0.8 | 7 | -0.2 |
@@ -380,46 +380,46 @@ $ROE = \underbrace{\tfrac{NI}{PTI}}_{\text{tax}} \times \underbrace{\tfrac{PTI}{
 
 | Ticker | Trail P/E | Fwd P/E | EV/EBITDA | P/S | P/B | FCF yld | Div yld | k (CAPM) | g=ROE×b | PVGO/P | Implied g (stage 1) | 2-stage DCF vs px | Street tgt upside |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| NVDA | 28.9 | 14.4 | 26.9 | 18.0 | 34.6 | 0.8% | 0.12% | 15.1% | 113% | 54% | 26% | -2% | 45% |
-| AVGO | 45.3 | 18.3 | 33.1 | 19.0 | 20.8 | 1.8% | 0.71% | 12.2% | 30% | 55% | 16% | 33% | 50% |
-| AMD | 154.0 | 39.5 | 104.0 | 24.3 | 15.9 | 0.9% | 0.00% | 16.1% | 10% | 84% | 57% | -75% | 0% |
-| QCOM | 22.7 | 19.3 | 18.1 | 4.8 | 9.9 | 4.9% | 1.81% | 13.1% | 20% | 61% | 21% | -4% | -2% |
-| MRVL | 85.0 | 38.6 | 82.7 | 24.8 | 16.4 | 1.0% | 0.09% | 15.2% | 15% | 83% | 76% | -83% | 11% |
-| ARM | 342.8 | 108.9 | 330.7 | 68.9 | 42.9 | 0.4% | 0.00% | 21.1% | 13% | 96% | 117% | -93% | -13% |
-| SNPS | 71.5 | 23.6 | 41.6 | 8.4 | 2.8 | 4.3% | 0.00% | 11.5% | 4% | 63% | 21% | -44% | 32% |
-| CDNS | 61.4 | 32.4 | 40.1 | 14.6 | 15.6 | 1.9% | 0.00% | 11.1% | 23% | 72% | 29% | -16% | 31% |
-| TSM | 33.7 | 20.4 | 22.5 | 16.6 | 13.8 | 1.0% | 0.76% | 12.0% | 30% | 59% | 35% | -27% | 24% |
-| 005930.KS | – | 4.0 | 7.5 | 3.9 | 4.4 | 3.7% | 0.52% | 12.4% | 28% | -100% | -19% | 343% | 68% |
-| INTC | – | 59.5 | 39.7 | 11.4 | 5.7 | 0.8% | 0.00% | 15.2% | -11% | 89% | 87% | -92% | -5% |
-| GFS | 37.4 | 17.7 | 12.7 | 3.7 | 2.2 | 2.9% | 0.25% | 13.5% | 6% | 58% | 20% | -38% | 64% |
-| 0981.HK | 62.3 | 35.4 | 13.4 | 6.7 | 3.2 | -5.9% | 0.00% | 8.4% | 4% | 67% | 52% | -81% | 49% |
-| TXN | 41.3 | 25.6 | 26.9 | 12.8 | 15.3 | 1.4% | 2.07% | 11.8% | 5% | 67% | 45% | -73% | 19% |
-| IFX.DE | 70.6 | 20.6 | 19.3 | 4.8 | 4.4 | 2.3% | 0.60% | 15.1% | 4% | 68% | 31% | -56% | 50% |
-| MU | 24.8 | 6.7 | 17.5 | 13.4 | 22.3 | 0.6% | 0.05% | 15.1% | 66% | 2% | 34% | -23% | 41% |
-| 000660.KS | – | 3.9 | 8.7 | 7.0 | 11.0 | 4.2% | 0.08% | 15.4% | 91% | -65% | -4% | 146% | 71% |
-| ASML | 59.9 | 29.4 | 43.2 | 16.6 | 30.0 | 1.4% | 0.50% | 13.5% | 38% | 75% | 36% | -29% | 22% |
-| AMAT | 40.8 | 25.7 | 36.9 | 12.2 | 18.4 | 0.8% | 0.40% | 12.8% | 34% | 70% | 35% | -28% | 35% |
-| LRCX | 51.7 | 26.2 | 44.3 | 16.6 | 30.8 | 0.8% | 0.35% | 13.7% | 53% | 72% | 46% | -48% | 22% |
-| KLAC | 51.6 | 28.0 | 40.7 | 18.1 | 38.6 | 1.1% | 0.42% | 12.2% | 68% | 71% | 37% | -32% | 24% |
-| 8035.T | 43.0 | 42.1 | 30.9 | 9.3 | 11.8 | 1.2% | 1.17% | 13.7% | 15% | 83% | 70% | -80% | 42% |
-| ASM.AS | 38.5 | 27.4 | 34.6 | 12.2 | 10.2 | 0.6% | 0.39% | 14.2% | 23% | 74% | 43% | -47% | 34% |
-| 6857.T | 64.1 | 64.1* | 40.4 | 19.4 | 30.0 | 1.5% | 0.18% | 14.3% | 50% | 89% | 75% | -77% | 27% |
-| 6146.T | 42.7 | 39.2 | 25.7 | 12.5 | 9.8 | 1.7% | 0.95% | 12.6% | 16% | 80% | 52% | -68% | 56% |
-| TER | 54.7 | 33.4 | 40.3 | 13.6 | 21.8 | 0.7% | 0.13% | 13.5% | 34% | 78% | 47% | -49% | 15% |
-| 4063.T | 23.4 | 17.9 | 10.5 | 4.1 | 2.4 | 2.3% | 1.80% | 11.8% | 7% | 53% | 22% | -41% | 32% |
-| ENTG | 75.8 | 30.1 | 28.6 | 6.9 | 5.8 | 2.1% | 0.26% | 11.9% | 6% | 72% | 30% | -55% | 15% |
-| ASX | 53.6 | 22.5 | 27.4 | 5.1 | 10.6 | -2.9% | 0.95% | 13.2% | 8% | 66% | 67% | -83% | 16% |
-| AMKR | 24.5 | 19.0 | 10.1 | 1.8 | 3.0 | -2.9% | 0.61% | 15.1% | 11% | 65% | 51% | -70% | 43% |
+| NVDA | 28.5 | 14.3 | 26.8 | 17.9 | 34.5 | 0.8% | 0.12% | 15.1% | 113% | 54% | 26% | -3% | 46% |
+| AVGO | 45.3 | 18.1 | 32.7 | 18.8 | 20.6 | 1.8% | 0.72% | 12.3% | 30% | 55% | 16% | 34% | 52% |
+| AMD | 156.1 | 40.4 | 106.5 | 24.9 | 16.3 | 0.9% | 0.00% | 16.1% | 10% | 85% | 58% | -75% | -2% |
+| QCOM | 22.5 | 19.0 | 17.9 | 4.7 | 9.8 | 4.9% | 1.82% | 13.2% | 20% | 60% | 21% | -4% | -0% |
+| MRVL | 86.3 | 38.3 | 82.1 | 24.6 | 16.3 | 1.0% | 0.09% | 15.3% | 15% | 83% | 76% | -83% | 12% |
+| ARM | 344.2 | 100.3 | 304.4 | 63.5 | 39.5 | 0.4% | 0.00% | 21.1% | 13% | 95% | 114% | -92% | -6% |
+| SNPS | 71.9 | 24.2 | 42.7 | 8.6 | 2.9 | 4.2% | 0.00% | 11.5% | 4% | 64% | 22% | -46% | 28% |
+| CDNS | 63.9 | 33.7 | 41.7 | 15.2 | 16.2 | 1.8% | 0.00% | 11.2% | 23% | 73% | 30% | -20% | 25% |
+| TSM | 33.2 | 20.6 | 22.7 | 16.8 | 13.9 | 1.0% | 0.77% | 12.0% | 30% | 60% | 35% | -29% | 22% |
+| 005930.KS | – | 4.0 | 7.5 | 3.9 | 4.4 | 3.7% | 0.52% | 12.5% | 28% | -99% | -19% | 340% | 68% |
+| INTC | – | 61.8 | 41.2 | 11.8 | 5.9 | 0.7% | 0.00% | 15.2% | -11% | 89% | 88% | -92% | -9% |
+| GFS | 36.2 | 17.9 | 12.9 | 3.8 | 2.2 | 2.9% | 0.26% | 13.6% | 6% | 59% | 21% | -39% | 62% |
+| 0981.HK | 62.1 | 35.3 | 13.3 | 6.7 | 3.2 | -5.9% | 0.00% | 8.5% | 4% | 67% | 52% | -81% | 49% |
+| TXN | 41.5 | 25.4 | 26.7 | 12.7 | 15.2 | 1.4% | 2.06% | 11.9% | 5% | 67% | 45% | -73% | 20% |
+| IFX.DE | 69.9 | 20.4 | 19.1 | 4.8 | 4.4 | 2.3% | 0.61% | 15.1% | 4% | 68% | 30% | -56% | 51% |
+| MU | 24.2 | 6.8 | 17.6 | 13.5 | 22.5 | 0.6% | 0.05% | 15.2% | 66% | 3% | 34% | -24% | 40% |
+| 000660.KS | – | 3.9 | 8.7 | 7.0 | 11.0 | 4.2% | 0.08% | 15.5% | 91% | -64% | -4% | 145% | 71% |
+| ASML | 59.9 | 29.1 | 42.7 | 16.5 | 29.6 | 1.5% | 0.50% | 13.5% | 38% | 75% | 36% | -29% | 23% |
+| AMAT | 41.0 | 25.7 | 36.9 | 12.2 | 18.4 | 0.8% | 0.40% | 12.8% | 34% | 70% | 36% | -28% | 35% |
+| LRCX | 53.5 | 26.2 | 44.3 | 16.5 | 30.8 | 0.8% | 0.34% | 13.8% | 53% | 72% | 47% | -48% | 22% |
+| KLAC | 51.3 | 27.9 | 40.5 | 18.0 | 38.5 | 1.1% | 0.43% | 12.3% | 68% | 71% | 37% | -32% | 25% |
+| 8035.T | 45.2 | 44.1 | 32.5 | 9.8 | 12.4 | 1.2% | 1.11% | 13.8% | 15% | 84% | 71% | -81% | 36% |
+| ASM.AS | 38.8 | 27.6 | 34.9 | 12.3 | 10.3 | 0.6% | 0.38% | 14.3% | 23% | 75% | 44% | -48% | 33% |
+| 6857.T | 65.9 | 65.9* | 41.6 | 19.9 | 30.8 | 1.4% | 0.17% | 14.4% | 50% | 89% | 76% | -77% | 24% |
+| 6146.T | 43.5 | 39.8 | 26.1 | 12.7 | 10.0 | 1.7% | 0.93% | 12.7% | 16% | 80% | 53% | -68% | 53% |
+| TER | 53.5 | 33.3 | 40.1 | 13.6 | 21.7 | 0.7% | 0.13% | 13.5% | 34% | 78% | 47% | -50% | 15% |
+| 4063.T | 23.3 | 17.9 | 10.5 | 4.1 | 2.4 | 2.3% | 1.80% | 11.8% | 7% | 53% | 23% | -42% | 32% |
+| ENTG | 75.1 | 29.6 | 28.3 | 6.8 | 5.7 | 2.1% | 0.27% | 12.0% | 6% | 72% | 30% | -55% | 17% |
+| ASX | 53.0 | 22.3 | 27.1 | 5.1 | 10.5 | -2.9% | 0.96% | 13.2% | 8% | 66% | 66% | -83% | 17% |
+| AMKR | 23.9 | 18.8 | 10.0 | 1.8 | 2.9 | -2.9% | 0.62% | 15.2% | 11% | 65% | 50% | -70% | 45% |
 
 \* Advantest's forward P/E from the data feed (140×) is inconsistent with its trailing P/E, so the trailing P/E is used instead.
 
 ![Valuation](charts/07_valuation_growth.png)
 
 **Interpretation**
-- **Least demanding relative to fundamentals:** NVIDIA (implied g ≈ 26% vs ROE·b >100%, forward P/E 14.4), Broadcom (16%), Qualcomm (21%), Synopsys (21%). Also Samsung and SK hynix, but only if HBM earnings prove durable (see the cyclical-peak caveat).
-- **Most demanding:** Arm (117% implied growth, 96% PVGO, forward P/E 109×), Intel (87%, a turnaround option on 18A/14A plus government backing), Marvell, Advantest, Tokyo Electron and ASE.
+- **Least demanding relative to fundamentals:** NVIDIA (implied g ≈ 26% vs ROE·b >100%, forward P/E 14.3), Broadcom (16%), Qualcomm (21%), Synopsys (22%). Also Samsung and SK hynix, but only if HBM earnings prove durable (see the cyclical-peak caveat).
+- **Most demanding:** Arm (114% implied growth, 95% PVGO, forward P/E 100×), Intel (88%, a turnaround option on 18A/14A plus government backing), Marvell, Advantest, Tokyo Electron and ASE.
 - **Equipment** (ASML, AMAT, LRCX, KLAC) needs 35–46% stage-1 growth: plausible only if WFE stays at records through 2027–28.
-- **Street targets** imply +31% upside on average (median 31%). Sell-side optimism is well documented (ch.12/27), so treat these as relative, not absolute, signals.
+- **Street targets** imply +30% upside on average (median 27%). Sell-side optimism is well documented (ch.12/27), so treat these as relative, not absolute, signals.
 
 ---
 
@@ -427,39 +427,39 @@ $ROE = \underbrace{\tfrac{NI}{PTI}}_{\text{tax}} \times \underbrace{\tfrac{PTI}{
 
 | Ticker | 12-1 mom. | vs 50DMA | vs 200DMA | 50>200 (golden) | RSI(14) | 6M RS vs SOXX |
 |---|---|---|---|---|---|---|
-| NVDA | 18% | 4% | 13% | ✅ | 56 | -40% |
-| AVGO | 13% | -6% | -3% | ✅ | 45 | -57% |
-| AMD | 191% | 23% | 67% | ✅ | 72 | 129% |
-| QCOM | 4% | 17% | 18% | ✅ | 67 | -20% |
-| MRVL | 152% | 19% | 58% | ✅ | 64 | 95% |
-| ARM | 71% | 26% | 55% | ✅ | 72 | 43% |
-| SNPS | -11% | 3% | -7% | ❌ | 56 | -69% |
-| CDNS | -4% | -3% | -5% | ❌ | 54 | -62% |
-| TSM | 50% | 7% | 16% | ✅ | 61 | -35% |
-| 005930.KS | 217% | 16% | 35% | ✅ | 64 | 5% |
-| INTC | 167% | 25% | 52% | ✅ | 71 | 106% |
-| GFS | 25% | -5% | -15% | ❌ | 47 | -68% |
-| 0981.HK | -12% | -6% | -9% | ❌ | 43 | -53% |
-| TXN | 46% | 1% | 10% | ✅ | 57 | -30% |
-| IFX.DE | 69% | -3% | 3% | ✅ | 48 | -25% |
-| MU | 474% | 14% | 59% | ✅ | 62 | 129% |
+| NVDA | 18% | 4% | 12% | ✅ | 55 | -41% |
+| AVGO | 13% | -7% | -4% | ✅ | 42 | -59% |
+| AMD | 191% | 25% | 71% | ✅ | 73 | 136% |
+| QCOM | 4% | 15% | 16% | ✅ | 64 | -22% |
+| MRVL | 152% | 18% | 57% | ✅ | 62 | 93% |
+| ARM | 71% | 16% | 43% | ✅ | 60 | 26% |
+| SNPS | -11% | 6% | -5% | ❌ | 60 | -67% |
+| CDNS | -4% | 1% | -1% | ❌ | 60 | -58% |
+| TSM | 50% | 8% | 17% | ✅ | 63 | -33% |
+| 005930.KS | 217% | 16% | 35% | ✅ | 64 | 4% |
+| INTC | 167% | 29% | 58% | ✅ | 73 | 117% |
+| GFS | 25% | -4% | -14% | ❌ | 49 | -67% |
+| 0981.HK | -12% | -6% | -9% | ❌ | 44 | -53% |
+| TXN | 46% | 0% | 10% | ✅ | 54 | -31% |
+| IFX.DE | 69% | -6% | 0% | ✅ | 45 | -30% |
+| MU | 474% | 15% | 60% | ✅ | 63 | 132% |
 | 000660.KS | 391% | 15% | 41% | ✅ | 60 | 50% |
-| ASML | 76% | 2% | 14% | ✅ | 56 | -41% |
+| ASML | 76% | 0% | 12% | ✅ | 53 | -42% |
 | AMAT | 125% | -3% | 11% | ✅ | 53 | -32% |
 | LRCX | 126% | 1% | 12% | ✅ | 53 | -27% |
-| KLAC | 64% | -0% | 6% | ✅ | 55 | -42% |
+| KLAC | 64% | -1% | 5% | ✅ | 54 | -43% |
 | 8035.T | 101% | -4% | 8% | ✅ | 47 | -37% |
-| ASM.AS | 57% | 0% | 5% | ✅ | 51 | -50% |
-| 6857.T | 114% | 2% | 20% | ✅ | 51 | -27% |
+| ASM.AS | 57% | -1% | 4% | ✅ | 50 | -51% |
+| 6857.T | 114% | 2% | 21% | ✅ | 51 | -27% |
 | 6146.T | 17% | -9% | -19% | ❌ | 40 | -92% |
-| TER | 155% | 6% | 17% | ✅ | 57 | -41% |
+| TER | 155% | 5% | 16% | ✅ | 57 | -42% |
 | 4063.T | 16% | -3% | -6% | ❌ | 45 | -77% |
-| ENTG | 47% | 8% | 15% | ✅ | 60 | -42% |
-| ASX | 237% | 15% | 46% | ✅ | 67 | 35% |
-| AMKR | 67% | 1% | -7% | ❌ | 56 | -54% |
+| ENTG | 47% | 7% | 13% | ✅ | 58 | -44% |
+| ASX | 237% | 14% | 44% | ✅ | 65 | 33% |
+| AMKR | 67% | 0% | -8% | ❌ | 54 | -55% |
 
 - **Momentum** (12-1-month; Jegadeesh-Titman, ch.11) is extreme in memory (MU 474%, SK hynix 391%), Samsung, ASE, AMD, Intel and Marvell.
-- **Overbought (RSI > 70):** AMD, ARM and INTC. **Oversold (RSI < 30):** none.
+- **Overbought (RSI > 70):** AMD and INTC. **Oversold (RSI < 30):** none.
 - **Below the 200-day average:** AVGO, SNPS, CDNS, GFS, SMIC, Disco, Shin-Etsu and AMKR. These are candidates for mean reversion (DeBondt-Thaler) *if* fundamentals hold.
 - **EMH caveat:** these signals are weak-form information. Ch.12 supports momentum as a behavioral anomaly (underreaction, then overreaction), but momentum crashes after sharp reversals are its known failure mode.
 
@@ -472,22 +472,22 @@ $ROE = \underbrace{\tfrac{NI}{PTI}}_{\text{tax}} \times \underbrace{\tfrac{PTI}{
 | NVDA | 0% | 38% | 0.00 | 0.0% | 2026-10-23 |
 | AVGO | 0% | 46% | 0.00 | 0.0% | 2026-10-23 |
 | AMD | 0% | 69% | 0.00 | 0.0% | 2026-10-23 |
-| QCOM | 0% | 54% | 0.01 | 0.1% | 2026-10-23 |
+| QCOM | 0% | 54% | 0.00 | 0.1% | 2026-10-23 |
 | MRVL | 0% | 79% | 0.00 | 0.1% | 2026-10-23 |
-| ARM | 0% | 78% | 0.00 | 0.1% | 2026-10-23 |
-| SNPS | 1% | 42% | 0.02 | 0.3% | 2026-10-23 |
-| CDNS | 0% | 40% | 0.00 | 0.1% | 2026-10-23 |
-| TSM | 0% | 40% | 0.00 | 0.1% | 2026-10-23 |
+| ARM | 0% | 79% | 0.00 | 0.1% | 2026-10-23 |
+| SNPS | 2% | 43% | 0.04 | 0.5% | 2026-10-23 |
+| CDNS | 0% | 40% | 0.01 | 0.1% | 2026-10-23 |
+| TSM | 0% | 40% | 0.00 | 0.0% | 2026-10-23 |
 | INTC | 1% | 76% | 0.01 | 0.2% | 2026-10-23 |
-| GFS | 1% | 60% | 0.01 | 0.2% | 2026-11-20 |
-| TXN | 0% | 42% | 0.01 | 0.1% | 2026-10-23 |
+| GFS | 2% | 60% | 0.03 | 0.5% | 2026-11-20 |
+| TXN | 0% | 42% | 0.00 | 0.0% | 2026-10-23 |
 | MU | 0% | 81% | 0.00 | 0.0% | 2026-10-23 |
 | ASML | 0% | 46% | 0.00 | 0.0% | 2026-10-23 |
 | AMAT | 0% | 59% | 0.00 | 0.0% | 2026-10-23 |
 | LRCX | 0% | 64% | 0.01 | 0.1% | 2026-10-23 |
-| KLAC | 1% | 60% | 0.02 | 0.3% | 2026-10-23 |
-| TER | 0% | 76% | 0.01 | 0.1% | 2026-10-23 |
-| ENTG | 0% | 68% | 0.00 | 0.1% | 2026-11-20 |
+| KLAC | 0% | 60% | 0.01 | 0.1% | 2026-10-23 |
+| TER | 1% | 76% | 0.01 | 0.2% | 2026-10-23 |
+| ENTG | 0% | 68% | 0.01 | 0.1% | 2026-11-20 |
 | ASX | 1% | 56% | 0.01 | 0.2% | 2026-11-20 |
 | AMKR | 0% | 78% | 0.01 | 0.1% | 2026-10-23 |
 
@@ -521,66 +521,66 @@ Diversification within semis stops at ~38% σ, roughly 2.4× SPY. The remaining 
 
 | Portfolio | E(r) | σ | Sharpe | β |
 |---|---|---|---|---|
-| GMV_longonly_cap10 | 12.4% | 22.4% | 0.38 | 1.27 |
-| MaxSharpe_longonly_cap10 | 18.3% | 28.0% | 0.51 | 1.59 |
+| GMV_longonly_cap10 | 12.4% | 22.4% | 0.37 | 1.27 |
+| MaxSharpe_longonly_cap10 | 18.8% | 29.0% | 0.51 | 1.65 |
 | EqualWeight | 14.0% | 29.6% | 0.34 | 1.81 |
 
 | Ticker | Global min-variance | Max-Sharpe (tangency) |
 |---|---|---|
-| 6146.T | 4.0% | 10.0% |
-| 0981.HK | 10.0% | 10.0% |
+| AVGO | 8.9% | 10.0% |
 | 005930.KS | 5.3% | 10.0% |
 | GFS | 0.0% | 10.0% |
+| 0981.HK | 10.0% | 10.0% |
 | 000660.KS | 0.0% | 10.0% |
-| AVGO | 8.9% | 10.0% |
-| IFX.DE | 0.0% | 9.2% |
-| 4063.T | 10.0% | 6.9% |
-| CDNS | 10.0% | 5.6% |
-| 8035.T | 0.0% | 5.4% |
-| SNPS | 10.0% | 4.9% |
-| NVDA | 0.0% | 4.5% |
-| AMKR | 0.0% | 1.9% |
-| AMAT | 3.4% | 1.5% |
+| 4063.T | 10.0% | 10.0% |
+| 6146.T | 4.0% | 10.0% |
+| IFX.DE | 0.0% | 10.0% |
+| NVDA | 0.0% | 7.6% |
+| AMKR | 0.0% | 4.7% |
+| AMAT | 3.4% | 3.2% |
+| SNPS | 10.0% | 2.1% |
+| 8035.T | 0.0% | 1.9% |
 | QCOM | 2.3% | 0.0% |
-| KLAC | 7.1% | 0.0% |
 | TXN | 10.0% | 0.0% |
-| TSM | 10.0% | 0.0% |
 | ENTG | 7.3% | 0.0% |
 | ASX | 1.7% | 0.0% |
+| KLAC | 7.1% | 0.0% |
+| TSM | 10.0% | 0.0% |
+| CDNS | 10.0% | 0.0% |
 
 **Capital allocation (ch.6):** $y^* = [E(r_P) - r_f]/(A\sigma_P^2)$ applied to the tangency portfolio:
 
 | Risk aversion A | y* in semis tangency portfolio | Complete-portfolio E(r) | Complete-portfolio σ |
 |---|---|---|---|
-| 2 | 91% | 17.0% | 25.4% |
-| 3 | 61% | 12.7% | 17.0% |
-| 4 | 45% | 10.5% | 12.7% |
-| 6 | 30% | 8.3% | 8.5% |
-| 8 | 23% | 7.3% | 6.4% |
+| 2 | 87% | 17.0% | 25.4% |
+| 3 | 58% | 12.7% | 16.9% |
+| 4 | 44% | 10.5% | 12.7% |
+| 6 | 29% | 8.4% | 8.5% |
+| 8 | 22% | 7.3% | 6.3% |
 
 **Treynor-Black active portfolio (ch.27).** Alphas are 12-month analyst-implied returns minus CAPM. The average optimism bias (17%) is removed, and the remainder is shrunk by 0.25. The active portfolio is then combined with SPY:
 
-- Active weight $w_A^* =$ 27%; index weight 73%; active β 0.31; IR 0.62.
-- Ex-ante Sharpe improves from 0.35 (index alone) to 0.71, using $S_P^2 = S_M^2 + IR^2$.
+- Active weight $w_A^* =$ 23%; index weight 77%; active β 0.33; IR 0.61.
+- Ex-ante Sharpe improves from 0.35 (index alone) to 0.70, using $S_P^2 = S_M^2 + IR^2$.
 
 | Ticker | Raw analyst α | De-biased & shrunk α | σ(e) | Weight in optimal risky portfolio |
 |---|---|---|---|---|
-| 005930.KS | 56% | 9.7% | 41% | 21.2% |
-| AVGO | 39% | 5.4% | 35% | 16.3% |
-| GFS | 50% | 8.2% | 47% | 13.9% |
-| 6146.T | 44% | 6.8% | 44% | 13.2% |
-| IFX.DE | 34% | 4.2% | 37% | 11.6% |
-| 000660.KS | 54% | 9.3% | 60% | 9.4% |
-| 0981.HK | 42% | 6.3% | 50% | 9.2% |
-| NVDA | 29% | 3.0% | 36% | 8.5% |
-| ASX | 4% | -3.4% | 38% | -8.7% |
-| TER | 1% | -4.0% | 41% | -8.9% |
-| TXN | 10% | -1.8% | 27% | -9.0% |
-| INTC | -21% | -9.6% | 61% | -9.4% |
-| AMD | -17% | -8.6% | 56% | -10.0% |
-| QCOM | -13% | -7.5% | 36% | -21.0% |
+| 005930.KS | 56% | 9.8% | 41% | 22.2% |
+| AVGO | 41% | 6.0% | 35% | 18.7% |
+| GFS | 48% | 7.8% | 47% | 13.6% |
+| IFX.DE | 35% | 4.7% | 37% | 13.3% |
+| 6146.T | 42% | 6.2% | 44% | 12.6% |
+| 000660.KS | 54% | 9.4% | 60% | 9.9% |
+| 0981.HK | 43% | 6.5% | 50% | 9.8% |
+| NVDA | 30% | 3.3% | 36% | 9.5% |
+| TXN | 11% | -1.5% | 27% | -7.7% |
+| ASX | 5% | -3.0% | 38% | -8.0% |
+| TER | 1% | -3.8% | 41% | -8.8% |
+| INTC | -25% | -10.4% | 61% | -10.6% |
+| AMD | -20% | -9.1% | 56% | -11.0% |
+| QCOM | -12% | -7.1% | 36% | -20.4% |
 
-The largest positive tilts are Samsung, AVGO, GFS, Disco and Infineon (the Street sees the most upside relative to their risk). The largest underweights/shorts are QCOM, AMD, INTC and TXN (priced above consensus targets). The unconstrained Treynor-Black portfolio is long/short and leveraged. Ch.27 recommends constraining tracking risk, so prefer the long-only max-Sharpe portfolio above for implementation.
+The largest positive tilts are Samsung, AVGO, GFS, Infineon and Disco (the Street sees the most upside relative to their risk). The largest underweights/shorts are QCOM, AMD, INTC and TER (priced above consensus targets). The unconstrained Treynor-Black portfolio is long/short and leveraged. Ch.27 recommends constraining tracking risk, so prefer the long-only max-Sharpe portfolio above for implementation.
 
 ---
 
@@ -595,36 +595,36 @@ Equal-weight z-scores:
 
 | Rank | Ticker | Company | Quality | Valuation | Risk (low=good) | Momentum | Risk-adj. perf | Composite |
 |---|---|---|---|---|---|---|---|---|
-| 1 | 000660.KS | SK hynix | 0.63 | 1.39 | -0.85 | 1.78 | 1.36 | 0.86 |
-| 2 | MU | Micron Technology | 0.06 | 0.32 | -0.77 | 2.43 | 1.36 | 0.68 |
-| 3 | AVGO | Broadcom | 0.27 | 0.38 | 0.94 | -0.75 | 1.77 | 0.52 |
-| 4 | 005930.KS | Samsung Electronics | -0.25 | 1.54 | 0.28 | 0.67 | 0.09 | 0.47 |
-| 5 | KLAC | KLA Corp | 0.51 | 0.00 | 0.73 | -0.40 | 0.97 | 0.36 |
-| 6 | TSM | TSMC | 0.58 | 0.18 | 0.54 | -0.40 | 0.65 | 0.31 |
-| 7 | ASX | ASE Technology | -0.68 | -0.43 | 0.49 | 1.00 | 0.80 | 0.24 |
-| 8 | CDNS | Cadence Design Systems | 0.31 | 0.22 | 1.65 | -0.86 | -0.39 | 0.18 |
-| 9 | NVDA | NVIDIA | 0.48 | -0.04 | -0.64 | -0.58 | 1.70 | 0.18 |
-| 10 | LRCX | Lam Research | 0.03 | -0.17 | -0.02 | 0.00 | 0.80 | 0.13 |
-| 11 | 6857.T | Advantest | 0.33 | -0.65 | -0.41 | -0.05 | 1.25 | 0.09 |
-| 12 | TXN | Texas Instruments | 0.24 | 0.17 | 1.46 | -0.38 | -1.10 | 0.08 |
-| 13 | QCOM | Qualcomm | 0.70 | 0.90 | 0.60 | -0.48 | -1.33 | 0.08 |
+| 1 | 000660.KS | SK hynix | 0.63 | 1.41 | -0.85 | 1.77 | 1.36 | 0.86 |
+| 2 | MU | Micron Technology | 0.06 | 0.33 | -0.77 | 2.43 | 1.36 | 0.68 |
+| 3 | AVGO | Broadcom | 0.27 | 0.39 | 0.94 | -0.75 | 1.77 | 0.52 |
+| 4 | 005930.KS | Samsung Electronics | -0.25 | 1.56 | 0.28 | 0.66 | 0.09 | 0.47 |
+| 5 | KLAC | KLA Corp | 0.51 | 0.01 | 0.73 | -0.40 | 0.97 | 0.36 |
+| 6 | TSM | TSMC | 0.58 | 0.18 | 0.54 | -0.38 | 0.65 | 0.31 |
+| 7 | ASX | ASE Technology | -0.68 | -0.42 | 0.49 | 0.98 | 0.80 | 0.23 |
+| 8 | CDNS | Cadence Design Systems | 0.31 | 0.18 | 1.65 | -0.81 | -0.39 | 0.19 |
+| 9 | NVDA | NVIDIA | 0.48 | -0.03 | -0.64 | -0.58 | 1.70 | 0.18 |
+| 10 | LRCX | Lam Research | 0.03 | -0.17 | -0.02 | 0.01 | 0.80 | 0.13 |
+| 11 | 6857.T | Advantest | 0.33 | -0.70 | -0.41 | -0.05 | 1.25 | 0.08 |
+| 12 | QCOM | Qualcomm | 0.70 | 0.93 | 0.60 | -0.49 | -1.33 | 0.08 |
+| 13 | TXN | Texas Instruments | 0.24 | 0.18 | 1.46 | -0.38 | -1.10 | 0.08 |
 | 14 | AMAT | Applied Materials | 0.03 | -0.06 | 0.15 | -0.04 | 0.22 | 0.06 |
-| 15 | SNPS | Synopsys | 0.14 | 0.87 | 1.16 | -0.95 | -1.35 | -0.03 |
-| 16 | AMD | Advanced Micro Devices | -0.15 | -0.60 | -1.22 | 1.57 | 0.17 | -0.04 |
-| 17 | MRVL | Marvell Technology | -0.12 | -0.48 | -0.88 | 1.12 | 0.08 | -0.06 |
-| 18 | ASML | ASML Holding | 0.42 | -0.07 | 0.14 | -0.33 | -0.58 | -0.08 |
-| 19 | 6146.T | Disco Corp | 0.07 | -0.08 | -0.06 | -1.02 | 0.43 | -0.13 |
+| 15 | SNPS | Synopsys | 0.14 | 0.83 | 1.16 | -0.92 | -1.35 | -0.03 |
+| 16 | AMD | Advanced Micro Devices | -0.15 | -0.62 | -1.22 | 1.62 | 0.17 | -0.04 |
+| 17 | MRVL | Marvell Technology | -0.12 | -0.47 | -0.88 | 1.09 | 0.08 | -0.06 |
+| 18 | ASML | ASML Holding | 0.42 | -0.06 | 0.14 | -0.34 | -0.58 | -0.08 |
+| 19 | 6146.T | Disco Corp | 0.07 | -0.10 | -0.06 | -1.01 | 0.43 | -0.14 |
 | 20 | TER | Teradyne | -0.31 | -0.29 | -0.11 | 0.01 | -0.03 | -0.15 |
-| 21 | 8035.T | Tokyo Electron | -0.28 | -0.34 | -0.15 | -0.19 | -0.13 | -0.22 |
-| 22 | 4063.T | Shin-Etsu Chemical | -0.19 | 0.53 | 1.00 | -0.89 | -1.56 | -0.22 |
-| 23 | ENTG | Entegris | -0.02 | 0.21 | 0.16 | -0.47 | -1.28 | -0.28 |
-| 24 | ASM.AS | ASM International | -0.10 | -0.30 | -0.18 | -0.49 | -0.34 | -0.28 |
-| 25 | 0981.HK | SMIC | -0.98 | -0.74 | 0.83 | -0.82 | 0.25 | -0.29 |
-| 26 | IFX.DE | Infineon Technologies | -0.04 | 0.13 | -0.27 | -0.24 | -1.09 | -0.30 |
-| 27 | INTC | Intel | -0.62 | -0.82 | -1.33 | 1.27 | -0.71 | -0.44 |
-| 28 | GFS | GlobalFoundries | -0.21 | 0.49 | -0.33 | -0.78 | -1.50 | -0.47 |
-| 29 | ARM | Arm Holdings | 0.04 | -1.56 | -1.65 | 0.33 | 0.24 | -0.52 |
-| 30 | AMKR | Amkor Technology | -1.00 | -0.38 | -0.77 | -0.48 | -0.74 | -0.67 |
+| 21 | 4063.T | Shin-Etsu Chemical | -0.19 | 0.55 | 1.00 | -0.88 | -1.56 | -0.22 |
+| 22 | 8035.T | Tokyo Electron | -0.28 | -0.39 | -0.15 | -0.19 | -0.13 | -0.23 |
+| 23 | ENTG | Entegris | -0.02 | 0.23 | 0.16 | -0.48 | -1.28 | -0.28 |
+| 24 | ASM.AS | ASM International | -0.10 | -0.30 | -0.18 | -0.50 | -0.34 | -0.28 |
+| 25 | 0981.HK | SMIC | -0.98 | -0.74 | 0.83 | -0.81 | 0.25 | -0.29 |
+| 26 | IFX.DE | Infineon Technologies | -0.04 | 0.15 | -0.27 | -0.27 | -1.09 | -0.31 |
+| 27 | INTC | Intel | -0.62 | -0.88 | -1.33 | 1.35 | -0.71 | -0.44 |
+| 28 | GFS | GlobalFoundries | -0.21 | 0.48 | -0.33 | -0.76 | -1.50 | -0.46 |
+| 29 | ARM | Arm Holdings | 0.04 | -1.56 | -1.65 | 0.19 | 0.24 | -0.55 |
+| 30 | AMKR | Amkor Technology | -1.00 | -0.37 | -0.77 | -0.48 | -0.74 | -0.67 |
 
 ![Scorecard](charts/09_scorecard.png)
 
@@ -650,7 +650,7 @@ Equal-weight z-scores:
 | **AI capex supercycle** | Hyperscaler capex ~USD 600bn in 2026 (+~70% YoY); semis revenue forecast ~USD 975bn–1.3tn | Demand shock ⇒ output, prices and margins up together (ch.17); highest DOL names benefit most |
 | **Memory/HBM** | HBM market ~USD 55bn (+58%); DRAM ASPs up sharply; capacity shifting from commodity DRAM to HBM | Classic cyclical: peak margins, low P/E, negative PVGO; the watch-item is capacity additions in 2027 |
 | **Bottlenecks** | CoWoS sold out for 2026 (~1m wafers; NVIDIA ~60%); N2 booked into 2028 | Pricing power for TSM/ASX/Disco/Advantest; volume risk if AI demand pauses |
-| **Rates & discount rates** | 13-wk bill 4.03%, 10-yr 5.11%; inflation above target | High k (11–21%) ⇒ long-duration growth equity is rate-sensitive (ch.18); a 1% change in k moves DCF value 10–25% (see DCF_Sensitivity sheet) |
+| **Rates & discount rates** | 13-wk bill 4.07%, 10-yr 5.16%; inflation above target | High k (11–21%) ⇒ long-duration growth equity is rate-sensitive (ch.18); a 1% change in k moves DCF value 10–25% (see DCF_Sensitivity sheet) |
 | **FX** | Weak yen; KRW recently firmer | Japanese exporters gain local earnings, but USD investors lose on translation (ch.25) |
 | **Concentration** | AI is ~half of chip revenue but a sliver of units; top-3 customers hold 85% of CoWoS | High customer concentration raises σ(e); consumer, auto and industrial (TXN, IFX, QCOM) are late-cycle recovery options |
 
