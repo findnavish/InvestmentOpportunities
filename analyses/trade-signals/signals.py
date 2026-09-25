@@ -38,6 +38,14 @@ US_HOLIDAYS = {"2026-01-01", "2026-01-19", "2026-02-16", "2026-04-03", "2026-05-
                "2027-07-05", "2027-09-06", "2027-11-25", "2027-12-24"}
 
 
+SHORT = {"005930.KS": "Samsung", "000660.KS": "SK hynix", "0981.HK": "SMIC", "IFX.DE": "Infineon", "8035.T": "Tokyo Electron",
+         "ASM.AS": "ASMI", "6857.T": "Advantest", "6146.T": "Disco", "4063.T": "Shin-Etsu"}
+
+
+def nm(t):
+    return SHORT.get(t, t)
+
+
 def suffix(t):
     return next((s for s in EXCH if s != "US" and t.endswith(s)), "US")
 
@@ -129,7 +137,10 @@ bias = D.alpha_raw.mean()
 conf = np.where(D.n >= CFG["min_analysts_full_weight"], 1.0, 0.5)
 D["alpha"] = ((D.alpha_raw - bias) * CFG["alpha_shrink"] * conf).fillna(0)
 W = CFG["score_weights"]
-D["score"] = (std(W["alpha"] * z(D.alpha) + W["momentum"] * z(D.mom) + W["quality"] * z(D.q) + W["trend"] * z(D.trend))
+COMP = {"analyst α": ("alpha", W["alpha"]), "momentum": ("mom", W["momentum"]), "quality": ("q", W["quality"]), "trend": ("trend", W["trend"])}
+for lbl, (col, wt) in COMP.items():
+    D["c_" + col] = wt * z(D[col])
+D["score"] = (std(D[["c_" + c for c, _ in COMP.values()]].sum(axis=1))
               - CFG["overbought_penalty"] * (D.rsi > CFG["overbought_rsi"]))
 th = CFG["rating_thresholds"]
 D["rating"] = pd.cut(D.score, [-np.inf, th["strong_sell"], th["sell"], th["buy"], th["strong_buy"], np.inf],
@@ -262,7 +273,7 @@ def rationale(t, o=None):
     else:
         p.append("Avoid: not owned." if not hold[t] else "Exit signalled.")
     if not pd.isna(r.up):
-        p.append(f"Analyst target {m['target_mean']:,.2f} vs {r.px:,.2f} {m['ccy']} ({pct(r.up, 0, True)}, {int(r.n)} analysts); "
+        p.append(f"Analyst target {fpx(t, m['target_mean'])} vs {fpx(t, r.px)} ({pct(r.up, 0, True)}, {int(r.n)} analysts); "
                  f"de-biased α {pct(r.alpha, 1, True)} vs CAPM hurdle {pct(r.k, 1)}.")
     else:
         p.append("No reliable analyst target: α set to 0.")
@@ -286,6 +297,10 @@ def rationale(t, o=None):
 
 
 # ---------------- page ----------------
+def fpx(t, x):
+    return f"{x:,.0f} {T[t]['ccy']}" if T[t]["ccy"] in ("KRW", "JPY") else f"{x:,.2f} {T[t]['ccy']}"
+
+
 def money(x):
     return f"${x:,.0f}"
 
@@ -303,21 +318,43 @@ inv = nav - pf["cash"]
 ret = nav / pf["start_nav"] - 1
 soxx_ret = live["SOXX"] / pf["soxx_start"] - 1
 order_rows = sorted(orders, key=lambda o: -abs(o["value_usd"]))
+badge = {"Strong Buy": "🟢🟢 Strong Buy", "Buy": "🟢 Buy", "Hold": "⚪ Hold", "Sell": "🔴 Sell", "Strong Sell": "🔴🔴 Strong Sell"}
+adm = {"Strong Buy": "success", "Buy": "success", "Hold": "note", "Sell": "failure", "Strong Sell": "failure"}
+
+
+def label(t):
+    return f"**{nm(t)}**<br><small>{t}</small>" if nm(t) != t else f"**{t}**<br><small>{T[t]['name']}</small>"
+
+
+def drivers(t):
+    """Top two score contributions plus compact risk flags."""
+    c = sorted(((lbl, D.at[t, "c_" + col]) for lbl, (col, _) in COMP.items()), key=lambda x: -abs(x[1]))[:2]
+    txt = " · ".join(f"{lbl} {v:+.2f}" for lbl, v in c)
+    r, m = D.loc[t], T[t]
+    flags = [f for f, ok in (("overbought", r.rsi > CFG["overbought_rsi"]), ("oversold", r.rsi < 30),
+                             ("cycle-peak P/E", (m["group"] == "Memory") and bool(m["fwd_pe"]) and (m["fwd_pe"] or 99) < 9),
+                             ("rich valuation", (m["implied_g"] or 0) > 0.6), ("high σ(e)", r.sd_e > 0.6)) if ok]
+    return txt + (" · ⚠️ " + ", ".join(flags) if flags else "")
+
+
 ord_md = "\n".join(
-    f"| {o['action']} | {o['ticker']} | {T[o['ticker']]['name']} | {abs(o['qty']):,} | {o['px']:,.2f} {T[o['ticker']]['ccy']} | "
-    f"{money(abs(o['value_usd']))} | {o['status']} | {rationale(o['ticker'], o)} |" for o in order_rows) or "| – | – | No trades required this hour: all positions are within their rebalance bands. | | | | | |"
+    f"| {o['action']} | {label(o['ticker'])} | {abs(o['qty']):,} | {fpx(o['ticker'], o['px'])} | "
+    f"{money(abs(o['value_usd']))} | {o['status'].replace('Queued: ', 'Queued · ')} | {drivers(o['ticker'])} |" for o in order_rows) \
+    or "| – | No trades this hour | | | | | All positions are within their rebalance bands. |"
 
 ordmap = {o["ticker"]: o for o in orders}
 sig = D.sort_values("score", ascending=False)
-badge = {"Strong Buy": "🟢🟢 Strong Buy", "Buy": "🟢 Buy", "Hold": "⚪ Hold", "Sell": "🔴 Sell", "Strong Sell": "🔴🔴 Strong Sell"}
 sig_md = "\n".join(
-    f"| {badge[r.rating]} | {r.score:+.2f} | **{t}** | {T[t]['name']} | {r.px:,.2f} {T[t]['ccy']} | {pct(r.up, 0, True)} | {pct(r.alpha, 1, True)} | "
-    f"{pct(r.mom, 0, True)} | {pct(r.trend, 0, True)} | {r.rsi:.0f} | {r.q:+.2f} | {pct(r.sd_e)} | {hold[t]:,} | {pct(hold[t] * r.px_usd / nav, 1)} | {pct(tw[t], 1)} | "
-    f"{(ordmap[t]['action'] + ' ' + format(abs(ordmap[t]['qty']), ',')) if t in ordmap else '–'} | {rationale(t, ordmap.get(t))} |"
+    f"| {badge[r.rating]} | {r.score:+.2f} | {label(t)} | {fpx(t, r.px)} | {pct(r.up, 0, True)} | {pct(r.alpha, 1, True)} | "
+    f"{pct(r.mom, 0, True)} | {pct(r.trend, 0, True)} | {r.rsi:.0f} | {r.q:+.2f} | {pct(hold[t] * r.px_usd / nav, 1)} → {pct(tw[t], 1)} | "
+    f"{(ordmap[t]['action'].split(' ')[0] + ' ' + format(abs(ordmap[t]['qty']), ',')) if t in ordmap else '–'} | {drivers(t)} |"
+    for t, r in sig.iterrows())
+why_md = "\n\n".join(
+    f'??? {adm[r.rating]} "{nm(t)} ({t}) — {badge[r.rating]}, score {r.score:+.2f}"\n    {rationale(t, ordmap.get(t))}'
     for t, r in sig.iterrows())
 
 pos = [(t, hold[t]) for t in tick if hold[t]]
-pos_md = "\n".join(f"| {t} | {T[t]['name']} | {q:,} | {D.at[t, 'px']:,.2f} {T[t]['ccy']} | {money(q * D.at[t, 'px_usd'])} | {pct(q * D.at[t, 'px_usd'] / nav, 1)} | {D.at[t, 'rating']} |"
+pos_md = "\n".join(f"| {t} | {T[t]['name']} | {q:,} | {fpx(t, D.at[t, 'px'])} | {money(q * D.at[t, 'px_usd'])} | {pct(q * D.at[t, 'px_usd'] / nav, 1)} | {D.at[t, 'rating']} |"
                    for t, q in sorted(pos, key=lambda x: -x[1] * D.at[x[0], 'px_usd'])) or "| – | Portfolio is all cash | | | | | |"
 
 tr = pd.read_csv(tl) if tl.exists() else pd.DataFrame()
@@ -349,17 +386,33 @@ Inception {pf['inception'][:16].replace('T', ' ')} UTC with {money(pf['start_nav
 
 ## This hour's orders
 
-| Action | Ticker | Company | Quantity (shares) | Price (local) | Value (USD) | Status | Rationale |
-|---|---|---|---|---|---|---|---|
+<div class="compact-table" markdown>
+
+| Action | Name | Qty (shares) | Price (local) | Value (USD) | Status | Key drivers |
+|---|---|--:|--:|--:|---|---|
 {ord_md}
+
+</div>
 
 Orders execute in the paper portfolio only while the listing's home market is open, with {CFG['cost_bps']} bp cost. Otherwise they are queued and re-evaluated next hour.
 
 ## Signals for all 30 names
 
-| Rating | Score | Ticker | Company | Price | Analyst upside | De-biased α | 12-1 mom | vs 200DMA | RSI | Quality z | σ(e) | Shares held | Weight now | Target weight | Order | Rationale |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+Sorted by score. **Weight** = current → target share of NAV. **Key drivers** = the two largest contributions to the score. Full reasoning for each name is in [Rationale by name](#rationale-by-name).
+
+<div class="compact-table" markdown>
+
+| Rating | Score | Name | Price | Analyst upside | De-biased α | 12-1 mom | vs 200DMA | RSI | Quality z | Weight | Order | Key drivers |
+|---|--:|---|--:|--:|--:|--:|--:|--:|--:|--:|---|---|
 {sig_md}
+
+</div>
+
+## Rationale by name
+
+Click a name to expand the full reasoning behind its rating and quantity.
+
+{why_md}
 
 ## Current holdings
 
