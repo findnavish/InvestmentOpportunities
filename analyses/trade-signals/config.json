@@ -1,0 +1,16 @@
+{
+  "start_nav_usd": 1000000,
+  "score_weights": {"alpha": 0.40, "momentum": 0.25, "quality": 0.20, "trend": 0.15},
+  "rating_thresholds": {"strong_buy": 0.75, "buy": 0.25, "sell": -0.25, "strong_sell": -0.75},
+  "alpha_shrink": 0.25,
+  "min_analysts_full_weight": 5,
+  "overbought_rsi": 75,
+  "overbought_penalty": 0.25,
+  "max_weight_per_name": 0.10,
+  "max_weight_per_group": 0.35,
+  "equity_budget_bull": 0.90,
+  "equity_budget_bear": 0.60,
+  "rebalance_band_abs_nav": 0.005,
+  "rebalance_band_rel_target": 0.20,
+  "cost_bps": 5
+}

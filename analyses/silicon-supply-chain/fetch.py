@@ -100,7 +100,10 @@ def patch_last():
             out[t] = float(yf.Ticker(t).fast_info["last_price"])
         except Exception as e:
             print("patch fail", t, e)
-    json.dump({"date": str(pd.Timestamp.now(tz="America/New_York").date()), "prices": out}, open(DATA / "last_us_prices.json", "w"), indent=1)
+    now = pd.Timestamp.now(tz="America/New_York")
+    session = now.normalize() if now.hour * 60 + now.minute >= 16 * 60 + 15 else now.normalize() - pd.Timedelta(days=1)
+    session = pd.offsets.BDay().rollback(session.tz_localize(None))  # last completed US session (holidays not handled)
+    json.dump({"date": str(session.date()), "prices": out}, open(DATA / "last_us_prices.json", "w"), indent=1)
     print("patched", len(out))
 
 

@@ -47,9 +47,12 @@ extra_css:
 extra_javascript:
   - javascripts/mathjax.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js
+  - javascripts/nav-chart.js
 
 nav:
   - Home: index.md
+  - Hourly Trade Signals: trade-signals/index.md
   - Analyses:
       - Silicon Supply Chain — Top 30: silicon-supply-chain/index.md
   - Methodology: methodology.md

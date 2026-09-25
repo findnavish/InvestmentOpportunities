@@ -4,11 +4,16 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: "0 14 * * 6"   # Saturdays 14:00 UTC (after the Friday US close)
+    - cron: "0 14 * * 6"    # weekly research refresh: Saturdays 14:00 UTC (after the Friday US close)
+    - cron: "17 * * * *"    # hourly trade signals
   workflow_dispatch:
     inputs:
-      refresh:
-        description: "Re-fetch market data and rebuild analyses before publishing"
+      weekly:
+        description: "Re-run the full weekly research pipeline (slow)"
+        type: boolean
+        default: false
+      signals:
+        description: "Re-run the hourly trade signals"
         type: boolean
         default: true
 
@@ -18,48 +23,63 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  group: site
   cancel-in-progress: false
 
 jobs:
-  refresh:
-    if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.refresh)
+  update:
+    if: github.event_name != 'push'
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 50
+    env:
+      WEEKLY: ${{ github.event.schedule == '0 14 * * 6' || (github.event_name == 'workflow_dispatch' && inputs.weekly) }}
+      SIGNALS: ${{ github.event.schedule == '17 * * * *' || (github.event_name == 'workflow_dispatch' && inputs.signals) }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.11"
           cache: pip
       - run: pip install -r requirements.txt
-      - name: Silicon supply chain — fetch, analyze, chart, report
+      - name: Weekly research — fetch, analyze, chart, report, export model inputs
+        if: env.WEEKLY == 'true'
+        timeout-minutes: 30
         working-directory: analyses/silicon-supply-chain
         run: |
           python fetch.py
           python analysis.py
           python charts.py
           python build_report.py
-      - name: Commit refreshed pages
+          python ../trade-signals/export_inputs.py
+      - name: Hourly trade signals
+        if: env.SIGNALS == 'true'
+        timeout-minutes: 12
+        working-directory: analyses/trade-signals
+        run: python signals.py
+      - name: Commit updates
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs
+          git add docs analyses/trade-signals/state
           if git diff --cached --quiet; then echo "No changes"; exit 0; fi
-          git commit -m "Weekly data refresh $(date -u +%Y-%m-%d)"
-          git push
+          msg="Signals update $(date -u +'%Y-%m-%d %H:%M UTC')"
+          [ "$WEEKLY" = "true" ] && msg="Weekly research refresh + signals $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git commit -q -m "$msg"
+          git pull -q --rebase origin main
+          git push -q
 
   build:
-    needs: refresh
-    if: always() && (needs.refresh.result == 'success' || needs.refresh.result == 'skipped')
+    needs: update
+    if: always() && (needs.update.result == 'success' || needs.update.result == 'skipped')
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           ref: main
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.11"
+          cache: pip
       - run: pip install -r requirements-docs.txt
       - run: mkdocs build --strict
       - uses: actions/upload-pages-artifact@v3

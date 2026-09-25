@@ -14,6 +14,14 @@ Research notebooks that apply the framework of Bodie, Kane & Marcus, *Investment
 
 <div class="grid cards" markdown>
 
+-   :material-swap-vertical-bold:{ .lg .middle } **[Hourly Trade Signals](trade-signals/index.md)**
+
+    ---
+
+    Buy/sell ratings, **share quantities** and a written rationale for each of the Top 30, recomputed **every hour** from live prices. A USD 1M paper model portfolio executes the orders while each home market is open and is tracked against SOXX.
+
+    *Refreshed hourly · rule-based, not advice*
+
 -   :material-chip:{ .lg .middle } **[Silicon Supply Chain — Top 30 Key Players](silicon-supply-chain/index.md)**
 
     ---

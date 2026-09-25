@@ -6,6 +6,7 @@ Research notebooks that apply the methods of Bodie, Kane & Marcus, *Investments*
 
 | Analysis | Page | Code |
 |---|---|---|
+| Hourly Trade Signals (paper model portfolio) | [site](https://findnavish.github.io/InvestmentOpportunities/trade-signals/) | [`analyses/trade-signals`](analyses/trade-signals) |
 | Silicon Supply Chain — Top 30 Key Players | [site](https://findnavish.github.io/InvestmentOpportunities/silicon-supply-chain/) | [`analyses/silicon-supply-chain`](analyses/silicon-supply-chain) |
 
 ## Run locally
@@ -19,6 +20,8 @@ python fetch.py          # prices, FX, fundamentals, options IV, Fama-French fac
 python analysis.py       # all models -> output/Silicon_Supply_Chain_Analysis.xlsx, output/results.pkl
 python charts.py         # output/charts/*.png
 python build_report.py   # docs/silicon-supply-chain/index.md (+ charts, xlsx)
+python ../trade-signals/export_inputs.py   # weekly model inputs for the hourly signals
+python ../trade-signals/signals.py         # docs/trade-signals/index.md + paper portfolio state
 cd ../..
 
 mkdocs serve             # preview at http://127.0.0.1:8000
@@ -28,6 +31,7 @@ mkdocs serve             # preview at http://127.0.0.1:8000
 
 `.github/workflows/site.yml`:
 - **On push to `main`:** builds and deploys the site from the committed `docs/`.
+- **Hourly (:17 past the hour):** recomputes trade signals, updates the paper portfolio and republishes.
 - **Weekly (Saturday 14:00 UTC) or manually** (*Actions → Refresh data & publish site → Run workflow*): re-runs every analysis on fresh data, commits the updated `docs/`, then deploys.
 
 ## Adding a new analysis
