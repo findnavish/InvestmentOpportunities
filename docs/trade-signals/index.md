@@ -8,8 +8,8 @@ hide:
 !!! danger "Model output, not investment advice"
     These are **rule-based signals for a paper (simulated) portfolio**, generated automatically from public, possibly delayed data. They do not account for your objectives, taxes, liquidity or risk tolerance, and they can be wrong. Nothing here is a recommendation to buy or sell securities. Consult a licensed adviser before investing.
 
-**Last updated:** 2026-09-26 07:43 UTC (Sat Sep 26, 03:43 AM ET) · refreshes hourly · weekly model inputs as of 2026-09-24
-**Markets:** NYSE/Nasdaq 🔴 closed (Sat 03:43) · Tokyo 🔴 closed (Sat 16:43) · Korea 🔴 closed (Sat 16:43) · Hong Kong 🔴 closed (Sat 15:43) · Xetra 🔴 closed (Sat 09:43) · Euronext Amsterdam 🔴 closed (Sat 09:43)
+**Last updated:** 2026-09-26 13:06 UTC (Sat Sep 26, 09:06 AM ET) · refreshes hourly · weekly model inputs as of 2026-09-24
+**Markets:** NYSE/Nasdaq 🔴 closed (Sat 09:06) · Tokyo 🔴 closed (Sat 22:06) · Korea 🔴 closed (Sat 22:06) · Hong Kong 🔴 closed (Sat 21:06) · Xetra 🔴 closed (Sat 15:06) · Euronext Amsterdam 🔴 closed (Sat 15:06)
 
 ## Portfolio snapshot
 
@@ -48,10 +48,10 @@ Sorted by score. **Weight** = current → target share of NAV. **Key drivers** =
 | 🟢🟢 Strong Buy | +1.90 | **Samsung**<br><small>005930.KS</small> | 284,250 KRW | +68% | +10.1% | +265% | +27% | 61 | -0.25 | 0.0% → 10.0% | BUY 478 | analyst α +0.66 · momentum +0.35 · ⚠️ cycle-peak P/E |
 | 🟢 Buy | +0.49 | **Advantest**<br><small>6857.T</small> | 33,890 JPY | +24% | -1.5% | +163% | +25% | 54 | +0.33 | 0.0% → 10.0% | BUY 400 | quality +0.16 · momentum +0.12 · ⚠️ rich valuation |
 | 🟢 Buy | +0.41 | **NVDA**<br><small>NVIDIA</small> | 225.08 USD | +46% | +3.6% | +28% | +13% | 55 | +0.48 | 10.0% → 10.0% | – | analyst α +0.27 · momentum -0.23 |
-| 🟢 Buy | +0.35 | **Infineon**<br><small>IFX.DE</small> | 57.08 EUR | +52% | +5.3% | +76% | +4% | 49 | -0.04 | 10.1% → 10.0% | – | analyst α +0.31 · trend -0.09 |
 | 🟢 Buy | +0.35 | **AMAT**<br><small>Applied Materials</small> | 485.05 USD | +32% | +0.9% | +143% | +15% | 56 | +0.03 | 8.6% → 10.0% | – | analyst α +0.08 · momentum +0.07 |
+| 🟢 Buy | +0.31 | **Infineon**<br><small>IFX.DE</small> | 57.08 EUR | +52% | +5.3% | +74% | +4% | 49 | -0.04 | 10.1% → 10.0% | – | analyst α +0.31 · trend -0.09 |
+| 🟢 Buy | +0.28 | **KLAC**<br><small>KLA Corp</small> | 187.91 USD | +24% | -0.9% | +74% | +7% | 54 | +0.51 | 8.8% → 10.0% | – | quality +0.24 · trend -0.07 |
 | ⚪ Hold | +0.24 | **Disco**<br><small>6146.T</small> | 54,400 JPY | +53% | +6.3% | +57% | -16% | 45 | +0.07 | 0.0% → 0.0% | – | analyst α +0.48 · trend -0.32 |
-| ⚪ Hold | +0.24 | **KLAC**<br><small>KLA Corp</small> | 187.91 USD | +24% | -0.9% | +74% | +7% | 54 | +0.51 | 8.8% → 8.8% | – | quality +0.24 · trend -0.07 |
 | ⚪ Hold | +0.24 | **TSM**<br><small>TSMC</small> | 450.58 USD | +23% | -1.2% | +56% | +18% | 62 | +0.58 | 0.0% → 0.0% | – | quality +0.28 · momentum -0.12 |
 | ⚪ Hold | +0.22 | **Tokyo Electron**<br><small>8035.T</small> | 56,480 JPY | +36% | +1.8% | +167% | +14% | 56 | -0.28 | 0.0% → 0.0% | – | quality -0.18 · analyst α +0.15 · ⚠️ rich valuation |
 | ⚪ Hold | +0.12 | **AVGO**<br><small>Broadcom</small> | 352.82 USD | +51% | +5.8% | +11% | -4% | 44 | +0.27 | 0.0% → 0.0% | – | analyst α +0.36 · momentum -0.30 |
@@ -60,7 +60,7 @@ Sorted by score. **Weight** = current → target share of NAV. **Key drivers** =
 | ⚪ Hold | +0.01 | **GFS**<br><small>GlobalFoundries</small> | 48.99 USD | +55% | +6.4% | +41% | -9% | 55 | -0.21 | 0.0% → 0.0% | – | analyst α +0.55 · trend -0.25 |
 | ⚪ Hold | -0.12 | **MRVL**<br><small>Marvell Technology</small> | 261.89 USD | +10% | -5.2% | +189% | +60% | 63 | -0.12 | 0.0% → 0.0% | – | analyst α -0.41 · momentum +0.23 · ⚠️ rich valuation |
 | ⚪ Hold | -0.14 | **AMD**<br><small>Advanced Micro Devices</small> | 630.35 USD | -2% | -8.6% | +196% | +72% | 73 | -0.15 | 0.0% → 0.0% | – | analyst α -0.55 · trend +0.32 |
-| ⚪ Hold | -0.24 | **ASMI**<br><small>ASM.AS</small> | 848.00 EUR | +33% | +0.7% | +63% | +8% | 54 | -0.10 | 0.0% → 0.0% | – | quality -0.06 · trend -0.06 |
+| ⚪ Hold | -0.24 | **ASMI**<br><small>ASM.AS</small> | 848.00 EUR | +33% | +0.7% | +60% | +8% | 54 | -0.10 | 0.0% → 0.0% | – | quality -0.06 · trend -0.06 |
 | 🔴 Sell | -0.30 | **LRCX**<br><small>Lam Research</small> | 315.29 USD | +19% | -2.7% | +150% | +16% | 56 | +0.03 | 0.0% → 0.0% | – | analyst α -0.27 · momentum +0.10 |
 | 🔴 Sell | -0.60 | **TER**<br><small>Teradyne</small> | 398.32 USD | +12% | -4.3% | +180% | +21% | 58 | -0.31 | 0.0% → 0.0% | – | analyst α -0.36 · quality -0.21 |
 | 🔴 Sell | -0.62 | **TXN**<br><small>Texas Instruments</small> | 278.01 USD | +17% | -2.3% | +50% | +13% | 60 | +0.24 | 0.0% → 0.0% | – | analyst α -0.23 · momentum -0.14 |
@@ -95,17 +95,17 @@ Click a name to expand the full reasoning behind its rating and quantity.
 ??? success "NVDA (NVDA) — 🟢 Buy, score +0.41"
     Within rebalance band of target 10.0%: no trade. Analyst target 327.70 USD vs 225.08 USD (+46%, 59 analysts); de-biased α +3.6% vs CAPM hurdle 14.0%. Uptrend +13% vs 200-day avg; 12-1 mom +28%; RSI 55. Quality z +0.48 (ROE 101%).
 
-??? success "Infineon (IFX.DE) — 🟢 Buy, score +0.35"
-    Within rebalance band of target 10.0%: no trade. Analyst target 86.59 EUR vs 57.08 EUR (+52%, 22 analysts); de-biased α +5.3% vs CAPM hurdle 14.1%. Uptrend +4% vs 200-day avg; 12-1 mom +76%; RSI 49. Quality z -0.04 (ROE 6%).
-
 ??? success "AMAT (AMAT) — 🟢 Buy, score +0.35"
     Within rebalance band of target 10.0%: no trade. Analyst target 640.89 USD vs 485.05 USD (+32%, 35 analysts); de-biased α +0.9% vs CAPM hurdle 11.7%. Uptrend +15% vs 200-day avg; 12-1 mom +143%; RSI 56. Quality z +0.03 (ROE 36%).
 
+??? success "Infineon (IFX.DE) — 🟢 Buy, score +0.31"
+    Within rebalance band of target 10.0%: no trade. Analyst target 86.59 EUR vs 57.08 EUR (+52%, 22 analysts); de-biased α +5.3% vs CAPM hurdle 14.1%. Uptrend +4% vs 200-day avg; 12-1 mom +74%; RSI 49. Quality z -0.04 (ROE 6%).
+
+??? success "KLAC (KLAC) — 🟢 Buy, score +0.28"
+    Within rebalance band of target 10.0%: no trade. Analyst target 233.77 USD vs 187.91 USD (+24%, 26 analysts); de-biased α -0.9% vs CAPM hurdle 11.2%. Uptrend +7% vs 200-day avg; 12-1 mom +74%; RSI 54. Quality z +0.51 (ROE 87%).
+
 ??? note "Disco (6146.T) — ⚪ Hold, score +0.24"
     Hold zone: not owned, no entry. Analyst target 83,130 JPY vs 54,400 JPY (+53%, 20 analysts); de-biased α +6.3% vs CAPM hurdle 11.6%. Downtrend -16% vs 200-day avg; 12-1 mom +57%; RSI 45. Quality z +0.07 (ROE 25%).
-
-??? note "KLAC (KLAC) — ⚪ Hold, score +0.24"
-    Hold zone: keep any existing position, no new money. Analyst target 233.77 USD vs 187.91 USD (+24%, 26 analysts); de-biased α -0.9% vs CAPM hurdle 11.2%. Uptrend +7% vs 200-day avg; 12-1 mom +74%; RSI 54. Quality z +0.51 (ROE 87%).
 
 ??? note "TSM (TSM) — ⚪ Hold, score +0.24"
     Hold zone: not owned, no entry. Analyst target 552.26 USD vs 450.58 USD (+23%, 20 analysts); de-biased α -1.2% vs CAPM hurdle 10.9%. Uptrend +18% vs 200-day avg; 12-1 mom +56%; RSI 62. Quality z +0.58 (ROE 35%).
@@ -132,7 +132,7 @@ Click a name to expand the full reasoning behind its rating and quantity.
     Hold zone: not owned, no entry. Analyst target 616.51 USD vs 630.35 USD (-2%, 50 analysts); de-biased α -8.6% vs CAPM hurdle 15.0%. Uptrend +72% vs 200-day avg; 12-1 mom +196%; RSI 73. Quality z -0.15 (ROE 7%).
 
 ??? note "ASMI (ASM.AS) — ⚪ Hold, score -0.24"
-    Hold zone: not owned, no entry. Analyst target 1,125.89 EUR vs 848.00 EUR (+33%, 19 analysts); de-biased α +0.7% vs CAPM hurdle 13.2%. Uptrend +8% vs 200-day avg; 12-1 mom +63%; RSI 54. Quality z -0.10 (ROE 19%).
+    Hold zone: not owned, no entry. Analyst target 1,125.89 EUR vs 848.00 EUR (+33%, 19 analysts); de-biased α +0.7% vs CAPM hurdle 13.2%. Uptrend +8% vs 200-day avg; 12-1 mom +60%; RSI 54. Quality z -0.10 (ROE 19%).
 
 ??? failure "LRCX (LRCX) — 🔴 Sell, score -0.30"
     Avoid: not owned. Analyst target 373.77 USD vs 315.29 USD (+19%, 31 analysts); de-biased α -2.7% vs CAPM hurdle 12.7%. Uptrend +16% vs 200-day avg; 12-1 mom +150%; RSI 56. Quality z +0.03 (ROE 65%).
@@ -177,7 +177,7 @@ Click a name to expand the full reasoning behind its rating and quantity.
 | IFX.DE | Infineon Technologies | 1,552 | 57.08 EUR | $100,921 | 10.1% | Buy |
 | NVDA | NVIDIA | 447 | 225.08 USD | $100,611 | 10.0% | Buy |
 | MU | Micron Technology | 92 | 1,081.69 USD | $99,515 | 9.9% | Strong Buy |
-| KLAC | KLA Corp | 469 | 187.91 USD | $88,130 | 8.8% | Hold |
+| KLAC | KLA Corp | 469 | 187.91 USD | $88,130 | 8.8% | Buy |
 | AMAT | Applied Materials | 178 | 485.05 USD | $86,339 | 8.6% | Buy |
 
 ## Recent paper trades
