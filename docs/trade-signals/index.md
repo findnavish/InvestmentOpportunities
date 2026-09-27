@@ -8,8 +8,8 @@ hide:
 !!! danger "Model output, not investment advice"
     These are **rule-based signals for a paper (simulated) portfolio**, generated automatically from public, possibly delayed data. They do not account for your objectives, taxes, liquidity or risk tolerance, and they can be wrong. Nothing here is a recommendation to buy or sell securities. Consult a licensed adviser before investing.
 
-**Last updated:** 2026-09-27 18:25 UTC (Sun Sep 27, 02:25 PM ET) · refreshes hourly · weekly model inputs as of 2026-09-25
-**Markets:** NYSE/Nasdaq 🔴 closed (Sun 14:25) · Tokyo 🔴 closed (Mon 03:25) · Korea 🔴 closed (Mon 03:25) · Hong Kong 🔴 closed (Mon 02:25) · Xetra 🔴 closed (Sun 20:25) · Euronext Amsterdam 🔴 closed (Sun 20:25)
+**Last updated:** 2026-09-27 22:13 UTC (Sun Sep 27, 06:13 PM ET) · refreshes hourly · weekly model inputs as of 2026-09-25
+**Markets:** NYSE/Nasdaq 🔴 closed (Sun 18:13) · Tokyo 🔴 closed (Mon 07:13) · Korea 🔴 closed (Mon 07:13) · Hong Kong 🔴 closed (Mon 06:13) · Xetra 🔴 closed (Mon 00:13) · Euronext Amsterdam 🔴 closed (Mon 00:13)
 
 ## Portfolio snapshot
 
