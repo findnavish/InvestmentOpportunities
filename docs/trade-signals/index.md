@@ -8,8 +8,8 @@ hide:
 !!! danger "Model output, not investment advice"
     These are **rule-based signals for a paper (simulated) portfolio**, generated automatically from public, possibly delayed data. They do not account for your objectives, taxes, liquidity or risk tolerance, and they can be wrong. Nothing here is a recommendation to buy or sell securities. Consult a licensed adviser before investing.
 
-**Last updated:** 2026-10-03 08:07 UTC (Sat Oct 03, 04:07 AM ET) · refreshes hourly · weekly model inputs as of 2026-09-25
-**Markets:** NYSE/Nasdaq 🔴 closed (Sat 04:07) · Tokyo 🔴 closed (Sat 17:07) · Korea 🔴 closed (Sat 17:07) · Hong Kong 🔴 closed (Sat 16:07) · Xetra 🔴 closed (Sat 10:07) · Euronext Amsterdam 🔴 closed (Sat 10:07)
+**Last updated:** 2026-10-03 13:23 UTC (Sat Oct 03, 09:23 AM ET) · refreshes hourly · weekly model inputs as of 2026-09-25
+**Markets:** NYSE/Nasdaq 🔴 closed (Sat 09:23) · Tokyo 🔴 closed (Sat 22:23) · Korea 🔴 closed (Sat 22:23) · Hong Kong 🔴 closed (Sat 21:23) · Xetra 🔴 closed (Sat 15:23) · Euronext Amsterdam 🔴 closed (Sat 15:23)
 
 ## Portfolio snapshot
 
@@ -44,23 +44,23 @@ Sorted by score. **Weight** = current → target share of NAV. **Key drivers** =
 | 🟢🟢 Strong Buy | +3.02 | **SK hynix**<br><small>000660.KS</small> | 1,835,000 KRW | +74% | +12.0% | +385% | +29% | 55 | +0.63 | 9.6% → 10.0% | – | analyst α +0.66 · momentum +0.41 · ⚠️ cycle-peak P/E, high σ(e) |
 | 🟢🟢 Strong Buy | +2.33 | **MU**<br><small>Micron Technology</small> | 1,074.27 USD | +41% | +4.0% | +422% | +57% | 59 | +0.06 | 9.4% → 10.0% | – | momentum +0.53 · analyst α +0.36 · ⚠️ cycle-peak P/E |
 | 🟢🟢 Strong Buy | +2.03 | **Samsung**<br><small>005930.KS</small> | 275,250 KRW | +74% | +13.0% | +224% | +21% | 55 | -0.25 | 9.5% → 10.0% | – | analyst α +0.85 · momentum +0.30 · ⚠️ cycle-peak P/E |
-| 🟢 Buy | +0.60 | **TSM**<br><small>TSMC</small> | 472.91 USD | +17% | -1.1% | +46% | +22% | 72 | +0.58 | 8.4% → 10.0% | – | quality +0.28 · momentum -0.05 |
+| 🟢 Buy | +0.55 | **TSM**<br><small>TSMC</small> | 472.91 USD | +17% | -1.1% | +46% | +22% | 72 | +0.58 | 8.4% → 10.0% | – | quality +0.28 · momentum -0.07 |
 | 🟢 Buy | +0.53 | **AMAT**<br><small>Applied Materials</small> | 540.04 USD | +19% | -1.0% | +102% | +26% | 69 | +0.03 | 6.6% → 7.6% | – | momentum +0.10 · analyst α +0.08 |
 | 🟢 Buy | +0.48 | **NVDA**<br><small>NVIDIA</small> | 233.99 USD | +40% | +3.7% | +21% | +17% | 63 | +0.48 | 8.3% → 8.1% | – | analyst α +0.27 · quality +0.21 |
 | 🟢 Buy | +0.40 | **ASX**<br><small>ASE Technology</small> | 47.44 USD | +8% | -1.9% | +239% | +55% | 69 | -0.68 | 6.8% → 6.5% | – | momentum +0.35 · quality -0.28 · ⚠️ rich valuation |
 | 🟢 Buy | +0.38 | **Advantest**<br><small>6857.T</small> | 38,430 JPY | +11% | -3.4% | +131% | +40% | 67 | +0.33 | 4.6% → 4.3% | – | analyst α -0.23 · quality +0.16 · ⚠️ rich valuation |
 | 🟢 Buy | +0.31 | **AVGO**<br><small>Broadcom</small> | 355.13 USD | +50% | +7.0% | +6% | -3% | 48 | +0.27 | 5.8% → 5.5% | – | analyst α +0.48 · momentum -0.26 |
-| 🟢 Buy | +0.26 | **Infineon**<br><small>IFX.DE</small> | 64.38 EUR | +35% | +2.5% | +64% | +16% | 64 | -0.04 | 4.3% → 4.4% | – | analyst α +0.19 · trend -0.07 |
+| 🟢 Buy | +0.26 | **Infineon**<br><small>IFX.DE</small> | 64.38 EUR | +35% | +2.5% | +68% | +16% | 64 | -0.04 | 4.3% → 4.4% | – | analyst α +0.19 · trend -0.07 |
 | ⚪ Hold | +0.18 | **Tokyo Electron**<br><small>8035.T</small> | 12,080 JPY | – | +0.0% | +120% | +25% | 64 | -0.28 | 4.4% → 4.4% | – | quality -0.18 · momentum +0.12 · ⚠️ rich valuation |
 | ⚪ Hold | +0.06 | **KLAC**<br><small>KLA Corp</small> | 206.94 USD | +13% | -2.2% | +53% | +16% | 67 | +0.51 | 9.3% → 9.3% | – | quality +0.24 · analyst α -0.12 |
 | ⚪ Hold | +0.03 | **ASML**<br><small>ASML Holding</small> | 1,868.24 USD | +14% | -2.4% | +61% | +21% | 65 | +0.42 | 0.0% → 0.0% | – | analyst α -0.19 · quality +0.18 |
 | ⚪ Hold | -0.10 | **MRVL**<br><small>Marvell Technology</small> | 272.40 USD | +6% | -4.8% | +143% | +62% | 65 | -0.12 | 0.0% → 0.0% | – | analyst α -0.41 · trend +0.25 · ⚠️ rich valuation |
 | ⚪ Hold | -0.12 | **Disco**<br><small>6146.T</small> | 60,190 JPY | +37% | +3.8% | +20% | -7% | 61 | +0.07 | 0.0% → 0.0% | – | analyst α +0.31 · momentum -0.23 |
+| ⚪ Hold | -0.23 | **ASMI**<br><small>ASM.AS</small> | 947.00 EUR | +19% | -1.3% | +51% | +19% | 69 | -0.10 | 0.0% → 0.0% | – | quality -0.06 · momentum -0.05 |
 | 🔴 Sell | -0.28 | **GFS**<br><small>GlobalFoundries</small> | 50.18 USD | +51% | +7.0% | +25% | -7% | 59 | -0.21 | 0.0% → 0.0% | – | analyst α +0.41 · trend -0.25 |
 | 🔴 Sell | -0.30 | **LRCX**<br><small>Lam Research</small> | 347.45 USD | +8% | -4.0% | +100% | +26% | 68 | +0.03 | 0.0% → 0.0% | – | analyst α -0.27 · momentum +0.07 |
-| 🔴 Sell | -0.32 | **ASMI**<br><small>ASM.AS</small> | 947.00 EUR | +19% | -1.3% | +41% | +20% | 69 | -0.10 | 0.0% → 0.0% | – | momentum -0.10 · quality -0.06 |
-| 🔴 Sell | -0.33 | **TXN**<br><small>Texas Instruments</small> | 293.81 USD | +11% | -2.4% | +43% | +19% | 70 | +0.24 | 0.0% → 0.0% | – | analyst α -0.15 · quality +0.10 |
 | 🔴 Sell | -0.36 | **AMD**<br><small>Advanced Micro Devices</small> | 633.75 USD | -2% | -7.2% | +169% | +68% | 70 | -0.15 | 0.0% → 0.0% | – | analyst α -0.66 · trend +0.32 |
+| 🔴 Sell | -0.38 | **TXN**<br><small>Texas Instruments</small> | 293.81 USD | +11% | -2.4% | +43% | +19% | 70 | +0.24 | 0.0% → 0.0% | – | analyst α -0.15 · momentum -0.10 |
 | 🔴 Sell | -0.53 | **Shin-Etsu**<br><small>4063.T</small> | 6,018 JPY | +29% | +2.3% | +33% | -3% | 55 | -0.19 | 0.0% → 0.0% | – | trend -0.16 · analyst α +0.15 |
 | 🔴 Sell | -0.55 | **QCOM**<br><small>Qualcomm</small> | 184.91 USD | +5% | -4.1% | +2% | +10% | 53 | +0.70 | 0.0% → 0.0% | – | quality +0.43 · analyst α -0.31 |
 | 🔴 Sell | -0.65 | **AMKR**<br><small>Amkor Technology</small> | 56.04 USD | +36% | +2.9% | +59% | -2% | 59 | -1.00 | 0.0% → 0.0% | – | quality -0.43 · analyst α +0.23 |
@@ -87,7 +87,7 @@ Click a name to expand the full reasoning behind its rating and quantity.
 ??? success "Samsung (005930.KS) — 🟢🟢 Strong Buy, score +2.03"
     Within rebalance band of target 10.0%: no trade. Analyst target 478,628 KRW vs 275,250 KRW (+74%, 36 analysts); de-biased α +13.0% vs CAPM hurdle 11.4%. Uptrend +21% vs 200-day avg; 12-1 mom +224%; RSI 55. Quality z -0.25 (ROE 11%). ⚠️ cyclical-peak risk: fwd P/E 4.0 (ch.17-18).
 
-??? success "TSM (TSM) — 🟢 Buy, score +0.60"
+??? success "TSM (TSM) — 🟢 Buy, score +0.55"
     Within rebalance band of target 10.0%: no trade. Analyst target 552.26 USD vs 472.91 USD (+17%, 20 analysts); de-biased α -1.1% vs CAPM hurdle 10.9%. Uptrend +22% vs 200-day avg; 12-1 mom +46%; RSI 72. Quality z +0.58 (ROE 35%).
 
 ??? success "AMAT (AMAT) — 🟢 Buy, score +0.53"
@@ -106,7 +106,7 @@ Click a name to expand the full reasoning behind its rating and quantity.
     Within rebalance band of target 5.5%: no trade. Analyst target 531.85 USD vs 355.13 USD (+50%, 47 analysts); de-biased α +7.0% vs CAPM hurdle 11.2%. Downtrend -3% vs 200-day avg; 12-1 mom +6%; RSI 48. Quality z +0.27 (ROE 31%).
 
 ??? success "Infineon (IFX.DE) — 🟢 Buy, score +0.26"
-    Within rebalance band of target 4.4%: no trade. Analyst target 86.74 EUR vs 64.38 EUR (+35%, 23 analysts); de-biased α +2.5% vs CAPM hurdle 14.1%. Uptrend +16% vs 200-day avg; 12-1 mom +64%; RSI 64. Quality z -0.04 (ROE 6%).
+    Within rebalance band of target 4.4%: no trade. Analyst target 86.74 EUR vs 64.38 EUR (+35%, 23 analysts); de-biased α +2.5% vs CAPM hurdle 14.1%. Uptrend +16% vs 200-day avg; 12-1 mom +68%; RSI 64. Quality z -0.04 (ROE 6%).
 
 ??? note "Tokyo Electron (8035.T) — ⚪ Hold, score +0.18"
     Hold zone: keep any existing position, no new money. No reliable analyst target: α set to 0. Uptrend +25% vs 200-day avg; 12-1 mom +120%; RSI 64. Quality z -0.28 (ROE 29%). ⚠️ price implies 72% stage-1 growth (reverse DCF).
@@ -123,20 +123,20 @@ Click a name to expand the full reasoning behind its rating and quantity.
 ??? note "Disco (6146.T) — ⚪ Hold, score -0.12"
     Hold zone: not owned, no entry. Analyst target 82,580 JPY vs 60,190 JPY (+37%, 20 analysts); de-biased α +3.8% vs CAPM hurdle 11.6%. Downtrend -7% vs 200-day avg; 12-1 mom +20%; RSI 61. Quality z +0.07 (ROE 25%).
 
+??? note "ASMI (ASM.AS) — ⚪ Hold, score -0.23"
+    Hold zone: not owned, no entry. Analyst target 1,125.89 EUR vs 947.00 EUR (+19%, 19 analysts); de-biased α -1.3% vs CAPM hurdle 13.2%. Uptrend +19% vs 200-day avg; 12-1 mom +51%; RSI 69. Quality z -0.10 (ROE 19%).
+
 ??? failure "GFS (GFS) — 🔴 Sell, score -0.28"
     Avoid: not owned. Analyst target 76.00 USD vs 50.18 USD (+51%, 22 analysts); de-biased α +7.0% vs CAPM hurdle 12.5%. Downtrend -7% vs 200-day avg; 12-1 mom +25%; RSI 59. Quality z -0.21 (ROE 8%).
 
 ??? failure "LRCX (LRCX) — 🔴 Sell, score -0.30"
     Avoid: not owned. Analyst target 373.77 USD vs 347.45 USD (+8%, 31 analysts); de-biased α -4.0% vs CAPM hurdle 12.7%. Uptrend +26% vs 200-day avg; 12-1 mom +100%; RSI 68. Quality z +0.03 (ROE 65%).
 
-??? failure "ASMI (ASM.AS) — 🔴 Sell, score -0.32"
-    Avoid: not owned. Analyst target 1,125.89 EUR vs 947.00 EUR (+19%, 19 analysts); de-biased α -1.3% vs CAPM hurdle 13.2%. Uptrend +20% vs 200-day avg; 12-1 mom +41%; RSI 69. Quality z -0.10 (ROE 19%).
-
-??? failure "TXN (TXN) — 🔴 Sell, score -0.33"
-    Avoid: not owned. Analyst target 324.71 USD vs 293.81 USD (+11%, 31 analysts); de-biased α -2.4% vs CAPM hurdle 10.8%. Uptrend +19% vs 200-day avg; 12-1 mom +43%; RSI 70. Quality z +0.24 (ROE 30%).
-
 ??? failure "AMD (AMD) — 🔴 Sell, score -0.36"
     Avoid: not owned. Analyst target 618.51 USD vs 633.75 USD (-2%, 50 analysts); de-biased α -7.2% vs CAPM hurdle 15.0%. Uptrend +68% vs 200-day avg; 12-1 mom +169%; RSI 70. Quality z -0.15 (ROE 7%).
+
+??? failure "TXN (TXN) — 🔴 Sell, score -0.38"
+    Avoid: not owned. Analyst target 324.71 USD vs 293.81 USD (+11%, 31 analysts); de-biased α -2.4% vs CAPM hurdle 10.8%. Uptrend +19% vs 200-day avg; 12-1 mom +43%; RSI 70. Quality z +0.24 (ROE 30%).
 
 ??? failure "Shin-Etsu (4063.T) — 🔴 Sell, score -0.53"
     Avoid: not owned. Analyst target 7,775 JPY vs 6,018 JPY (+29%, 17 analysts); de-biased α +2.3% vs CAPM hurdle 10.8%. Downtrend -3% vs 200-day avg; 12-1 mom +33%; RSI 55. Quality z -0.19 (ROE 10%).
