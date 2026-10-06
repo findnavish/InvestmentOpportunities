@@ -55,5 +55,7 @@ nav:
   - Hourly Trade Signals: trade-signals/index.md
   - Analyses:
       - Silicon Supply Chain — Top 30: silicon-supply-chain/index.md
+  - Stock Deep Dives:
+      - AMD: deep-dives/amd/index.md
   - Methodology: methodology.md
   - Changelog: changelog.md

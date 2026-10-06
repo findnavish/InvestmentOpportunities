@@ -51,6 +51,12 @@ jobs:
           python charts.py
           python build_report.py
           python ../trade-signals/export_inputs.py
+      - name: Weekly stock deep dives
+        if: env.WEEKLY == 'true'
+        continue-on-error: true
+        timeout-minutes: 15
+        working-directory: analyses/deep-dives
+        run: python deep_dive.py --all
       - name: Hourly trade signals
         if: env.SIGNALS == 'true'
         timeout-minutes: 12

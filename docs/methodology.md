@@ -10,15 +10,26 @@ Each analysis maps textbook methods from Bodie, Kane & Marcus, *Investments* (13
 | Index models | Single-index regression (α, β, R², residual σ), Blume-adjusted β | 8 |
 | Equilibrium | CAPM cost of equity, Security Market Line, Jensen's α and its t-statistic | 9 |
 | Multifactor | Fama-French 5 factors + momentum regressions | 10, 13 |
-| Market efficiency | Momentum, moving averages, RSI, and behavioral caveats | 11–12 |
+| Market efficiency | Momentum, moving averages, RSI, and behavioral caveats. Deep dives add a market-model **earnings event study** (abnormal returns, CAR, post-announcement drift) | 11–12 |
 | Macro & industry | PEST analysis, business-cycle sensitivity, operating leverage (DOL), industry life cycle | 17 |
 | Equity valuation | Forward P/E, sustainable growth \(g = ROE \times b\), PVGO, constant-growth and two-stage FCF models, reverse-DCF implied growth, sensitivity | 18 |
 | Financial statements | Five-factor DuPont, capital/R&D intensity, cash conversion, accruals-based earnings quality | 19 |
-| Options | Implied vs realized volatility, implied move | 20–21 |
+| Options | Implied vs realized volatility, implied move. Deep dives add the IV term structure, earnings-implied move, skew, a put-call parity check and Black-Scholes deltas for covered calls and cash-secured puts | 20–21 |
 | Performance evaluation | Sharpe, Treynor, Jensen, information ratio, M² | 24 |
 | International | Local vs USD return decomposition, currency contribution | 25 |
 | Active management | Treynor-Black optimal active portfolio with de-biased, shrunk analyst alphas | 27 |
 | Policy | Core-satellite framing, investment-policy guidance | 28 |
+
+## Stock deep dives
+
+`analyses/deep-dives/deep_dive.py TICKER` applies the toolkit above to one stock. It adds a **scenario DCF on owner FCF (FCF after stock-based compensation)**:
+
+- Revenue follows consensus for the current and next fiscal year (low/avg/high), then growth fades linearly to 4% over 8 years.
+- Margins ramp to the scenario level over 3 years.
+- Cash flows are discounted at the Blume-adjusted CAPM rate.
+- A reverse DCF solves for the margin, growth or discount rate that the price implies.
+
+The verdict comes from a transparent 8-point checklist covering valuation, Street alpha, momentum, trend, RSI, fundamentals and balance sheet. Hand-written PEST and catalyst notes live in `analyses/deep-dives/notes/`.
 
 ## Data & reproducibility
 

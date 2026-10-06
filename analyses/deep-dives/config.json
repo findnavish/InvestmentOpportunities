@@ -1,0 +1,20 @@
+{
+  "mrp": 0.055,
+  "terminal_growth": 0.04,
+  "alpha_shrink": 0.25,
+  "fade_years": 8,
+  "margin_ramp_years": 3,
+  "tickers": {
+    "AMD": {
+      "name": "Advanced Micro Devices",
+      "sector_etf": "SOXX",
+      "peers": ["NVDA", "AVGO", "INTC", "QCOM", "ARM", "MRVL"],
+      "scenarios": {
+        "Bear": {"rev_next": "low",  "g_after": 0.12, "fcf_margin": 0.20},
+        "Base": {"rev_next": "avg",  "g_after": 0.25, "fcf_margin": 0.28},
+        "Bull": {"rev_next": "high", "g_after": 0.35, "fcf_margin": 0.35}
+      },
+      "potential_dilution": {"shares": 160000000, "label": "OpenAI warrant (up to 160M shares, vests on deployment and share-price milestones)"}
+    }
+  }
+}

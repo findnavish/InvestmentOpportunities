@@ -8,6 +8,7 @@ Research notebooks that apply the methods of Bodie, Kane & Marcus, *Investments*
 |---|---|---|
 | Hourly Trade Signals (paper model portfolio) | [site](https://findnavish.github.io/InvestmentOpportunities/trade-signals/) | [`analyses/trade-signals`](analyses/trade-signals) |
 | Silicon Supply Chain — Top 30 Key Players | [site](https://findnavish.github.io/InvestmentOpportunities/silicon-supply-chain/) | [`analyses/silicon-supply-chain`](analyses/silicon-supply-chain) |
+| Stock Deep Dives (AMD, …) | [site](https://findnavish.github.io/InvestmentOpportunities/deep-dives/amd/) | [`analyses/deep-dives`](analyses/deep-dives) |
 
 ## Run locally
 
