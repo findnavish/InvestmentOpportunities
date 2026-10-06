@@ -349,7 +349,7 @@
         "HLX"
       ],
       "sector_etf": "OIH",
-      "data_warning": "Hornbeck Offshore went through Chapter 11 in 2020 and its old shares were cancelled. Yahoo Finance shows a continuous HOS price series back to 2014 with no company name attached, so price history, return statistics, betas and factor loadings before the company's return to public markets may not belong to today's equity. Treat sections 1\u20134 and 7 with caution and verify the listing history."
+      "data_warning": "Hornbeck Offshore's old shares were cancelled in its 2020 Chapter 11. It reportedly returned to the NYSE as HOS in September 2026 through a combination with Helix Energy Solutions (HLX), and Yahoo Finance now shows Helix's price history under HOS (HLX has no data after the deal). Price history, return statistics, betas, factor loadings and the event study before September 2026 therefore describe Helix, not the combined company. Treat sections 1\u20134 and 7 with caution and verify against the merger filings."
     }
   }
 }

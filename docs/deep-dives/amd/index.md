@@ -264,7 +264,7 @@ Calls = covered calls on shares you own (yield on the share price); puts = cash-
 
 ## 11. Our hourly signal model
 
-The [Hourly Trade Signals](../../trade-signals/index.md) engine rates AMD **🔴 Sell** with a composite score of **-0.36** (as of 2026-10-06 02:59 UTC). It combines the de-biased analyst alpha (40%), 12-1 momentum (25%), quality (20%) and trend (15%), with a penalty when RSI exceeds 75.
+The [Hourly Trade Signals](../../trade-signals/index.md) engine rates AMD **🔴 Sell** with a composite score of **-0.36** (as of 2026-10-06 17:12 UTC). It combines the de-biased analyst alpha (40%), 12-1 momentum (25%), quality (20%) and trend (15%), with a penalty when RSI exceeds 75.
 
 ## 12. Qualitative analysis: business, PEST, catalysts and risks
 

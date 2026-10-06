@@ -38,5 +38,5 @@ The verdict counts eight checks: base DCF ≥ price, forward P/E ≤ 1.2× peers
 | [**TSLA**](tsla/index.md) Tesla | Consumer Cyclical | 378.73 | Reduce / Avoid | 3/8 | -90% | 93% | 176.7x (6.2x) | 1.91 | -12% | -74% | – |
 | [**LCID**](lcid/index.md) Lucid Group | Consumer Cyclical | 4.17 | Reduce / Avoid | 2/8 | -287% | 42% | n/m (16.6x) | 1.01 | -83% | -99% | – |
 
-*Last rebuilt 2026-10-06 20:08 UTC. 'Growth the price needs' is the reverse-DCF revenue growth after next year at the base-case margin.*
+*Last rebuilt 2026-10-06 20:27 UTC. 'Growth the price needs' is the reverse-DCF revenue growth after next year at the base-case margin.*
 
