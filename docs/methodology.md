@@ -29,6 +29,24 @@ Each analysis maps textbook methods from Bodie, Kane & Marcus, *Investments* (13
 - Cash flows are discounted at the Blume-adjusted CAPM rate.
 - A reverse DCF solves for the margin, growth or discount rate that the price implies.
 
+**Default scenarios** apply unless `config.json` overrides them:
+
+| Inputs | Bear | Base | Bull |
+|---|---|---|---|
+| Next-year revenue | consensus low | consensus average | consensus high |
+| Growth after next year (g = 0.6 × consensus growth + 2%, capped at 2–30%) | g / 2 | g | 1.4 × g + 1% (max 40%) |
+| Owner-FCF margin, profitable companies (m = today's margin, 3–45%) | 0.75 × m | m | 1.25 × m |
+| Margin, profitable but capex-heavy (m = 0.6 × operating margin) | 0.75 × m | m | 1.25 × m |
+| Margin, loss-makers (m = 0.3 × gross margin, 5–12%; ramps over 5 years) | 3% | m | 1.6 × m |
+
+Other rules:
+
+- When no consensus estimates exist, the revenue path starts from TTM revenue and grows at the latest reported rate (±15% for low/high).
+- The discount rate is never below r_f + 2% or g + 2%. A ticker can add an explicit risk premium, for example for country or legal-structure risk.
+- Foreign filers' statements are converted to the quote currency.
+- Peer multiples come from live Yahoo data for hand-picked peers; the relative-value check compares against the peer median.
+- A speculative name (loss-making with net debt) cannot score above "Hold".
+
 The verdict comes from a transparent 8-point checklist covering valuation, Street alpha, momentum, trend, RSI, fundamentals and balance sheet. Hand-written PEST and catalyst notes live in `analyses/deep-dives/notes/`.
 
 ## Data & reproducibility

@@ -30,7 +30,7 @@ jobs:
   update:
     if: github.event_name != 'push'
     runs-on: ubuntu-latest
-    timeout-minutes: 50
+    timeout-minutes: 110
     env:
       WEEKLY: ${{ github.event.schedule == '0 14 * * 6' || (github.event_name == 'workflow_dispatch' && inputs.weekly) }}
       SIGNALS: ${{ github.event.schedule == '17 * * * *' || (github.event_name == 'workflow_dispatch' && inputs.signals) }}
@@ -54,7 +54,7 @@ jobs:
       - name: Weekly stock deep dives
         if: env.WEEKLY == 'true'
         continue-on-error: true
-        timeout-minutes: 15
+        timeout-minutes: 45
         working-directory: analyses/deep-dives
         run: python deep_dive.py --all
       - name: Hourly trade signals

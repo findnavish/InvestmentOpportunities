@@ -8,13 +8,348 @@
     "AMD": {
       "name": "Advanced Micro Devices",
       "sector_etf": "SOXX",
-      "peers": ["NVDA", "AVGO", "INTC", "QCOM", "ARM", "MRVL"],
+      "peers": [
+        "NVDA",
+        "AVGO",
+        "INTC",
+        "QCOM",
+        "ARM",
+        "MRVL"
+      ],
       "scenarios": {
-        "Bear": {"rev_next": "low",  "g_after": 0.12, "fcf_margin": 0.20},
-        "Base": {"rev_next": "avg",  "g_after": 0.25, "fcf_margin": 0.28},
-        "Bull": {"rev_next": "high", "g_after": 0.35, "fcf_margin": 0.35}
+        "Bear": {
+          "rev_next": "low",
+          "g_after": 0.12,
+          "fcf_margin": 0.2
+        },
+        "Base": {
+          "rev_next": "avg",
+          "g_after": 0.25,
+          "fcf_margin": 0.28
+        },
+        "Bull": {
+          "rev_next": "high",
+          "g_after": 0.35,
+          "fcf_margin": 0.35
+        }
       },
-      "potential_dilution": {"shares": 160000000, "label": "OpenAI warrant (up to 160M shares, vests on deployment and share-price milestones)"}
+      "potential_dilution": {
+        "shares": 160000000,
+        "label": "OpenAI warrant (up to 160M shares, vests on deployment and share-price milestones)"
+      }
+    },
+    "MSFT": {
+      "name": "Microsoft",
+      "peers": [
+        "AAPL",
+        "GOOGL",
+        "AMZN",
+        "ORCL",
+        "CRM"
+      ],
+      "scenarios": {
+        "Bear": {
+          "fcf_margin": 0.2
+        },
+        "Base": {
+          "fcf_margin": 0.26
+        },
+        "Bull": {
+          "fcf_margin": 0.32
+        }
+      },
+      "scenario_reason": "today's FCF is depressed by the AI data-centre capex build-out; margins are set near the pre-2024 owner-FCF level"
+    },
+    "AAPL": {
+      "name": "Apple",
+      "peers": [
+        "MSFT",
+        "GOOGL",
+        "AMZN",
+        "META",
+        "DELL"
+      ]
+    },
+    "GOOGL": {
+      "name": "Alphabet",
+      "peers": [
+        "META",
+        "MSFT",
+        "AMZN",
+        "AAPL"
+      ],
+      "scenarios": {
+        "Bear": {
+          "fcf_margin": 0.12
+        },
+        "Base": {
+          "fcf_margin": 0.17
+        },
+        "Bull": {
+          "fcf_margin": 0.22
+        }
+      },
+      "scenario_reason": "today's FCF is depressed by the AI data-centre capex build-out; margins are set near the pre-2024 owner-FCF level"
+    },
+    "META": {
+      "name": "Meta Platforms",
+      "peers": [
+        "GOOGL",
+        "SNAP",
+        "PINS",
+        "MSFT",
+        "AMZN"
+      ],
+      "scenarios": {
+        "Bear": {
+          "fcf_margin": 0.15
+        },
+        "Base": {
+          "fcf_margin": 0.22
+        },
+        "Bull": {
+          "fcf_margin": 0.28
+        }
+      },
+      "scenario_reason": "today's FCF is depressed by the AI data-centre capex build-out; margins are set near the pre-2024 owner-FCF level"
+    },
+    "AMZN": {
+      "name": "Amazon.com",
+      "peers": [
+        "WMT",
+        "COST",
+        "MSFT",
+        "GOOGL",
+        "SHOP"
+      ],
+      "scenarios": {
+        "Bear": {
+          "fcf_margin": 0.07
+        },
+        "Base": {
+          "fcf_margin": 0.1
+        },
+        "Bull": {
+          "fcf_margin": 0.13
+        }
+      },
+      "scenario_reason": "today's FCF is depressed by the AI data-centre capex build-out; margins are set near the pre-2024 owner-FCF level"
+    },
+    "NVDA": {
+      "name": "NVIDIA",
+      "peers": [
+        "AMD",
+        "AVGO",
+        "INTC",
+        "QCOM",
+        "MRVL",
+        "TSM"
+      ],
+      "sector_etf": "SOXX"
+    },
+    "INTC": {
+      "name": "Intel",
+      "peers": [
+        "AMD",
+        "NVDA",
+        "TSM",
+        "TXN",
+        "QCOM",
+        "MU"
+      ],
+      "sector_etf": "SOXX",
+      "scenarios": {
+        "Bear": {
+          "fcf_margin": 0.08
+        },
+        "Base": {
+          "fcf_margin": 0.15
+        },
+        "Bull": {
+          "fcf_margin": 0.22
+        }
+      },
+      "scenario_reason": "today's FCF is depressed by the foundry build-out; the base case assumes a partial return toward the roughly 20% owner-FCF margins of 2015-2020"
+    },
+    "MU": {
+      "name": "Micron Technology",
+      "peers": [
+        "WDC",
+        "STX",
+        "INTC",
+        "AMAT",
+        "LRCX"
+      ],
+      "sector_etf": "SOXX"
+    },
+    "SMCI": {
+      "name": "Super Micro Computer",
+      "peers": [
+        "DELL",
+        "HPE",
+        "NVDA",
+        "ANET"
+      ]
+    },
+    "PLTR": {
+      "name": "Palantir Technologies",
+      "peers": [
+        "SNOW",
+        "CRM",
+        "NOW",
+        "DDOG",
+        "AI"
+      ]
+    },
+    "AI": {
+      "name": "C3.ai",
+      "peers": [
+        "PLTR",
+        "SNOW",
+        "NOW",
+        "CRM",
+        "DDOG"
+      ]
+    },
+    "IONQ": {
+      "name": "IonQ",
+      "peers": [
+        "RGTI",
+        "QBTS",
+        "QUBT",
+        "IBM"
+      ]
+    },
+    "RGTI": {
+      "name": "Rigetti Computing",
+      "peers": [
+        "IONQ",
+        "QBTS",
+        "QUBT",
+        "IBM"
+      ]
+    },
+    "TSLA": {
+      "name": "Tesla",
+      "peers": [
+        "RIVN",
+        "LCID",
+        "GM",
+        "F",
+        "TM"
+      ]
+    },
+    "LCID": {
+      "name": "Lucid Group",
+      "peers": [
+        "TSLA",
+        "RIVN",
+        "F",
+        "GM",
+        "NIO"
+      ]
+    },
+    "RIVN": {
+      "name": "Rivian Automotive",
+      "peers": [
+        "TSLA",
+        "LCID",
+        "F",
+        "GM",
+        "NIO"
+      ]
+    },
+    "F": {
+      "name": "Ford Motor",
+      "peers": [
+        "GM",
+        "TM",
+        "STLA",
+        "TSLA",
+        "HMC"
+      ],
+      "net_cash_override": 0,
+      "net_cash_reason": "Ford's consolidated balance sheet carries Ford Credit's debt, which funds customer and dealer loans and is matched by finance receivables. Following the usual treatment of captive finance arms, the DCF uses automotive net cash of roughly zero instead of the consolidated figure; check the 'Company excluding Ford Credit' table in the 10-Q."
+    },
+    "RTX": {
+      "name": "RTX Corporation",
+      "peers": [
+        "LMT",
+        "GD",
+        "NOC",
+        "BA",
+        "GE"
+      ],
+      "sector_etf": "ITA"
+    },
+    "SNAP": {
+      "name": "Snap",
+      "peers": [
+        "META",
+        "PINS",
+        "GOOGL",
+        "RDDT"
+      ]
+    },
+    "PINS": {
+      "name": "Pinterest",
+      "peers": [
+        "META",
+        "SNAP",
+        "GOOGL",
+        "RDDT",
+        "ETSY"
+      ]
+    },
+    "SIRI": {
+      "name": "Sirius XM Holdings",
+      "peers": [
+        "SPOT",
+        "IHRT",
+        "NFLX",
+        "ROKU"
+      ]
+    },
+    "SNDL": {
+      "name": "SNDL Inc.",
+      "peers": [
+        "TLRY",
+        "CGC",
+        "ACB",
+        "CRON"
+      ]
+    },
+    "VXRT": {
+      "name": "Vaxart",
+      "peers": [
+        "NVAX",
+        "MRNA",
+        "BNTX",
+        "DVAX"
+      ],
+      "sector_etf": "XBI"
+    },
+    "DIDIY": {
+      "name": "DiDi Global (ADR)",
+      "peers": [
+        "UBER",
+        "LYFT",
+        "GRAB",
+        "BABA"
+      ],
+      "sector_etf": "KWEB",
+      "risk_premium_add": 0.04,
+      "risk_premium_reason": "China country and VIE-structure risk, OTC-only trading of the ADR, and limited legal recourse for US holders (ch.25 political risk)"
+    },
+    "HOS": {
+      "name": "Hornbeck Offshore Services",
+      "peers": [
+        "TDW",
+        "OII",
+        "HLX"
+      ],
+      "sector_etf": "OIH",
+      "data_warning": "Hornbeck Offshore went through Chapter 11 in 2020 and its old shares were cancelled. Yahoo Finance shows a continuous HOS price series back to 2014 with no company name attached, so price history, return statistics, betas and factor loadings before the company's return to public markets may not belong to today's equity. Treat sections 1\u20134 and 7 with caution and verify the listing history."
     }
   }
 }

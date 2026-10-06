@@ -56,6 +56,40 @@ nav:
   - Analyses:
       - Silicon Supply Chain — Top 30: silicon-supply-chain/index.md
   - Stock Deep Dives:
-      - AMD: deep-dives/amd/index.md
+      - Scoreboard: deep-dives/index.md
+      - Semiconductors & hardware:
+          - AMD: deep-dives/amd/index.md
+          - NVDA: deep-dives/nvda/index.md
+          - INTC: deep-dives/intc/index.md
+          - MU: deep-dives/mu/index.md
+          - SMCI: deep-dives/smci/index.md
+      - Mega-cap tech:
+          - MSFT: deep-dives/msft/index.md
+          - AAPL: deep-dives/aapl/index.md
+          - GOOGL: deep-dives/googl/index.md
+          - META: deep-dives/meta/index.md
+          - AMZN: deep-dives/amzn/index.md
+      - Software & AI:
+          - PLTR: deep-dives/pltr/index.md
+          - AI: deep-dives/ai/index.md
+      - Quantum computing:
+          - IONQ: deep-dives/ionq/index.md
+          - RGTI: deep-dives/rgti/index.md
+      - Autos & EVs:
+          - TSLA: deep-dives/tsla/index.md
+          - RIVN: deep-dives/rivn/index.md
+          - LCID: deep-dives/lcid/index.md
+          - F: deep-dives/f/index.md
+      - Internet & media:
+          - SNAP: deep-dives/snap/index.md
+          - PINS: deep-dives/pins/index.md
+          - SIRI: deep-dives/siri/index.md
+          - DIDIY: deep-dives/didiy/index.md
+      - Industrials & energy:
+          - RTX: deep-dives/rtx/index.md
+          - HOS: deep-dives/hos/index.md
+      - Health & cannabis:
+          - VXRT: deep-dives/vxrt/index.md
+          - SNDL: deep-dives/sndl/index.md
   - Methodology: methodology.md
   - Changelog: changelog.md

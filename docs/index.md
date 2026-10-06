@@ -30,11 +30,11 @@ Research notebooks that apply the framework of Bodie, Kane & Marcus, *Investment
 
     *Auto-refreshed weekly · [Excel workbook](silicon-supply-chain/Silicon_Supply_Chain_Analysis.xlsx)*
 
--   :material-magnify-scan:{ .lg .middle } **[Stock Deep Dive — AMD](deep-dives/amd/index.md)**
+-   :material-magnify-scan:{ .lg .middle } **[Stock Deep Dives — 26 stocks](deep-dives/index.md)**
 
     ---
 
-    One stock, the whole textbook: price history, return and risk statistics, index-model and Fama-French betas, capital allocation, DuPont and earnings quality, PVGO, scenario and reverse DCF, an earnings event study, technical and behavioural signals, Treynor-Black, the options-implied view and a PEST analysis.
+    One page per stock (AMD, NVDA, MSFT, GOOGL, TSLA, PLTR, IONQ and 19 more), the whole textbook on each: price history, return and risk statistics, index-model and Fama-French betas, capital allocation, DuPont and earnings quality, PVGO, scenario and reverse DCF, an earnings event study, technical and behavioural signals, Treynor-Black, the options-implied view and a PEST analysis.
 
     *Auto-refreshed weekly · rule-based verdict*
 
@@ -49,5 +49,5 @@ Ideas for upcoming enhancements. Suggestions are welcome via [GitHub issues](htt
 - [ ] Earnings-revision and short-interest tracking for the Top 30
 - [ ] Additional themes: AI data-center power & cooling, hyperscalers, networking/optics
 - [ ] Bond and macro dashboards (yield curve, duration/convexity, ch.14–16)
-- [ ] More single-stock deep dives (add a ticker to `analyses/deep-dives/config.json`)
+- [x] 26 single-stock deep dives with a scoreboard (add a ticker to `analyses/deep-dives/config.json` for more)
 - [ ] Options strategy playbooks for concentrated positions (ch.20–21)
