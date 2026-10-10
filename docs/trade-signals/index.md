@@ -8,8 +8,8 @@ hide:
 !!! danger "Model output, not investment advice"
     These are **rule-based signals for a paper (simulated) portfolio**, generated automatically from public, possibly delayed data. They do not account for your objectives, taxes, liquidity or risk tolerance, and they can be wrong. Nothing here is a recommendation to buy or sell securities. Consult a licensed adviser before investing.
 
-**Last updated:** 2026-10-10 07:09 UTC (Sat Oct 10, 03:09 AM ET) · refreshes hourly · weekly model inputs as of 2026-10-02
-**Markets:** NYSE/Nasdaq 🔴 closed (Sat 03:09) · Tokyo 🔴 closed (Sat 16:09) · Korea 🔴 closed (Sat 16:09) · Hong Kong 🔴 closed (Sat 15:09) · Xetra 🔴 closed (Sat 09:09) · Euronext Amsterdam 🔴 closed (Sat 09:09)
+**Last updated:** 2026-10-10 13:43 UTC (Sat Oct 10, 09:43 AM ET) · refreshes hourly · weekly model inputs as of 2026-10-02
+**Markets:** NYSE/Nasdaq 🔴 closed (Sat 09:43) · Tokyo 🔴 closed (Sat 22:43) · Korea 🔴 closed (Sat 22:43) · Hong Kong 🔴 closed (Sat 21:43) · Xetra 🔴 closed (Sat 15:43) · Euronext Amsterdam 🔴 closed (Sat 15:43)
 
 ## Portfolio snapshot
 
@@ -48,7 +48,7 @@ Sorted by score. **Weight** = current → target share of NAV. **Key drivers** =
 | 🟢 Buy | +0.55 | **AMAT**<br><small>Applied Materials</small> | 506.85 USD | +26% | -0.4% | +108% | +17% | 54 | +0.03 | 8.0% → 8.3% | – | analyst α +0.12 · momentum +0.10 |
 | 🟢 Buy | +0.49 | **TSM**<br><small>TSMC</small> | 453.26 USD | +22% | -1.2% | +46% | +16% | 53 | +0.58 | 8.3% → 10.0% | – | quality +0.28 · momentum -0.12 |
 | 🟢 Buy | +0.46 | **ASX**<br><small>ASE Technology</small> | 46.43 USD | +10% | -2.2% | +239% | +48% | 62 | -0.68 | 6.9% → 7.7% | – | momentum +0.35 · quality -0.28 · ⚠️ rich valuation |
-| 🟢 Buy | +0.42 | **Infineon**<br><small>IFX.DE</small> | 58.70 EUR | +48% | +4.4% | +76% | +4% | 49 | -0.04 | 6.3% → 7.5% | – | analyst α +0.31 · trend -0.12 |
+| 🟢 Buy | +0.42 | **Infineon**<br><small>IFX.DE</small> | 58.70 EUR | +48% | +4.4% | +81% | +4% | 49 | -0.04 | 6.3% → 7.5% | – | analyst α +0.31 · trend -0.12 |
 | 🟢 Buy | +0.37 | **NVDA**<br><small>NVIDIA</small> | 229.34 USD | +43% | +3.2% | +14% | +14% | 53 | +0.47 | 8.4% → 6.5% | TRIM 80 | analyst α +0.23 · momentum -0.23 |
 | 🟢 Buy | +0.33 | **KLAC**<br><small>KLA Corp</small> | 195.64 USD | +19% | -1.9% | +72% | +9% | 55 | +0.51 | 4.2% → 5.4% | ADD 61 | quality +0.24 · trend -0.07 |
 | ⚪ Hold | +0.22 | **ASML**<br><small>ASML Holding</small> | 1,781.44 USD | +18% | -2.6% | +74% | +14% | 53 | +0.42 | 0.0% → 0.0% | – | quality +0.18 · analyst α -0.08 |
@@ -58,7 +58,7 @@ Sorted by score. **Weight** = current → target share of NAV. **Key drivers** =
 | ⚪ Hold | -0.08 | **MRVL**<br><small>Marvell Technology</small> | 275.33 USD | +7% | -5.9% | +161% | +59% | 62 | -0.12 | 0.0% → 0.0% | – | analyst α -0.48 · trend +0.32 · ⚠️ rich valuation |
 | ⚪ Hold | -0.10 | **Advantest**<br><small>6857.T</small> | 41,560 JPY | +3% | -6.7% | +134% | +48% | 71 | +0.33 | 5.2% → 5.2% | – | analyst α -0.55 · trend +0.18 · ⚠️ rich valuation |
 | ⚪ Hold | -0.10 | **LRCX**<br><small>Lam Research</small> | 318.83 USD | +18% | -2.8% | +112% | +14% | 51 | +0.02 | 0.0% → 0.0% | – | analyst α -0.15 · momentum +0.12 |
-| ⚪ Hold | -0.18 | **ASMI**<br><small>ASM.AS</small> | 888.00 EUR | +27% | -0.6% | +53% | +11% | 54 | -0.10 | 0.0% → 0.0% | – | analyst α +0.08 · quality -0.06 |
+| ⚪ Hold | -0.18 | **ASMI**<br><small>ASM.AS</small> | 888.00 EUR | +27% | -0.6% | +52% | +11% | 54 | -0.10 | 0.0% → 0.0% | – | analyst α +0.08 · quality -0.06 |
 | 🔴 Sell | -0.29 | **Disco**<br><small>6146.T</small> | 61,250 JPY | +33% | +1.6% | +16% | -6% | 58 | +0.06 | 0.0% → 0.0% | – | momentum -0.20 · analyst α +0.19 |
 | 🔴 Sell | -0.34 | **TXN**<br><small>Texas Instruments</small> | 283.74 USD | +14% | -2.7% | +46% | +13% | 56 | +0.24 | 0.0% → 0.0% | – | analyst α -0.12 · momentum -0.10 |
 | 🔴 Sell | -0.42 | **QCOM**<br><small>Qualcomm</small> | 175.56 USD | +11% | -4.0% | +12% | +4% | 45 | +0.70 | 0.0% → 0.0% | – | quality +0.43 · analyst α -0.27 |
@@ -98,7 +98,7 @@ Click a name to expand the full reasoning behind its rating and quantity.
     Within rebalance band of target 7.7%: no trade. Analyst target 51.00 USD vs 46.43 USD (+10%, 1 analysts); de-biased α -2.2% vs CAPM hurdle 11.9%. Uptrend +48% vs 200-day avg; 12-1 mom +239%; RSI 62. Quality z -0.68 (ROE 12%). ⚠️ price implies 69% stage-1 growth (reverse DCF).
 
 ??? success "Infineon (IFX.DE) — 🟢 Buy, score +0.42"
-    Within rebalance band of target 7.5%: no trade. Analyst target 86.74 EUR vs 58.70 EUR (+48%, 23 analysts); de-biased α +4.4% vs CAPM hurdle 14.1%. Uptrend +4% vs 200-day avg; 12-1 mom +76%; RSI 49. Quality z -0.04 (ROE 6%).
+    Within rebalance band of target 7.5%: no trade. Analyst target 86.74 EUR vs 58.70 EUR (+48%, 23 analysts); de-biased α +4.4% vs CAPM hurdle 14.1%. Uptrend +4% vs 200-day avg; 12-1 mom +81%; RSI 49. Quality z -0.04 (ROE 6%).
 
 ??? success "NVDA (NVDA) — 🟢 Buy, score +0.37"
     **TRIM 80 sh** → target 6.5% of NAV (sized ∝ score ÷ σ(e), cap 10%). Analyst target 327.70 USD vs 229.34 USD (+43%, 59 analysts); de-biased α +3.2% vs CAPM hurdle 13.9%. Uptrend +14% vs 200-day avg; 12-1 mom +14%; RSI 53. Quality z +0.47 (ROE 101%).
@@ -128,7 +128,7 @@ Click a name to expand the full reasoning behind its rating and quantity.
     Hold zone: not owned, no entry. Analyst target 375.06 USD vs 318.83 USD (+18%, 31 analysts); de-biased α -2.8% vs CAPM hurdle 12.6%. Uptrend +14% vs 200-day avg; 12-1 mom +112%; RSI 51. Quality z +0.02 (ROE 65%).
 
 ??? note "ASMI (ASM.AS) — ⚪ Hold, score -0.18"
-    Hold zone: not owned, no entry. Analyst target 1,128.53 EUR vs 888.00 EUR (+27%, 19 analysts); de-biased α -0.6% vs CAPM hurdle 13.2%. Uptrend +11% vs 200-day avg; 12-1 mom +53%; RSI 54. Quality z -0.10 (ROE 19%).
+    Hold zone: not owned, no entry. Analyst target 1,128.53 EUR vs 888.00 EUR (+27%, 19 analysts); de-biased α -0.6% vs CAPM hurdle 13.2%. Uptrend +11% vs 200-day avg; 12-1 mom +52%; RSI 54. Quality z -0.10 (ROE 19%).
 
 ??? failure "Disco (6146.T) — 🔴 Sell, score -0.29"
     Avoid: not owned. Analyst target 81,730 JPY vs 61,250 JPY (+33%, 20 analysts); de-biased α +1.6% vs CAPM hurdle 11.5%. Downtrend -6% vs 200-day avg; 12-1 mom +16%; RSI 58. Quality z +0.06 (ROE 25%).
