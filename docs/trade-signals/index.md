@@ -8,16 +8,16 @@ hide:
 !!! danger "Model output, not investment advice"
     These are **rule-based signals for a paper (simulated) portfolio**, generated automatically from public, possibly delayed data. They do not account for your objectives, taxes, liquidity or risk tolerance, and they can be wrong. Nothing here is a recommendation to buy or sell securities. Consult a licensed adviser before investing.
 
-**Last updated:** 2026-10-11 08:53 UTC (Sun Oct 11, 04:53 AM ET) · refreshes hourly · weekly model inputs as of 2026-10-02
-**Markets:** NYSE/Nasdaq 🔴 closed (Sun 04:53) · Tokyo 🔴 closed (Sun 17:53) · Korea 🔴 closed (Sun 17:53) · Hong Kong 🔴 closed (Sun 16:53) · Xetra 🔴 closed (Sun 10:53) · Euronext Amsterdam 🔴 closed (Sun 10:53)
+**Last updated:** 2026-10-11 15:42 UTC (Sun Oct 11, 11:42 AM ET) · refreshes hourly · weekly model inputs as of 2026-10-02
+**Markets:** NYSE/Nasdaq 🔴 closed (Sun 11:42) · Tokyo 🔴 closed (Mon 00:42) · Korea 🔴 closed (Mon 00:42) · Hong Kong 🔴 closed (Sun 23:42) · Xetra 🔴 closed (Sun 17:42) · Euronext Amsterdam 🔴 closed (Sun 17:42)
 
 ## Portfolio snapshot
 
 | NAV | Cash | Invested | Return since inception | SOXX since inception | Regime (SOXX vs 200-day) | Equity budget |
 |---|---|---|---|---|---|---|
-| **$1,018,577** | $158,584 (16%) | $859,993 (84%) | +1.86% | -1.01% | 🟢 Risk-on (+21.2%) | 90% |
+| **$1,018,570** | $158,584 (16%) | $859,985 (84%) | +1.86% | -1.01% | 🟢 Risk-on (+21.2%) | 90% |
 
-Inception 2026-09-24 08:59 UTC with $1,000,000 of paper cash. **Scaling quantities:** multiply by (your capital ÷ $1,018,577), then round to board lots (Tokyo 100 shares, Hong Kong/SMIC 500).
+Inception 2026-09-24 08:59 UTC with $1,000,000 of paper cash. **Scaling quantities:** multiply by (your capital ÷ $1,018,570), then round to board lots (Tokyo 100 shares, Hong Kong/SMIC 500).
 
 <canvas id="navChart" height="90"></canvas>
 
@@ -27,7 +27,7 @@ Inception 2026-09-24 08:59 UTC with $1,000,000 of paper cash. **Scaling quantiti
 
 | Action | Name | Qty (shares) | Price (local) | Value (USD) | Status | Key drivers |
 |---|---|--:|--:|--:|---|---|
-| TRIM | **NVDA**<br><small>NVIDIA</small> | 80 | 229.34 USD | $18,347 | Queued · NYSE/Nasdaq closed | analyst α +0.23 · momentum -0.23 |
+| TRIM | **NVDA**<br><small>NVIDIA</small> | 80 | 229.32 USD | $18,346 | Queued · NYSE/Nasdaq closed | analyst α +0.23 · momentum -0.23 |
 | ADD | **KLAC**<br><small>KLA Corp</small> | 61 | 195.64 USD | $11,934 | Queued · NYSE/Nasdaq closed | quality +0.24 · trend -0.07 |
 
 </div>
@@ -49,7 +49,7 @@ Sorted by score. **Weight** = current → target share of NAV. **Key drivers** =
 | 🟢 Buy | +0.49 | **TSM**<br><small>TSMC</small> | 453.26 USD | +22% | -1.2% | +46% | +16% | 53 | +0.58 | 8.3% → 10.0% | – | quality +0.28 · momentum -0.12 |
 | 🟢 Buy | +0.46 | **ASX**<br><small>ASE Technology</small> | 46.43 USD | +10% | -2.2% | +239% | +48% | 62 | -0.68 | 6.9% → 7.7% | – | momentum +0.35 · quality -0.28 · ⚠️ rich valuation |
 | 🟢 Buy | +0.42 | **Infineon**<br><small>IFX.DE</small> | 58.70 EUR | +48% | +4.4% | +81% | +4% | 49 | -0.04 | 6.3% → 7.5% | – | analyst α +0.31 · trend -0.12 |
-| 🟢 Buy | +0.37 | **NVDA**<br><small>NVIDIA</small> | 229.34 USD | +43% | +3.2% | +14% | +14% | 53 | +0.47 | 8.4% → 6.5% | TRIM 80 | analyst α +0.23 · momentum -0.23 |
+| 🟢 Buy | +0.37 | **NVDA**<br><small>NVIDIA</small> | 229.32 USD | +43% | +3.2% | +14% | +14% | 53 | +0.47 | 8.4% → 6.5% | TRIM 80 | analyst α +0.23 · momentum -0.23 |
 | 🟢 Buy | +0.33 | **KLAC**<br><small>KLA Corp</small> | 195.64 USD | +19% | -1.9% | +72% | +9% | 55 | +0.51 | 4.2% → 5.4% | ADD 61 | quality +0.24 · trend -0.07 |
 | ⚪ Hold | +0.22 | **ASML**<br><small>ASML Holding</small> | 1,781.44 USD | +18% | -2.6% | +74% | +14% | 53 | +0.42 | 0.0% → 0.0% | – | quality +0.18 · analyst α -0.08 |
 | ⚪ Hold | +0.09 | **Tokyo Electron**<br><small>8035.T</small> | 12,430 JPY | +23% | -1.3% | +107% | +26% | 62 | -0.28 | 4.6% → 4.6% | – | quality -0.18 · trend +0.14 |
@@ -69,7 +69,7 @@ Sorted by score. **Weight** = current → target share of NAV. **Key drivers** =
 | 🔴🔴 Strong Sell | -0.85 | **ENTG**<br><small>Entegris</small> | 165.87 USD | +5% | -5.7% | +49% | +23% | 65 | -0.02 | 0.0% → 0.0% | – | analyst α -0.41 · trend +0.10 |
 | 🔴🔴 Strong Sell | -0.90 | **SMIC**<br><small>0981.HK</small> | 57.65 HKD | +67% | +10.7% | -15% | -17% | 34 | -0.99 | 0.0% → 0.0% | – | analyst α +0.55 · momentum -0.35 |
 | 🔴🔴 Strong Sell | -1.13 | **CDNS**<br><small>Cadence Design Systems</small> | 352.97 USD | +15% | -2.9% | -17% | +8% | 66 | +0.31 | 0.0% → 0.0% | – | momentum -0.41 · analyst α -0.19 |
-| 🔴🔴 Strong Sell | -1.14 | **AMD**<br><small>Advanced Micro Devices</small> | 608.09 USD | +2% | -7.4% | +122% | +57% | 57 | -0.15 | 0.0% → 0.0% | – | analyst α -0.85 · trend +0.25 |
+| 🔴🔴 Strong Sell | -1.14 | **AMD**<br><small>Advanced Micro Devices</small> | 608.12 USD | +2% | -7.4% | +122% | +57% | 57 | -0.15 | 0.0% → 0.0% | – | analyst α -0.85 · trend +0.25 |
 | 🔴🔴 Strong Sell | -1.19 | **ARM**<br><small>Arm Holdings</small> | 266.55 USD | +8% | -6.9% | +55% | +21% | 44 | +0.04 | 0.0% → 0.0% | – | analyst α -0.66 · trend +0.09 · ⚠️ rich valuation, high σ(e) |
 | 🔴🔴 Strong Sell | -1.39 | **SNPS**<br><small>Synopsys</small> | 509.95 USD | +12% | -3.7% | -18% | +14% | 75 | +0.14 | 0.0% → 0.0% | – | momentum -0.53 · analyst α -0.23 |
 
@@ -101,7 +101,7 @@ Click a name to expand the full reasoning behind its rating and quantity.
     Within rebalance band of target 7.5%: no trade. Analyst target 86.74 EUR vs 58.70 EUR (+48%, 23 analysts); de-biased α +4.4% vs CAPM hurdle 14.1%. Uptrend +4% vs 200-day avg; 12-1 mom +81%; RSI 49. Quality z -0.04 (ROE 6%).
 
 ??? success "NVDA (NVDA) — 🟢 Buy, score +0.37"
-    **TRIM 80 sh** → target 6.5% of NAV (sized ∝ score ÷ σ(e), cap 10%). Analyst target 327.70 USD vs 229.34 USD (+43%, 59 analysts); de-biased α +3.2% vs CAPM hurdle 13.9%. Uptrend +14% vs 200-day avg; 12-1 mom +14%; RSI 53. Quality z +0.47 (ROE 101%).
+    **TRIM 80 sh** → target 6.5% of NAV (sized ∝ score ÷ σ(e), cap 10%). Analyst target 327.70 USD vs 229.32 USD (+43%, 59 analysts); de-biased α +3.2% vs CAPM hurdle 13.9%. Uptrend +14% vs 200-day avg; 12-1 mom +14%; RSI 53. Quality z +0.47 (ROE 101%).
 
 ??? success "KLAC (KLAC) — 🟢 Buy, score +0.33"
     **ADD 61 sh** → target 5.4% of NAV (sized ∝ score ÷ σ(e), cap 10%). Analyst target 233.77 USD vs 195.64 USD (+19%, 26 analysts); de-biased α -1.9% vs CAPM hurdle 11.1%. Uptrend +9% vs 200-day avg; 12-1 mom +72%; RSI 55. Quality z +0.51 (ROE 87%).
@@ -161,7 +161,7 @@ Click a name to expand the full reasoning behind its rating and quantity.
     Avoid: not owned. Analyst target 405.47 USD vs 352.97 USD (+15%, 26 analysts); de-biased α -2.9% vs CAPM hurdle 10.0%. Uptrend +8% vs 200-day avg; 12-1 mom -17%; RSI 66. Quality z +0.31 (ROE 22%).
 
 ??? failure "AMD (AMD) — 🔴🔴 Strong Sell, score -1.14"
-    Avoid: not owned. Analyst target 619.51 USD vs 608.09 USD (+2%, 50 analysts); de-biased α -7.4% vs CAPM hurdle 14.9%. Uptrend +57% vs 200-day avg; 12-1 mom +122%; RSI 57. Quality z -0.15 (ROE 7%).
+    Avoid: not owned. Analyst target 619.51 USD vs 608.12 USD (+2%, 50 analysts); de-biased α -7.4% vs CAPM hurdle 14.9%. Uptrend +57% vs 200-day avg; 12-1 mom +122%; RSI 57. Quality z -0.15 (ROE 7%).
 
 ??? failure "ARM (ARM) — 🔴🔴 Strong Sell, score -1.19"
     Avoid: not owned. Analyst target 288.70 USD vs 266.55 USD (+8%, 40 analysts); de-biased α -6.9% vs CAPM hurdle 19.6%. Uptrend +21% vs 200-day avg; 12-1 mom +55%; RSI 44. Quality z +0.04 (ROE 12%). ⚠️ price implies 113% stage-1 growth (reverse DCF); high firm-specific risk σ(e) 78% → smaller size.
@@ -176,7 +176,7 @@ Click a name to expand the full reasoning behind its rating and quantity.
 | 005930.KS | Samsung Electronics | 485 | 264,000 KRW | $95,551 | 9.4% | Strong Buy |
 | MU | Micron Technology | 92 | 1,028.14 USD | $94,588 | 9.3% | Strong Buy |
 | 000660.KS | SK hynix | 74 | 1,699,000 KRW | $93,824 | 9.2% | Strong Buy |
-| NVDA | NVIDIA | 371 | 229.34 USD | $85,085 | 8.4% | Buy |
+| NVDA | NVIDIA | 371 | 229.32 USD | $85,078 | 8.4% | Buy |
 | TSM | TSMC | 187 | 453.26 USD | $84,760 | 8.3% | Buy |
 | AMAT | Applied Materials | 160 | 506.85 USD | $81,096 | 8.0% | Buy |
 | ASX | ASE Technology | 1,509 | 46.43 USD | $70,063 | 6.9% | Buy |
