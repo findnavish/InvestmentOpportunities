@@ -8,16 +8,16 @@ hide:
 !!! danger "Model output, not investment advice"
     These are **rule-based signals for a paper (simulated) portfolio**, generated automatically from public, possibly delayed data. They do not account for your objectives, taxes, liquidity or risk tolerance, and they can be wrong. Nothing here is a recommendation to buy or sell securities. Consult a licensed adviser before investing.
 
-**Last updated:** 2026-10-16 17:25 UTC (Fri Oct 16, 01:25 PM ET) · refreshes hourly · weekly model inputs as of 2026-10-02
-**Markets:** NYSE/Nasdaq 🟢 open (Fri 13:25) · Tokyo 🔴 closed (Sat 02:25) · Korea 🔴 closed (Sat 02:25) · Hong Kong 🔴 closed (Sat 01:25) · Xetra 🔴 closed (Fri 19:25) · Euronext Amsterdam 🔴 closed (Fri 19:25)
+**Last updated:** 2026-10-16 21:10 UTC (Fri Oct 16, 05:10 PM ET) · refreshes hourly · weekly model inputs as of 2026-10-02
+**Markets:** NYSE/Nasdaq 🔴 closed (Fri 17:10) · Tokyo 🔴 closed (Sat 06:10) · Korea 🔴 closed (Sat 06:10) · Hong Kong 🔴 closed (Sat 05:10) · Xetra 🔴 closed (Fri 23:10) · Euronext Amsterdam 🔴 closed (Fri 23:10)
 
 ## Portfolio snapshot
 
 | NAV | Cash | Invested | Return since inception | SOXX since inception | Regime (SOXX vs 200-day) | Equity budget |
 |---|---|---|---|---|---|---|
-| **$902,568** | $92,397 (10%) | $810,171 (90%) | -9.74% | -11.72% | 🟢 Risk-on (+6.8%) | 90% |
+| **$897,590** | $92,397 (10%) | $805,194 (90%) | -10.24% | -12.80% | 🟢 Risk-on (+5.5%) | 90% |
 
-Inception 2026-09-24 08:59 UTC with $1,000,000 of paper cash. **Scaling quantities:** multiply by (your capital ÷ $902,568), then round to board lots (Tokyo 100 shares, Hong Kong/SMIC 500).
+Inception 2026-09-24 08:59 UTC with $1,000,000 of paper cash. **Scaling quantities:** multiply by (your capital ÷ $897,590), then round to board lots (Tokyo 100 shares, Hong Kong/SMIC 500).
 
 <canvas id="navChart" height="90"></canvas>
 
@@ -27,9 +27,9 @@ Inception 2026-09-24 08:59 UTC with $1,000,000 of paper cash. **Scaling quantiti
 
 | Action | Name | Qty (shares) | Price (local) | Value (USD) | Status | Key drivers |
 |---|---|--:|--:|--:|---|---|
-| ADD | **ASX**<br><small>ASE Technology</small> | 558 | 39.86 USD | $22,242 | Executed (paper) | momentum +0.35 · quality -0.28 · ⚠️ rich valuation |
-| TRIM | **TSM**<br><small>TSMC</small> | 45 | 412.92 USD | $18,582 | Executed (paper) | quality +0.28 · momentum -0.12 |
-| TRIM | **Tokyo Electron**<br><small>8035.T</small> | 100 | 10,570 JPY | $6,685 | Queued · Tokyo closed | quality -0.18 · momentum +0.12 |
+| BUY (new) | **MRVL**<br><small>Marvell Technology</small> | 97 | 227.76 USD | $22,093 | Queued · NYSE/Nasdaq closed | analyst α -0.27 · trend +0.25 · ⚠️ rich valuation |
+| TRIM | **AMAT**<br><small>Applied Materials</small> | 27 | 409.29 USD | $11,051 | Queued · NYSE/Nasdaq closed | analyst α +0.23 · trend -0.09 · ⚠️ oversold |
+| TRIM | **TSM**<br><small>TSMC</small> | 26 | 412.51 USD | $10,725 | Queued · NYSE/Nasdaq closed | quality +0.28 · momentum -0.12 |
 
 </div>
 
@@ -43,36 +43,36 @@ Sorted by score. **Weight** = current → target share of NAV. **Key drivers** =
 
 | Rating | Score | Name | Price | Analyst upside | De-biased α | 12-1 mom | vs 200DMA | RSI | Quality z | Weight | Order | Key drivers |
 |---|--:|---|--:|--:|--:|--:|--:|--:|--:|--:|---|---|
-| 🟢🟢 Strong Buy | +3.28 | **SK hynix**<br><small>000660.KS</small> | 1,284,000 KRW | +145% | +24.0% | +421% | -12% | 27 | +0.62 | 10.4% → 10.0% | – | analyst α +0.85 · momentum +0.53 · ⚠️ oversold, cycle-peak P/E, high σ(e) |
-| 🟢🟢 Strong Buy | +2.24 | **MU**<br><small>Micron Technology</small> | 892.14 USD | +70% | +5.5% | +410% | +24% | 35 | +0.12 | 9.1% → 10.0% | – | analyst α +0.41 · momentum +0.41 · ⚠️ cycle-peak P/E |
-| 🟢🟢 Strong Buy | +1.50 | **Samsung**<br><small>005930.KS</small> | 217,500 KRW | +120% | +18.6% | +211% | -6% | 33 | -0.26 | 8.8% → 10.0% | – | analyst α +0.66 · momentum +0.30 · ⚠️ cycle-peak P/E |
-| 🟢 Buy | +0.59 | **NVDA**<br><small>NVIDIA</small> | 215.29 USD | +52% | +1.0% | +22% | +6% | 39 | +0.47 | 8.8% → 9.1% | – | quality +0.21 · momentum -0.17 |
-| 🟢 Buy | +0.55 | **ASX**<br><small>ASE Technology</small> | 39.86 USD | +28% | -2.2% | +239% | +25% | 39 | -0.68 | 7.9% → 7.9% | ADD 558 | momentum +0.35 · quality -0.28 · ⚠️ rich valuation |
-| 🟢 Buy | +0.53 | **Infineon**<br><small>IFX.DE</small> | 52.35 EUR | +66% | +4.5% | +69% | -7% | 36 | -0.04 | 8.5% → 8.2% | – | analyst α +0.36 · trend -0.12 |
-| 🟢 Buy | +0.53 | **AMAT**<br><small>Applied Materials</small> | 416.08 USD | +54% | +2.0% | +84% | -5% | 30 | +0.03 | 7.2% → 7.0% | – | analyst α +0.23 · momentum +0.07 |
-| 🟢 Buy | +0.35 | **TSM**<br><small>TSMC</small> | 412.92 USD | +34% | -2.7% | +43% | +5% | 34 | +0.58 | 6.5% → 6.5% | TRIM 45 | quality +0.28 · momentum -0.12 |
-| 🟢 Buy | +0.35 | **KLAC**<br><small>KLA Corp</small> | 169.06 USD | +38% | -1.7% | +56% | -6% | 33 | +0.51 | 5.2% → 4.9% | – | quality +0.24 · trend -0.10 |
-| 🟢 Buy | +0.26 | **Tokyo Electron**<br><small>8035.T</small> | 10,570 JPY | +45% | -0.4% | +101% | +7% | 43 | -0.28 | 4.4% → 3.5% | TRIM 100 | quality -0.18 · momentum +0.12 |
-| ⚪ Hold | +0.20 | **LRCX**<br><small>Lam Research</small> | 267.39 USD | +40% | -1.6% | +87% | -5% | 31 | +0.02 | 0.0% → 0.0% | – | momentum +0.10 · analyst α +0.05 |
-| ⚪ Hold | +0.17 | **MRVL**<br><small>Marvell Technology</small> | 231.33 USD | +27% | -5.3% | +171% | +32% | 39 | -0.12 | 0.0% → 0.0% | – | analyst α -0.31 · trend +0.25 · ⚠️ rich valuation |
-| ⚪ Hold | +0.11 | **ASML**<br><small>ASML Holding</small> | 1,657.46 USD | +27% | -4.9% | +62% | +5% | 39 | +0.42 | 5.5% → 5.5% | – | analyst α -0.23 · quality +0.18 |
-| ⚪ Hold | +0.09 | **Advantest**<br><small>6857.T</small> | 34,480 JPY | +24% | -5.9% | +116% | +22% | 44 | +0.33 | 2.4% → 2.4% | – | analyst α -0.41 · quality +0.16 · ⚠️ rich valuation |
-| ⚪ Hold | -0.10 | **AVGO**<br><small>Broadcom</small> | 332.11 USD | +60% | +3.8% | -1% | -10% | 36 | +0.26 | 4.9% → 4.9% | – | momentum -0.30 · analyst α +0.27 |
-| ⚪ Hold | -0.18 | **ASMI**<br><small>ASM.AS</small> | 758.60 EUR | +49% | +0.4% | +45% | -6% | 33 | -0.10 | 0.0% → 0.0% | – | analyst α +0.12 · momentum -0.07 |
-| ⚪ Hold | -0.24 | **TER**<br><small>Teradyne</small> | 333.90 USD | +34% | -3.2% | +151% | -3% | 35 | -0.31 | 0.0% → 0.0% | – | quality -0.21 · momentum +0.20 |
-| 🔴 Sell | -0.28 | **INTC**<br><small>Intel</small> | 90.70 USD | +28% | -5.0% | +193% | +7% | 32 | -0.62 | 0.0% → 0.0% | – | analyst α -0.27 · momentum +0.26 · ⚠️ rich valuation, high σ(e) |
-| 🔴 Sell | -0.30 | **GFS**<br><small>GlobalFoundries</small> | 46.96 USD | +62% | +3.8% | +31% | -14% | 46 | -0.21 | 0.0% → 0.0% | – | analyst α +0.31 · trend -0.18 |
-| 🔴 Sell | -0.49 | **Disco**<br><small>6146.T</small> | 53,760 JPY | +52% | +1.8% | +14% | -18% | 41 | +0.06 | 0.0% → 0.0% | – | momentum -0.26 · trend -0.21 |
-| 🔴 Sell | -0.56 | **AMD**<br><small>Advanced Micro Devices</small> | 533.30 USD | +16% | -8.2% | +128% | +35% | 39 | -0.15 | 0.0% → 0.0% | – | analyst α -0.66 · trend +0.32 |
-| 🔴 Sell | -0.63 | **TXN**<br><small>Texas Instruments</small> | 280.49 USD | +16% | -6.9% | +51% | +11% | 51 | +0.24 | 0.0% → 0.0% | – | analyst α -0.48 · trend +0.14 |
-| 🔴 Sell | -0.63 | **AMKR**<br><small>Amkor Technology</small> | 42.76 USD | +79% | +7.8% | +54% | -26% | 31 | -1.00 | 0.0% → 0.0% | – | analyst α +0.48 · quality -0.43 |
-| 🔴🔴 Strong Sell | -0.92 | **CDNS**<br><small>Cadence Design Systems</small> | 317.42 USD | +28% | -4.1% | -13% | -3% | 43 | +0.31 | 0.0% → 0.0% | – | momentum -0.41 · analyst α -0.15 |
-| 🔴🔴 Strong Sell | -0.95 | **ENTG**<br><small>Entegris</small> | 141.31 USD | +23% | -5.6% | +43% | +4% | 40 | -0.02 | 0.0% → 0.0% | – | analyst α -0.36 · momentum -0.10 |
-| 🔴🔴 Strong Sell | -0.95 | **SNPS**<br><small>Synopsys</small> | 450.27 USD | +27% | -4.5% | -13% | +1% | 48 | +0.14 | 0.0% → 0.0% | – | momentum -0.35 · analyst α -0.19 |
-| 🔴🔴 Strong Sell | -0.97 | **Shin-Etsu**<br><small>4063.T</small> | 6,002 JPY | +29% | -3.5% | +20% | -4% | 49 | -0.20 | 0.0% → 0.0% | – | momentum -0.20 · analyst α -0.12 |
-| 🔴🔴 Strong Sell | -1.09 | **ARM**<br><small>Arm Holdings</small> | 232.51 USD | +24% | -7.4% | +55% | +4% | 36 | +0.04 | 0.0% → 0.0% | – | analyst α -0.55 · quality +0.03 · ⚠️ rich valuation, high σ(e) |
-| 🔴🔴 Strong Sell | -1.17 | **SMIC**<br><small>0981.HK</small> | 52.40 HKD | +83% | +10.4% | -29% | -24% | 25 | -0.99 | 0.0% → 0.0% | – | analyst α +0.55 · momentum -0.53 · ⚠️ oversold |
-| 🔴🔴 Strong Sell | -1.28 | **QCOM**<br><small>Qualcomm</small> | 175.52 USD | +11% | -8.4% | +18% | +4% | 46 | +0.70 | 0.0% → 0.0% | – | analyst α -0.85 · quality +0.43 |
+| 🟢🟢 Strong Buy | +3.02 | **SK hynix**<br><small>000660.KS</small> | 1,284,000 KRW | +145% | +23.7% | +390% | -12% | 27 | +0.62 | 10.5% → 10.0% | – | analyst α +0.85 · momentum +0.41 · ⚠️ oversold, cycle-peak P/E, high σ(e) |
+| 🟢🟢 Strong Buy | +2.50 | **MU**<br><small>Micron Technology</small> | 878.67 USD | +73% | +5.9% | +410% | +22% | 34 | +0.12 | 9.0% → 10.0% | – | momentum +0.53 · analyst α +0.41 · ⚠️ cycle-peak P/E |
+| 🟢🟢 Strong Buy | +1.53 | **Samsung**<br><small>005930.KS</small> | 217,500 KRW | +120% | +18.3% | +199% | -6% | 33 | -0.26 | 8.8% → 10.0% | – | analyst α +0.66 · momentum +0.30 · ⚠️ cycle-peak P/E |
+| 🟢 Buy | +0.59 | **NVDA**<br><small>NVIDIA</small> | 214.13 USD | +53% | +0.9% | +22% | +6% | 38 | +0.47 | 8.9% → 8.5% | – | quality +0.21 · momentum -0.17 |
+| 🟢 Buy | +0.57 | **Infineon**<br><small>IFX.DE</small> | 52.35 EUR | +66% | +4.2% | +69% | -7% | 36 | -0.04 | 8.5% → 8.1% | – | analyst α +0.36 · trend -0.10 |
+| 🟢 Buy | +0.55 | **ASX**<br><small>ASE Technology</small> | 39.53 USD | +29% | -2.2% | +239% | +24% | 39 | -0.68 | 7.9% → 7.4% | – | momentum +0.35 · quality -0.28 · ⚠️ rich valuation |
+| 🟢 Buy | +0.48 | **AMAT**<br><small>Applied Materials</small> | 409.29 USD | +56% | +2.4% | +84% | -7% | 29 | +0.03 | 7.1% → 5.8% | TRIM 27 | analyst α +0.23 · trend -0.09 · ⚠️ oversold |
+| 🟢 Buy | +0.38 | **KLAC**<br><small>KLA Corp</small> | 165.75 USD | +41% | -1.3% | +56% | -8% | 31 | +0.51 | 5.2% → 5.1% | – | quality +0.24 · trend -0.12 |
+| 🟢 Buy | +0.30 | **TSM**<br><small>TSMC</small> | 412.51 USD | +34% | -2.9% | +43% | +5% | 34 | +0.58 | 6.5% → 5.3% | TRIM 26 | quality +0.28 · momentum -0.12 |
+| 🟢 Buy | +0.26 | **MRVL**<br><small>Marvell Technology</small> | 227.76 USD | +29% | -5.1% | +171% | +30% | 38 | -0.12 | 0.0% → 2.5% | BUY 97 | analyst α -0.27 · trend +0.25 · ⚠️ rich valuation |
+| ⚪ Hold | +0.25 | **Tokyo Electron**<br><small>8035.T</small> | 10,570 JPY | +45% | -0.7% | +85% | +6% | 43 | -0.28 | 4.5% → 4.5% | – | quality -0.18 · trend +0.12 |
+| ⚪ Hold | +0.17 | **ASML**<br><small>ASML Holding</small> | 1,641.20 USD | +28% | -4.9% | +62% | +4% | 38 | +0.42 | 5.5% → 5.5% | – | analyst α -0.19 · quality +0.18 |
+| ⚪ Hold | +0.15 | **LRCX**<br><small>Lam Research</small> | 263.87 USD | +42% | -1.4% | +87% | -6% | 30 | +0.02 | 0.0% → 0.0% | – | momentum +0.12 · trend -0.06 |
+| ⚪ Hold | +0.09 | **Advantest**<br><small>6857.T</small> | 34,480 JPY | +24% | -6.2% | +107% | +22% | 44 | +0.33 | 2.4% → 2.4% | – | analyst α -0.41 · quality +0.16 · ⚠️ rich valuation |
+| ⚪ Hold | -0.01 | **AVGO**<br><small>Broadcom</small> | 328.81 USD | +62% | +3.9% | -1% | -10% | 35 | +0.26 | 4.9% → 4.9% | – | analyst α +0.31 · momentum -0.30 |
+| ⚪ Hold | -0.13 | **ASMI**<br><small>ASM.AS</small> | 758.60 EUR | +49% | +0.1% | +45% | -6% | 33 | -0.10 | 0.0% → 0.0% | – | analyst α +0.12 · momentum -0.07 |
+| ⚪ Hold | -0.20 | **TER**<br><small>Teradyne</small> | 325.04 USD | +37% | -2.6% | +151% | -6% | 33 | -0.31 | 0.0% → 0.0% | – | quality -0.21 · momentum +0.20 |
+| ⚪ Hold | -0.23 | **INTC**<br><small>Intel</small> | 89.76 USD | +30% | -5.0% | +193% | +6% | 31 | -0.62 | 0.0% → 0.0% | – | momentum +0.26 · quality -0.24 · ⚠️ rich valuation, high σ(e) |
+| 🔴 Sell | -0.39 | **GFS**<br><small>GlobalFoundries</small> | 46.71 USD | +63% | +3.8% | +31% | -15% | 46 | -0.21 | 0.0% → 0.0% | – | analyst α +0.27 · trend -0.18 |
+| 🔴 Sell | -0.49 | **Disco**<br><small>6146.T</small> | 53,760 JPY | +52% | +1.5% | +1% | -18% | 41 | +0.06 | 0.0% → 0.0% | – | momentum -0.26 · trend -0.21 |
+| 🔴 Sell | -0.63 | **TXN**<br><small>Texas Instruments</small> | 276.55 USD | +17% | -6.7% | +51% | +9% | 48 | +0.24 | 0.0% → 0.0% | – | analyst α -0.48 · trend +0.14 |
+| 🔴 Sell | -0.63 | **AMKR**<br><small>Amkor Technology</small> | 41.83 USD | +83% | +8.5% | +54% | -27% | 30 | -1.00 | 0.0% → 0.0% | – | analyst α +0.48 · quality -0.43 · ⚠️ oversold |
+| 🔴🔴 Strong Sell | -0.87 | **QCOM**<br><small>Qualcomm</small> | 172.04 USD | +13% | -8.1% | +18% | +2% | 43 | +0.70 | 0.0% → 0.0% | – | analyst α -0.66 · quality +0.43 |
+| 🔴🔴 Strong Sell | -0.92 | **CDNS**<br><small>Cadence Design Systems</small> | 319.62 USD | +27% | -4.6% | -13% | -2% | 44 | +0.31 | 0.0% → 0.0% | – | momentum -0.41 · analyst α -0.15 |
+| 🔴🔴 Strong Sell | -0.94 | **Shin-Etsu**<br><small>4063.T</small> | 6,002 JPY | +29% | -3.8% | +19% | -4% | 49 | -0.20 | 0.0% → 0.0% | – | momentum -0.20 · analyst α -0.12 |
+| 🔴🔴 Strong Sell | -0.95 | **ENTG**<br><small>Entegris</small> | 138.68 USD | +25% | -5.3% | +43% | +2% | 38 | -0.02 | 0.0% → 0.0% | – | analyst α -0.36 · momentum -0.10 |
+| 🔴🔴 Strong Sell | -0.97 | **AMD**<br><small>Advanced Micro Devices</small> | 528.75 USD | +17% | -8.3% | +128% | +34% | 38 | -0.15 | 0.0% → 0.0% | – | analyst α -0.85 · trend +0.32 |
+| 🔴🔴 Strong Sell | -1.12 | **ARM**<br><small>Arm Holdings</small> | 227.75 USD | +27% | -7.1% | +55% | +2% | 34 | +0.04 | 0.0% → 0.0% | – | analyst α -0.55 · quality +0.03 · ⚠️ rich valuation, high σ(e) |
+| 🔴🔴 Strong Sell | -1.17 | **SMIC**<br><small>0981.HK</small> | 52.40 HKD | +83% | +10.1% | -29% | -24% | 25 | -0.99 | 0.0% → 0.0% | – | analyst α +0.55 · momentum -0.53 · ⚠️ oversold |
+| 🔴🔴 Strong Sell | -1.19 | **SNPS**<br><small>Synopsys</small> | 454.79 USD | +25% | -5.1% | -13% | +2% | 50 | +0.14 | 0.0% → 0.0% | – | momentum -0.35 · analyst α -0.31 |
 
 </div>
 
@@ -80,113 +80,113 @@ Sorted by score. **Weight** = current → target share of NAV. **Key drivers** =
 
 Click a name to expand the full reasoning behind its rating and quantity.
 
-??? success "SK hynix (000660.KS) — 🟢🟢 Strong Buy, score +3.28"
-    Within rebalance band of target 10.0%: no trade. Analyst target 3,141,025 KRW vs 1,284,000 KRW (+145%, 38 analysts); de-biased α +24.0% vs CAPM hurdle 14.3%. Downtrend -12% vs 200-day avg; 12-1 mom +421%; RSI 27. Quality z +0.62 (ROE 44%). ⚠️ oversold; cyclical-peak risk: fwd P/E 3.9 (ch.17-18); high firm-specific risk σ(e) 60% → smaller size.
+??? success "SK hynix (000660.KS) — 🟢🟢 Strong Buy, score +3.02"
+    Within rebalance band of target 10.0%: no trade. Analyst target 3,141,025 KRW vs 1,284,000 KRW (+145%, 38 analysts); de-biased α +23.7% vs CAPM hurdle 14.3%. Downtrend -12% vs 200-day avg; 12-1 mom +390%; RSI 27. Quality z +0.62 (ROE 44%). ⚠️ oversold; cyclical-peak risk: fwd P/E 3.9 (ch.17-18); high firm-specific risk σ(e) 60% → smaller size.
 
-??? success "MU (MU) — 🟢🟢 Strong Buy, score +2.24"
-    Within rebalance band of target 10.0%: no trade. Analyst target 1,520.02 USD vs 892.14 USD (+70%, 46 analysts); de-biased α +5.5% vs CAPM hurdle 14.0%. Uptrend +24% vs 200-day avg; 12-1 mom +410%; RSI 35. Quality z +0.12 (ROE 17%). ⚠️ cyclical-peak risk: fwd P/E 5.2 (ch.17-18).
+??? success "MU (MU) — 🟢🟢 Strong Buy, score +2.50"
+    Within rebalance band of target 10.0%: no trade. Analyst target 1,520.02 USD vs 878.67 USD (+73%, 46 analysts); de-biased α +5.9% vs CAPM hurdle 14.0%. Uptrend +22% vs 200-day avg; 12-1 mom +410%; RSI 34. Quality z +0.12 (ROE 17%). ⚠️ cyclical-peak risk: fwd P/E 5.2 (ch.17-18).
 
-??? success "Samsung (005930.KS) — 🟢🟢 Strong Buy, score +1.50"
-    Within rebalance band of target 10.0%: no trade. Analyst target 477,517 KRW vs 217,500 KRW (+120%, 36 analysts); de-biased α +18.6% vs CAPM hurdle 11.3%. Downtrend -6% vs 200-day avg; 12-1 mom +211%; RSI 33. Quality z -0.26 (ROE 11%). ⚠️ cyclical-peak risk: fwd P/E 3.9 (ch.17-18).
+??? success "Samsung (005930.KS) — 🟢🟢 Strong Buy, score +1.53"
+    Within rebalance band of target 10.0%: no trade. Analyst target 477,517 KRW vs 217,500 KRW (+120%, 36 analysts); de-biased α +18.3% vs CAPM hurdle 11.3%. Downtrend -6% vs 200-day avg; 12-1 mom +199%; RSI 33. Quality z -0.26 (ROE 11%). ⚠️ cyclical-peak risk: fwd P/E 3.9 (ch.17-18).
 
 ??? success "NVDA (NVDA) — 🟢 Buy, score +0.59"
-    Within rebalance band of target 9.1%: no trade. Analyst target 327.70 USD vs 215.29 USD (+52%, 59 analysts); de-biased α +1.0% vs CAPM hurdle 13.9%. Uptrend +6% vs 200-day avg; 12-1 mom +22%; RSI 39. Quality z +0.47 (ROE 101%).
+    Within rebalance band of target 8.5%: no trade. Analyst target 327.70 USD vs 214.13 USD (+53%, 59 analysts); de-biased α +0.9% vs CAPM hurdle 13.9%. Uptrend +6% vs 200-day avg; 12-1 mom +22%; RSI 38. Quality z +0.47 (ROE 101%).
+
+??? success "Infineon (IFX.DE) — 🟢 Buy, score +0.57"
+    Within rebalance band of target 8.1%: no trade. Analyst target 86.74 EUR vs 52.35 EUR (+66%, 23 analysts); de-biased α +4.2% vs CAPM hurdle 14.1%. Downtrend -7% vs 200-day avg; 12-1 mom +69%; RSI 36. Quality z -0.04 (ROE 6%).
 
 ??? success "ASX (ASX) — 🟢 Buy, score +0.55"
-    **ADD 558 sh** → target 7.9% of NAV (sized ∝ score ÷ σ(e), cap 10%). Analyst target 51.00 USD vs 39.86 USD (+28%, 1 analysts); de-biased α -2.2% vs CAPM hurdle 11.9%. Uptrend +25% vs 200-day avg; 12-1 mom +239%; RSI 39. Quality z -0.68 (ROE 12%). ⚠️ price implies 69% stage-1 growth (reverse DCF).
+    Within rebalance band of target 7.4%: no trade. Analyst target 51.00 USD vs 39.53 USD (+29%, 1 analysts); de-biased α -2.2% vs CAPM hurdle 11.9%. Uptrend +24% vs 200-day avg; 12-1 mom +239%; RSI 39. Quality z -0.68 (ROE 12%). ⚠️ price implies 69% stage-1 growth (reverse DCF).
 
-??? success "Infineon (IFX.DE) — 🟢 Buy, score +0.53"
-    Within rebalance band of target 8.2%: no trade. Analyst target 86.74 EUR vs 52.35 EUR (+66%, 23 analysts); de-biased α +4.5% vs CAPM hurdle 14.1%. Downtrend -7% vs 200-day avg; 12-1 mom +69%; RSI 36. Quality z -0.04 (ROE 6%).
+??? success "AMAT (AMAT) — 🟢 Buy, score +0.48"
+    **TRIM 27 sh** → target 5.8% of NAV (sized ∝ score ÷ σ(e), cap 10%). Analyst target 638.94 USD vs 409.29 USD (+56%, 36 analysts); de-biased α +2.4% vs CAPM hurdle 11.6%. Downtrend -7% vs 200-day avg; 12-1 mom +84%; RSI 29. Quality z +0.03 (ROE 36%). ⚠️ oversold.
 
-??? success "AMAT (AMAT) — 🟢 Buy, score +0.53"
-    Within rebalance band of target 7.0%: no trade. Analyst target 638.94 USD vs 416.08 USD (+54%, 36 analysts); de-biased α +2.0% vs CAPM hurdle 11.6%. Downtrend -5% vs 200-day avg; 12-1 mom +84%; RSI 30. Quality z +0.03 (ROE 36%).
+??? success "KLAC (KLAC) — 🟢 Buy, score +0.38"
+    Within rebalance band of target 5.1%: no trade. Analyst target 233.77 USD vs 165.75 USD (+41%, 26 analysts); de-biased α -1.3% vs CAPM hurdle 11.1%. Downtrend -8% vs 200-day avg; 12-1 mom +56%; RSI 31. Quality z +0.51 (ROE 87%).
 
-??? success "TSM (TSM) — 🟢 Buy, score +0.35"
-    **TRIM 45 sh** → target 6.5% of NAV (sized ∝ score ÷ σ(e), cap 10%). Analyst target 552.26 USD vs 412.92 USD (+34%, 20 analysts); de-biased α -2.7% vs CAPM hurdle 10.8%. Uptrend +5% vs 200-day avg; 12-1 mom +43%; RSI 34. Quality z +0.58 (ROE 35%).
+??? success "TSM (TSM) — 🟢 Buy, score +0.30"
+    **TRIM 26 sh** → target 5.3% of NAV (sized ∝ score ÷ σ(e), cap 10%). Analyst target 552.26 USD vs 412.51 USD (+34%, 20 analysts); de-biased α -2.9% vs CAPM hurdle 10.8%. Uptrend +5% vs 200-day avg; 12-1 mom +43%; RSI 34. Quality z +0.58 (ROE 35%).
 
-??? success "KLAC (KLAC) — 🟢 Buy, score +0.35"
-    Within rebalance band of target 4.9%: no trade. Analyst target 233.77 USD vs 169.06 USD (+38%, 26 analysts); de-biased α -1.7% vs CAPM hurdle 11.1%. Downtrend -6% vs 200-day avg; 12-1 mom +56%; RSI 33. Quality z +0.51 (ROE 87%).
+??? success "MRVL (MRVL) — 🟢 Buy, score +0.26"
+    **BUY (new) 97 sh** → target 2.5% of NAV (sized ∝ score ÷ σ(e), cap 10%). Analyst target 293.88 USD vs 227.76 USD (+29%, 43 analysts); de-biased α -5.1% vs CAPM hurdle 14.1%. Uptrend +30% vs 200-day avg; 12-1 mom +171%; RSI 38. Quality z -0.12 (ROE 19%). ⚠️ price implies 78% stage-1 growth (reverse DCF).
 
-??? success "Tokyo Electron (8035.T) — 🟢 Buy, score +0.26"
-    **TRIM 100 sh** → target 3.5% of NAV (sized ∝ score ÷ σ(e), cap 10%). Analyst target 15,275 JPY vs 10,570 JPY (+45%, 23 analysts); de-biased α -0.4% vs CAPM hurdle 12.8%. Uptrend +7% vs 200-day avg; 12-1 mom +101%; RSI 43. Quality z -0.28 (ROE 29%).
+??? note "Tokyo Electron (8035.T) — ⚪ Hold, score +0.25"
+    Hold zone: keep any existing position, no new money. Analyst target 15,275 JPY vs 10,570 JPY (+45%, 23 analysts); de-biased α -0.7% vs CAPM hurdle 12.8%. Uptrend +6% vs 200-day avg; 12-1 mom +85%; RSI 43. Quality z -0.28 (ROE 29%).
 
-??? note "LRCX (LRCX) — ⚪ Hold, score +0.20"
-    Hold zone: not owned, no entry. Analyst target 375.06 USD vs 267.39 USD (+40%, 31 analysts); de-biased α -1.6% vs CAPM hurdle 12.6%. Downtrend -5% vs 200-day avg; 12-1 mom +87%; RSI 31. Quality z +0.02 (ROE 65%).
+??? note "ASML (ASML) — ⚪ Hold, score +0.17"
+    Hold zone: keep any existing position, no new money. Analyst target 2,096.77 USD vs 1,641.20 USD (+28%, 16 analysts); de-biased α -4.9% vs CAPM hurdle 12.3%. Uptrend +4% vs 200-day avg; 12-1 mom +62%; RSI 38. Quality z +0.42 (ROE 50%).
 
-??? note "MRVL (MRVL) — ⚪ Hold, score +0.17"
-    Hold zone: not owned, no entry. Analyst target 293.88 USD vs 231.33 USD (+27%, 43 analysts); de-biased α -5.3% vs CAPM hurdle 14.1%. Uptrend +32% vs 200-day avg; 12-1 mom +171%; RSI 39. Quality z -0.12 (ROE 19%). ⚠️ price implies 78% stage-1 growth (reverse DCF).
-
-??? note "ASML (ASML) — ⚪ Hold, score +0.11"
-    Hold zone: keep any existing position, no new money. Analyst target 2,096.77 USD vs 1,657.46 USD (+27%, 16 analysts); de-biased α -4.9% vs CAPM hurdle 12.3%. Uptrend +5% vs 200-day avg; 12-1 mom +62%; RSI 39. Quality z +0.42 (ROE 50%).
+??? note "LRCX (LRCX) — ⚪ Hold, score +0.15"
+    Hold zone: not owned, no entry. Analyst target 375.06 USD vs 263.87 USD (+42%, 31 analysts); de-biased α -1.4% vs CAPM hurdle 12.6%. Downtrend -6% vs 200-day avg; 12-1 mom +87%; RSI 30. Quality z +0.02 (ROE 65%).
 
 ??? note "Advantest (6857.T) — ⚪ Hold, score +0.09"
-    Hold zone: keep any existing position, no new money. Analyst target 42,686 JPY vs 34,480 JPY (+24%, 21 analysts); de-biased α -5.9% vs CAPM hurdle 13.4%. Uptrend +22% vs 200-day avg; 12-1 mom +116%; RSI 44. Quality z +0.33 (ROE 58%). ⚠️ price implies 82% stage-1 growth (reverse DCF).
+    Hold zone: keep any existing position, no new money. Analyst target 42,686 JPY vs 34,480 JPY (+24%, 21 analysts); de-biased α -6.2% vs CAPM hurdle 13.4%. Uptrend +22% vs 200-day avg; 12-1 mom +107%; RSI 44. Quality z +0.33 (ROE 58%). ⚠️ price implies 82% stage-1 growth (reverse DCF).
 
-??? note "AVGO (AVGO) — ⚪ Hold, score -0.10"
-    Hold zone: keep any existing position, no new money. Analyst target 531.31 USD vs 332.11 USD (+60%, 47 analysts); de-biased α +3.8% vs CAPM hurdle 11.2%. Downtrend -10% vs 200-day avg; 12-1 mom -1%; RSI 36. Quality z +0.26 (ROE 31%).
+??? note "AVGO (AVGO) — ⚪ Hold, score -0.01"
+    Hold zone: keep any existing position, no new money. Analyst target 531.31 USD vs 328.81 USD (+62%, 47 analysts); de-biased α +3.9% vs CAPM hurdle 11.2%. Downtrend -10% vs 200-day avg; 12-1 mom -1%; RSI 35. Quality z +0.26 (ROE 31%).
 
-??? note "ASMI (ASM.AS) — ⚪ Hold, score -0.18"
-    Hold zone: not owned, no entry. Analyst target 1,128.53 EUR vs 758.60 EUR (+49%, 19 analysts); de-biased α +0.4% vs CAPM hurdle 13.2%. Downtrend -6% vs 200-day avg; 12-1 mom +45%; RSI 33. Quality z -0.10 (ROE 19%).
+??? note "ASMI (ASM.AS) — ⚪ Hold, score -0.13"
+    Hold zone: not owned, no entry. Analyst target 1,128.53 EUR vs 758.60 EUR (+49%, 19 analysts); de-biased α +0.1% vs CAPM hurdle 13.2%. Downtrend -6% vs 200-day avg; 12-1 mom +45%; RSI 33. Quality z -0.10 (ROE 19%).
 
-??? note "TER (TER) — ⚪ Hold, score -0.24"
-    Hold zone: not owned, no entry. Analyst target 446.47 USD vs 333.90 USD (+34%, 15 analysts); de-biased α -3.2% vs CAPM hurdle 12.3%. Downtrend -3% vs 200-day avg; 12-1 mom +151%; RSI 35. Quality z -0.31 (ROE 20%).
+??? note "TER (TER) — ⚪ Hold, score -0.20"
+    Hold zone: not owned, no entry. Analyst target 446.47 USD vs 325.04 USD (+37%, 15 analysts); de-biased α -2.6% vs CAPM hurdle 12.3%. Downtrend -6% vs 200-day avg; 12-1 mom +151%; RSI 33. Quality z -0.31 (ROE 20%).
 
-??? failure "INTC (INTC) — 🔴 Sell, score -0.28"
-    Avoid: not owned. Analyst target 116.37 USD vs 90.70 USD (+28%, 43 analysts); de-biased α -5.0% vs CAPM hurdle 14.0%. Uptrend +7% vs 200-day avg; 12-1 mom +193%; RSI 32. Quality z -0.62 (ROE -0%). ⚠️ price implies 86% stage-1 growth (reverse DCF); high firm-specific risk σ(e) 63% → smaller size.
+??? note "INTC (INTC) — ⚪ Hold, score -0.23"
+    Hold zone: not owned, no entry. Analyst target 116.37 USD vs 89.76 USD (+30%, 43 analysts); de-biased α -5.0% vs CAPM hurdle 14.0%. Uptrend +6% vs 200-day avg; 12-1 mom +193%; RSI 31. Quality z -0.62 (ROE -0%). ⚠️ price implies 86% stage-1 growth (reverse DCF); high firm-specific risk σ(e) 63% → smaller size.
 
-??? failure "GFS (GFS) — 🔴 Sell, score -0.30"
-    Avoid: not owned. Analyst target 76.00 USD vs 46.96 USD (+62%, 22 analysts); de-biased α +3.8% vs CAPM hurdle 12.4%. Downtrend -14% vs 200-day avg; 12-1 mom +31%; RSI 46. Quality z -0.21 (ROE 8%).
+??? failure "GFS (GFS) — 🔴 Sell, score -0.39"
+    Avoid: not owned. Analyst target 76.00 USD vs 46.71 USD (+63%, 22 analysts); de-biased α +3.8% vs CAPM hurdle 12.4%. Downtrend -15% vs 200-day avg; 12-1 mom +31%; RSI 46. Quality z -0.21 (ROE 8%).
 
 ??? failure "Disco (6146.T) — 🔴 Sell, score -0.49"
-    Avoid: not owned. Analyst target 81,730 JPY vs 53,760 JPY (+52%, 20 analysts); de-biased α +1.8% vs CAPM hurdle 11.5%. Downtrend -18% vs 200-day avg; 12-1 mom +14%; RSI 41. Quality z +0.06 (ROE 25%).
-
-??? failure "AMD (AMD) — 🔴 Sell, score -0.56"
-    Avoid: not owned. Analyst target 619.51 USD vs 533.30 USD (+16%, 50 analysts); de-biased α -8.2% vs CAPM hurdle 14.9%. Uptrend +35% vs 200-day avg; 12-1 mom +128%; RSI 39. Quality z -0.15 (ROE 7%).
+    Avoid: not owned. Analyst target 81,730 JPY vs 53,760 JPY (+52%, 20 analysts); de-biased α +1.5% vs CAPM hurdle 11.5%. Downtrend -18% vs 200-day avg; 12-1 mom +1%; RSI 41. Quality z +0.06 (ROE 25%).
 
 ??? failure "TXN (TXN) — 🔴 Sell, score -0.63"
-    Avoid: not owned. Analyst target 324.71 USD vs 280.49 USD (+16%, 31 analysts); de-biased α -6.9% vs CAPM hurdle 10.8%. Uptrend +11% vs 200-day avg; 12-1 mom +51%; RSI 51. Quality z +0.24 (ROE 30%).
+    Avoid: not owned. Analyst target 324.71 USD vs 276.55 USD (+17%, 31 analysts); de-biased α -6.7% vs CAPM hurdle 10.8%. Uptrend +9% vs 200-day avg; 12-1 mom +51%; RSI 48. Quality z +0.24 (ROE 30%).
 
 ??? failure "AMKR (AMKR) — 🔴 Sell, score -0.63"
-    Avoid: not owned. Analyst target 76.40 USD vs 42.76 USD (+79%, 10 analysts); de-biased α +7.8% vs CAPM hurdle 14.0%. Downtrend -26% vs 200-day avg; 12-1 mom +54%; RSI 31. Quality z -1.00 (ROE 9%).
+    Avoid: not owned. Analyst target 76.40 USD vs 41.83 USD (+83%, 10 analysts); de-biased α +8.5% vs CAPM hurdle 14.0%. Downtrend -27% vs 200-day avg; 12-1 mom +54%; RSI 30. Quality z -1.00 (ROE 9%). ⚠️ oversold.
+
+??? failure "QCOM (QCOM) — 🔴🔴 Strong Sell, score -0.87"
+    Avoid: not owned. Analyst target 194.13 USD vs 172.04 USD (+13%, 30 analysts); de-biased α -8.1% vs CAPM hurdle 11.9%. Uptrend +2% vs 200-day avg; 12-1 mom +18%; RSI 43. Quality z +0.70 (ROE 23%).
 
 ??? failure "CDNS (CDNS) — 🔴🔴 Strong Sell, score -0.92"
-    Avoid: not owned. Analyst target 405.47 USD vs 317.42 USD (+28%, 26 analysts); de-biased α -4.1% vs CAPM hurdle 10.0%. Downtrend -3% vs 200-day avg; 12-1 mom -13%; RSI 43. Quality z +0.31 (ROE 22%).
+    Avoid: not owned. Analyst target 405.47 USD vs 319.62 USD (+27%, 26 analysts); de-biased α -4.6% vs CAPM hurdle 10.0%. Downtrend -2% vs 200-day avg; 12-1 mom -13%; RSI 44. Quality z +0.31 (ROE 22%).
+
+??? failure "Shin-Etsu (4063.T) — 🔴🔴 Strong Sell, score -0.94"
+    Avoid: not owned. Analyst target 7,763 JPY vs 6,002 JPY (+29%, 17 analysts); de-biased α -3.8% vs CAPM hurdle 10.8%. Downtrend -4% vs 200-day avg; 12-1 mom +19%; RSI 49. Quality z -0.20 (ROE 10%).
 
 ??? failure "ENTG (ENTG) — 🔴🔴 Strong Sell, score -0.95"
-    Avoid: not owned. Analyst target 173.36 USD vs 141.31 USD (+23%, 11 analysts); de-biased α -5.6% vs CAPM hurdle 11.0%. Uptrend +4% vs 200-day avg; 12-1 mom +43%; RSI 40. Quality z -0.02 (ROE 6%).
+    Avoid: not owned. Analyst target 173.36 USD vs 138.68 USD (+25%, 11 analysts); de-biased α -5.3% vs CAPM hurdle 11.0%. Uptrend +2% vs 200-day avg; 12-1 mom +43%; RSI 38. Quality z -0.02 (ROE 6%).
 
-??? failure "SNPS (SNPS) — 🔴🔴 Strong Sell, score -0.95"
-    Avoid: not owned. Analyst target 569.78 USD vs 450.27 USD (+27%, 26 analysts); de-biased α -4.5% vs CAPM hurdle 10.3%. Uptrend +1% vs 200-day avg; 12-1 mom -13%; RSI 48. Quality z +0.14 (ROE 7%).
+??? failure "AMD (AMD) — 🔴🔴 Strong Sell, score -0.97"
+    Avoid: not owned. Analyst target 619.51 USD vs 528.75 USD (+17%, 50 analysts); de-biased α -8.3% vs CAPM hurdle 14.9%. Uptrend +34% vs 200-day avg; 12-1 mom +128%; RSI 38. Quality z -0.15 (ROE 7%).
 
-??? failure "Shin-Etsu (4063.T) — 🔴🔴 Strong Sell, score -0.97"
-    Avoid: not owned. Analyst target 7,763 JPY vs 6,002 JPY (+29%, 17 analysts); de-biased α -3.5% vs CAPM hurdle 10.8%. Downtrend -4% vs 200-day avg; 12-1 mom +20%; RSI 49. Quality z -0.20 (ROE 10%).
-
-??? failure "ARM (ARM) — 🔴🔴 Strong Sell, score -1.09"
-    Avoid: not owned. Analyst target 288.70 USD vs 232.51 USD (+24%, 40 analysts); de-biased α -7.4% vs CAPM hurdle 19.6%. Uptrend +4% vs 200-day avg; 12-1 mom +55%; RSI 36. Quality z +0.04 (ROE 12%). ⚠️ price implies 113% stage-1 growth (reverse DCF); high firm-specific risk σ(e) 78% → smaller size.
+??? failure "ARM (ARM) — 🔴🔴 Strong Sell, score -1.12"
+    Avoid: not owned. Analyst target 288.70 USD vs 227.75 USD (+27%, 40 analysts); de-biased α -7.1% vs CAPM hurdle 19.6%. Uptrend +2% vs 200-day avg; 12-1 mom +55%; RSI 34. Quality z +0.04 (ROE 12%). ⚠️ price implies 113% stage-1 growth (reverse DCF); high firm-specific risk σ(e) 78% → smaller size.
 
 ??? failure "SMIC (0981.HK) — 🔴🔴 Strong Sell, score -1.17"
-    Avoid: not owned. Analyst target 95.99 HKD vs 52.40 HKD (+83%, 21 analysts); de-biased α +10.4% vs CAPM hurdle 7.3%. Downtrend -24% vs 200-day avg; 12-1 mom -29%; RSI 25. Quality z -0.99 (ROE 3%). ⚠️ oversold.
+    Avoid: not owned. Analyst target 95.99 HKD vs 52.40 HKD (+83%, 21 analysts); de-biased α +10.1% vs CAPM hurdle 7.3%. Downtrend -24% vs 200-day avg; 12-1 mom -29%; RSI 25. Quality z -0.99 (ROE 3%). ⚠️ oversold.
 
-??? failure "QCOM (QCOM) — 🔴🔴 Strong Sell, score -1.28"
-    Avoid: not owned. Analyst target 194.13 USD vs 175.52 USD (+11%, 30 analysts); de-biased α -8.4% vs CAPM hurdle 11.9%. Uptrend +4% vs 200-day avg; 12-1 mom +18%; RSI 46. Quality z +0.70 (ROE 23%).
+??? failure "SNPS (SNPS) — 🔴🔴 Strong Sell, score -1.19"
+    Avoid: not owned. Analyst target 569.78 USD vs 454.79 USD (+25%, 26 analysts); de-biased α -5.1% vs CAPM hurdle 10.3%. Uptrend +2% vs 200-day avg; 12-1 mom -13%; RSI 50. Quality z +0.14 (ROE 7%).
 
 ## Current holdings
 
 | Ticker | Company | Shares | Price | Value (USD) | Weight | Rating |
 |---|---|---|---|---|---|---|
-| 000660.KS | SK hynix | 98 | 1,284,000 KRW | $94,253 | 10.4% | Strong Buy |
-| MU | Micron Technology | 92 | 892.14 USD | $82,077 | 9.1% | Strong Buy |
-| NVDA | NVIDIA | 371 | 215.29 USD | $79,873 | 8.8% | Buy |
-| 005930.KS | Samsung Electronics | 485 | 217,500 KRW | $79,014 | 8.8% | Strong Buy |
-| IFX.DE | Infineon Technologies | 1,301 | 52.35 EUR | $76,474 | 8.5% | Buy |
-| ASX | ASE Technology | 1,797 | 39.86 USD | $71,628 | 7.9% | Buy |
-| AMAT | Applied Materials | 156 | 416.08 USD | $64,909 | 7.2% | Buy |
-| TSM | TSMC | 142 | 412.92 USD | $58,635 | 6.5% | Buy |
-| ASML | ASML Holding | 30 | 1,657.46 USD | $49,724 | 5.5% | Hold |
-| KLAC | KLA Corp | 279 | 169.06 USD | $47,168 | 5.2% | Buy |
-| AVGO | Broadcom | 134 | 332.11 USD | $44,503 | 4.9% | Hold |
-| 8035.T | Tokyo Electron | 600 | 10,570 JPY | $40,108 | 4.4% | Buy |
-| 6857.T | Advantest | 100 | 34,480 JPY | $21,806 | 2.4% | Hold |
+| 000660.KS | SK hynix | 98 | 1,284,000 KRW | $94,313 | 10.5% | Strong Buy |
+| MU | Micron Technology | 92 | 878.67 USD | $80,838 | 9.0% | Strong Buy |
+| NVDA | NVIDIA | 371 | 214.13 USD | $79,442 | 8.9% | Buy |
+| 005930.KS | Samsung Electronics | 485 | 217,500 KRW | $79,064 | 8.8% | Strong Buy |
+| IFX.DE | Infineon Technologies | 1,301 | 52.35 EUR | $76,577 | 8.5% | Buy |
+| ASX | ASE Technology | 1,797 | 39.53 USD | $71,026 | 7.9% | Buy |
+| AMAT | Applied Materials | 156 | 409.29 USD | $63,849 | 7.1% | Buy |
+| TSM | TSMC | 142 | 412.51 USD | $58,576 | 6.5% | Buy |
+| ASML | ASML Holding | 30 | 1,641.20 USD | $49,236 | 5.5% | Hold |
+| KLAC | KLA Corp | 279 | 165.75 USD | $46,244 | 5.2% | Buy |
+| AVGO | Broadcom | 134 | 328.81 USD | $44,061 | 4.9% | Hold |
+| 8035.T | Tokyo Electron | 600 | 10,570 JPY | $40,143 | 4.5% | Hold |
+| 6857.T | Advantest | 100 | 34,480 JPY | $21,825 | 2.4% | Hold |
 
 ## Recent paper trades
 
@@ -220,7 +220,7 @@ Click a name to expand the full reasoning behind its rating and quantity.
 
 ## How the signals are built
 
-1. **Expected return vs hurdle (ch.9, 27).** Analyst-implied return $E(r) = \text{target}/P - 1 + \text{dividend yield}$ at the live price. The CAPM hurdle is $k = r_f + \beta_{adj} \times MRP$ ($r_f$ = 3.99%, MRP = 5.5%, Blume-adjusted β). The raw α is $E(r) - k$. The cross-sectional mean (the Street's average optimism, currently 34.3%) is subtracted, and the remainder is shrunk ×0.25 (×half again if fewer than 5 analysts).
+1. **Expected return vs hurdle (ch.9, 27).** Analyst-implied return $E(r) = \text{target}/P - 1 + \text{dividend yield}$ at the live price. The CAPM hurdle is $k = r_f + \beta_{adj} \times MRP$ ($r_f$ = 3.99%, MRP = 5.5%, Blume-adjusted β). The raw α is $E(r) - k$. The cross-sectional mean (the Street's average optimism, currently 35.4%) is subtracted, and the remainder is shrunk ×0.25 (×half again if fewer than 5 analysts).
 2. **Momentum & trend (ch.11–12).** 12-1-month momentum and price vs the 200-day average (z-scored), plus a −0.25 penalty when RSI(14) > 75.
 3. **Quality (ch.19).** Weekly quality z-score: EBIT margin, ROE, FCF conversion and low accruals.
 4. **Score** = cross-sectionally standardized $(0.4\,z_\alpha + 0.25\,z_{mom} + 0.2\,z_{quality} + 0.15\,z_{trend})$, where each $z$ is a rank-based normal score (robust to outliers). The score is therefore relative to the other 29 names. Ratings: Strong Buy ≥ 0.75, Buy ≥ 0.25, Hold, Sell ≤ -0.25, Strong Sell ≤ -0.75.
