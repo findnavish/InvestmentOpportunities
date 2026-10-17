@@ -8,16 +8,16 @@ hide:
 !!! danger "Model output, not investment advice"
     These are **rule-based signals for a paper (simulated) portfolio**, generated automatically from public, possibly delayed data. They do not account for your objectives, taxes, liquidity or risk tolerance, and they can be wrong. Nothing here is a recommendation to buy or sell securities. Consult a licensed adviser before investing.
 
-**Last updated:** 2026-10-17 09:23 UTC (Sat Oct 17, 05:23 AM ET) · refreshes hourly · weekly model inputs as of 2026-10-02
-**Markets:** NYSE/Nasdaq 🔴 closed (Sat 05:23) · Tokyo 🔴 closed (Sat 18:23) · Korea 🔴 closed (Sat 18:23) · Hong Kong 🔴 closed (Sat 17:23) · Xetra 🔴 closed (Sat 11:23) · Euronext Amsterdam 🔴 closed (Sat 11:23)
+**Last updated:** 2026-10-17 13:44 UTC (Sat Oct 17, 09:44 AM ET) · refreshes hourly · weekly model inputs as of 2026-10-02
+**Markets:** NYSE/Nasdaq 🔴 closed (Sat 09:44) · Tokyo 🔴 closed (Sat 22:44) · Korea 🔴 closed (Sat 22:44) · Hong Kong 🔴 closed (Sat 21:44) · Xetra 🔴 closed (Sat 15:44) · Euronext Amsterdam 🔴 closed (Sat 15:44)
 
 ## Portfolio snapshot
 
 | NAV | Cash | Invested | Return since inception | SOXX since inception | Regime (SOXX vs 200-day) | Equity budget |
 |---|---|---|---|---|---|---|
-| **$897,594** | $92,397 (10%) | $805,197 (90%) | -10.24% | -12.80% | 🟢 Risk-on (+5.5%) | 90% |
+| **$897,590** | $92,397 (10%) | $805,194 (90%) | -10.24% | -12.80% | 🟢 Risk-on (+5.5%) | 90% |
 
-Inception 2026-09-24 08:59 UTC with $1,000,000 of paper cash. **Scaling quantities:** multiply by (your capital ÷ $897,594), then round to board lots (Tokyo 100 shares, Hong Kong/SMIC 500).
+Inception 2026-09-24 08:59 UTC with $1,000,000 of paper cash. **Scaling quantities:** multiply by (your capital ÷ $897,590), then round to board lots (Tokyo 100 shares, Hong Kong/SMIC 500).
 
 <canvas id="navChart" height="90"></canvas>
 
@@ -45,7 +45,7 @@ Sorted by score. **Weight** = current → target share of NAV. **Key drivers** =
 | 🟢🟢 Strong Buy | +3.02 | **SK hynix**<br><small>000660.KS</small> | 1,284,000 KRW | +145% | +23.7% | +390% | -12% | 27 | +0.62 | 10.5% → 10.0% | – | analyst α +0.85 · momentum +0.41 · ⚠️ oversold, cycle-peak P/E, high σ(e) |
 | 🟢🟢 Strong Buy | +2.49 | **MU**<br><small>Micron Technology</small> | 878.67 USD | +73% | +5.9% | +402% | +22% | 34 | +0.12 | 9.0% → 10.0% | – | momentum +0.53 · analyst α +0.41 · ⚠️ cycle-peak P/E |
 | 🟢🟢 Strong Buy | +1.56 | **Samsung**<br><small>005930.KS</small> | 217,500 KRW | +120% | +18.3% | +199% | -6% | 33 | -0.26 | 8.8% → 10.0% | – | analyst α +0.66 · momentum +0.30 · ⚠️ cycle-peak P/E |
-| 🟢 Buy | +0.59 | **NVDA**<br><small>NVIDIA</small> | 214.14 USD | +53% | +0.9% | +23% | +6% | 38 | +0.47 | 8.9% → 8.6% | – | quality +0.21 · momentum -0.17 |
+| 🟢 Buy | +0.59 | **NVDA**<br><small>NVIDIA</small> | 214.13 USD | +53% | +0.9% | +22% | +6% | 38 | +0.47 | 8.9% → 8.6% | – | quality +0.21 · momentum -0.17 |
 | 🟢 Buy | +0.55 | **ASX**<br><small>ASE Technology</small> | 39.53 USD | +29% | -2.2% | +234% | +23% | 39 | -0.68 | 7.9% → 7.5% | – | momentum +0.35 · quality -0.28 · ⚠️ rich valuation |
 | 🟢 Buy | +0.52 | **Infineon**<br><small>IFX.DE</small> | 52.35 EUR | +66% | +4.2% | +65% | -8% | 36 | -0.04 | 8.5% → 7.6% | – | analyst α +0.36 · trend -0.10 |
 | 🟢 Buy | +0.48 | **AMAT**<br><small>Applied Materials</small> | 409.29 USD | +56% | +2.4% | +84% | -7% | 29 | +0.03 | 7.1% → 5.9% | – | analyst α +0.23 · trend -0.09 · ⚠️ oversold |
@@ -89,7 +89,7 @@ Click a name to expand the full reasoning behind its rating and quantity.
     Within rebalance band of target 10.0%: no trade. Analyst target 477,517 KRW vs 217,500 KRW (+120%, 36 analysts); de-biased α +18.3% vs CAPM hurdle 11.3%. Downtrend -6% vs 200-day avg; 12-1 mom +199%; RSI 33. Quality z -0.26 (ROE 11%). ⚠️ cyclical-peak risk: fwd P/E 3.9 (ch.17-18).
 
 ??? success "NVDA (NVDA) — 🟢 Buy, score +0.59"
-    Within rebalance band of target 8.6%: no trade. Analyst target 327.70 USD vs 214.14 USD (+53%, 59 analysts); de-biased α +0.9% vs CAPM hurdle 13.9%. Uptrend +6% vs 200-day avg; 12-1 mom +23%; RSI 38. Quality z +0.47 (ROE 101%).
+    Within rebalance band of target 8.6%: no trade. Analyst target 327.70 USD vs 214.13 USD (+53%, 59 analysts); de-biased α +0.9% vs CAPM hurdle 13.9%. Uptrend +6% vs 200-day avg; 12-1 mom +22%; RSI 38. Quality z +0.47 (ROE 101%).
 
 ??? success "ASX (ASX) — 🟢 Buy, score +0.55"
     Within rebalance band of target 7.5%: no trade. Analyst target 51.00 USD vs 39.53 USD (+29%, 1 analysts); de-biased α -2.2% vs CAPM hurdle 11.9%. Uptrend +23% vs 200-day avg; 12-1 mom +234%; RSI 39. Quality z -0.68 (ROE 12%). ⚠️ price implies 69% stage-1 growth (reverse DCF).
@@ -175,7 +175,7 @@ Click a name to expand the full reasoning behind its rating and quantity.
 |---|---|---|---|---|---|---|
 | 000660.KS | SK hynix | 98 | 1,284,000 KRW | $94,313 | 10.5% | Strong Buy |
 | MU | Micron Technology | 92 | 878.67 USD | $80,838 | 9.0% | Strong Buy |
-| NVDA | NVIDIA | 371 | 214.14 USD | $79,446 | 8.9% | Buy |
+| NVDA | NVIDIA | 371 | 214.13 USD | $79,442 | 8.9% | Buy |
 | 005930.KS | Samsung Electronics | 485 | 217,500 KRW | $79,064 | 8.8% | Strong Buy |
 | IFX.DE | Infineon Technologies | 1,301 | 52.35 EUR | $76,577 | 8.5% | Buy |
 | ASX | ASE Technology | 1,797 | 39.53 USD | $71,026 | 7.9% | Buy |
