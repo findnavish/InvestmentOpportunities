@@ -8,16 +8,16 @@ hide:
 !!! danger "Model output, not investment advice"
     These are **rule-based signals for a paper (simulated) portfolio**, generated automatically from public, possibly delayed data. They do not account for your objectives, taxes, liquidity or risk tolerance, and they can be wrong. Nothing here is a recommendation to buy or sell securities. Consult a licensed adviser before investing.
 
-**Last updated:** 2026-10-18 20:45 UTC (Sun Oct 18, 04:45 PM ET) · refreshes hourly · weekly model inputs as of 2026-10-02
-**Markets:** NYSE/Nasdaq 🔴 closed (Sun 16:45) · Tokyo 🔴 closed (Mon 05:45) · Korea 🔴 closed (Mon 05:45) · Hong Kong 🔴 closed (Mon 04:45) · Xetra 🔴 closed (Sun 22:45) · Euronext Amsterdam 🔴 closed (Sun 22:45)
+**Last updated:** 2026-10-18 23:14 UTC (Sun Oct 18, 07:14 PM ET) · refreshes hourly · weekly model inputs as of 2026-10-02
+**Markets:** NYSE/Nasdaq 🔴 closed (Sun 19:14) · Tokyo 🔴 closed (Mon 08:14) · Korea 🔴 closed (Mon 08:14) · Hong Kong 🔴 closed (Mon 07:14) · Xetra 🔴 closed (Mon 01:14) · Euronext Amsterdam 🔴 closed (Mon 01:14)
 
 ## Portfolio snapshot
 
 | NAV | Cash | Invested | Return since inception | SOXX since inception | Regime (SOXX vs 200-day) | Equity budget |
 |---|---|---|---|---|---|---|
-| **$897,594** | $92,397 (10%) | $805,197 (90%) | -10.24% | -12.80% | 🟢 Risk-on (+5.5%) | 90% |
+| **$897,423** | $92,397 (10%) | $805,026 (90%) | -10.26% | -12.80% | 🟢 Risk-on (+5.5%) | 90% |
 
-Inception 2026-09-24 08:59 UTC with $1,000,000 of paper cash. **Scaling quantities:** multiply by (your capital ÷ $897,594), then round to board lots (Tokyo 100 shares, Hong Kong/SMIC 500).
+Inception 2026-09-24 08:59 UTC with $1,000,000 of paper cash. **Scaling quantities:** multiply by (your capital ÷ $897,423), then round to board lots (Tokyo 100 shares, Hong Kong/SMIC 500).
 
 <canvas id="navChart" height="90"></canvas>
 
@@ -173,19 +173,19 @@ Click a name to expand the full reasoning behind its rating and quantity.
 
 | Ticker | Company | Shares | Price | Value (USD) | Weight | Rating |
 |---|---|---|---|---|---|---|
-| 000660.KS | SK hynix | 98 | 1,284,000 KRW | $94,313 | 10.5% | Strong Buy |
+| 000660.KS | SK hynix | 98 | 1,284,000 KRW | $94,303 | 10.5% | Strong Buy |
 | MU | Micron Technology | 92 | 878.67 USD | $80,838 | 9.0% | Strong Buy |
 | NVDA | NVIDIA | 371 | 214.14 USD | $79,446 | 8.9% | Buy |
-| 005930.KS | Samsung Electronics | 485 | 217,500 KRW | $79,064 | 8.8% | Strong Buy |
-| IFX.DE | Infineon Technologies | 1,301 | 52.35 EUR | $76,577 | 8.5% | Buy |
+| 005930.KS | Samsung Electronics | 485 | 217,500 KRW | $79,056 | 8.8% | Strong Buy |
+| IFX.DE | Infineon Technologies | 1,301 | 52.35 EUR | $76,388 | 8.5% | Buy |
 | ASX | ASE Technology | 1,797 | 39.53 USD | $71,026 | 7.9% | Buy |
 | AMAT | Applied Materials | 156 | 409.29 USD | $63,849 | 7.1% | Buy |
 | TSM | TSMC | 142 | 412.51 USD | $58,576 | 6.5% | Buy |
 | ASML | ASML Holding | 30 | 1,641.20 USD | $49,236 | 5.5% | Hold |
 | KLAC | KLA Corp | 279 | 165.75 USD | $46,244 | 5.2% | Buy |
 | AVGO | Broadcom | 134 | 328.81 USD | $44,061 | 4.9% | Hold |
-| 8035.T | Tokyo Electron | 600 | 10,570 JPY | $40,143 | 4.5% | Hold |
-| 6857.T | Advantest | 100 | 34,480 JPY | $21,825 | 2.4% | Hold |
+| 8035.T | Tokyo Electron | 600 | 10,570 JPY | $40,166 | 4.5% | Hold |
+| 6857.T | Advantest | 100 | 34,480 JPY | $21,837 | 2.4% | Hold |
 
 ## Recent paper trades
 
