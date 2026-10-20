@@ -8,16 +8,16 @@ hide:
 !!! danger "Model output, not investment advice"
     These are **rule-based signals for a paper (simulated) portfolio**, generated automatically from public, possibly delayed data. They do not account for your objectives, taxes, liquidity or risk tolerance, and they can be wrong. Nothing here is a recommendation to buy or sell securities. Consult a licensed adviser before investing.
 
-**Last updated:** 2026-10-20 20:36 UTC (Tue Oct 20, 04:36 PM ET) · refreshes hourly · weekly model inputs as of 2026-10-02
-**Markets:** NYSE/Nasdaq 🔴 closed (Tue 16:36) · Tokyo 🔴 closed (Wed 05:36) · Korea 🔴 closed (Wed 05:36) · Hong Kong 🔴 closed (Wed 04:36) · Xetra 🔴 closed (Tue 22:36) · Euronext Amsterdam 🔴 closed (Tue 22:36)
+**Last updated:** 2026-10-20 23:53 UTC (Tue Oct 20, 07:53 PM ET) · refreshes hourly · weekly model inputs as of 2026-10-02
+**Markets:** NYSE/Nasdaq 🔴 closed (Tue 19:53) · Tokyo 🔴 closed (Wed 08:53) · Korea 🔴 closed (Wed 08:53) · Hong Kong 🔴 closed (Wed 07:53) · Xetra 🔴 closed (Wed 01:53) · Euronext Amsterdam 🔴 closed (Wed 01:53)
 
 ## Portfolio snapshot
 
 | NAV | Cash | Invested | Return since inception | SOXX since inception | Regime (SOXX vs 200-day) | Equity budget |
 |---|---|---|---|---|---|---|
-| **$894,422** | $129,183 (14%) | $765,239 (86%) | -10.56% | -11.54% | 🟢 Risk-on (+6.6%) | 90% |
+| **$894,393** | $129,183 (14%) | $765,210 (86%) | -10.56% | -11.54% | 🟢 Risk-on (+6.6%) | 90% |
 
-Inception 2026-09-24 08:59 UTC with $1,000,000 of paper cash. **Scaling quantities:** multiply by (your capital ÷ $894,422), then round to board lots (Tokyo 100 shares, Hong Kong/SMIC 500).
+Inception 2026-09-24 08:59 UTC with $1,000,000 of paper cash. **Scaling quantities:** multiply by (your capital ÷ $894,393), then round to board lots (Tokyo 100 shares, Hong Kong/SMIC 500).
 
 <canvas id="navChart" height="90"></canvas>
 
@@ -57,7 +57,7 @@ Sorted by score. **Weight** = current → target share of NAV. **Key drivers** =
 | ⚪ Hold | +0.06 | **MRVL**<br><small>Marvell Technology</small> | 240.42 USD | +22% | -6.0% | +193% | +36% | 45 | -0.12 | 0.0% → 0.0% | – | analyst α -0.48 · trend +0.32 · ⚠️ rich valuation |
 | ⚪ Hold | +0.02 | **ASML**<br><small>ASML Holding</small> | 1,630.84 USD | +29% | -3.9% | +67% | +3% | 37 | +0.42 | 5.5% → 5.5% | – | analyst α -0.23 · quality +0.18 |
 | ⚪ Hold | -0.18 | **GFS**<br><small>GlobalFoundries</small> | 47.03 USD | +62% | +4.3% | +41% | -14% | 47 | -0.21 | 0.0% → 0.0% | – | analyst α +0.36 · trend -0.16 |
-| 🔴 Sell | -0.27 | **INTC**<br><small>Intel</small> | 91.66 USD | +27% | -4.8% | +229% | +8% | 34 | -0.62 | 0.0% → 0.0% | – | momentum +0.30 · analyst α -0.27 · ⚠️ rich valuation, high σ(e) |
+| 🔴 Sell | -0.27 | **INTC**<br><small>Intel</small> | 91.61 USD | +27% | -4.8% | +229% | +8% | 34 | -0.62 | 0.0% → 0.0% | – | momentum +0.30 · analyst α -0.27 · ⚠️ rich valuation, high σ(e) |
 | 🔴 Sell | -0.27 | **ASMI**<br><small>ASM.AS</small> | 743.80 EUR | +52% | +1.6% | +52% | -8% | 32 | -0.10 | 0.0% → 0.0% | – | analyst α +0.15 · momentum -0.12 |
 | 🔴 Sell | -0.28 | **TER**<br><small>Teradyne</small> | 336.17 USD | +33% | -2.9% | +177% | -3% | 37 | -0.31 | 0.0% → 0.0% | – | quality -0.21 · momentum +0.20 |
 | 🔴 Sell | -0.40 | **AMKR**<br><small>Amkor Technology</small> | 41.69 USD | +83% | +9.4% | +68% | -28% | 30 | -1.00 | 0.0% → 0.0% | – | analyst α +0.55 · quality -0.43 · ⚠️ oversold |
@@ -127,7 +127,7 @@ Click a name to expand the full reasoning behind its rating and quantity.
     Hold zone: not owned, no entry. Analyst target 76.00 USD vs 47.03 USD (+62%, 22 analysts); de-biased α +4.3% vs CAPM hurdle 12.4%. Downtrend -14% vs 200-day avg; 12-1 mom +41%; RSI 47. Quality z -0.21 (ROE 8%).
 
 ??? failure "INTC (INTC) — 🔴 Sell, score -0.27"
-    Avoid: not owned. Analyst target 116.37 USD vs 91.66 USD (+27%, 43 analysts); de-biased α -4.8% vs CAPM hurdle 14.0%. Uptrend +8% vs 200-day avg; 12-1 mom +229%; RSI 34. Quality z -0.62 (ROE -0%). ⚠️ price implies 86% stage-1 growth (reverse DCF); high firm-specific risk σ(e) 63% → smaller size.
+    Avoid: not owned. Analyst target 116.37 USD vs 91.61 USD (+27%, 43 analysts); de-biased α -4.8% vs CAPM hurdle 14.0%. Uptrend +8% vs 200-day avg; 12-1 mom +229%; RSI 34. Quality z -0.62 (ROE -0%). ⚠️ price implies 86% stage-1 growth (reverse DCF); high firm-specific risk σ(e) 63% → smaller size.
 
 ??? failure "ASMI (ASM.AS) — 🔴 Sell, score -0.27"
     Avoid: not owned. Analyst target 1,128.53 EUR vs 743.80 EUR (+52%, 19 analysts); de-biased α +1.6% vs CAPM hurdle 13.2%. Downtrend -8% vs 200-day avg; 12-1 mom +52%; RSI 32. Quality z -0.10 (ROE 19%).
@@ -172,10 +172,10 @@ Click a name to expand the full reasoning behind its rating and quantity.
 
 | Ticker | Company | Shares | Price | Value (USD) | Weight | Rating |
 |---|---|---|---|---|---|---|
-| 000660.KS | SK hynix | 98 | 1,217,000 KRW | $89,984 | 10.1% | Strong Buy |
+| 000660.KS | SK hynix | 98 | 1,217,000 KRW | $90,027 | 10.1% | Strong Buy |
 | MU | Micron Technology | 92 | 895.85 USD | $82,418 | 9.2% | Strong Buy |
-| 005930.KS | Samsung Electronics | 485 | 210,500 KRW | $77,027 | 8.6% | Strong Buy |
-| IFX.DE | Infineon Technologies | 1,301 | 52.18 EUR | $76,302 | 8.5% | Buy |
+| 005930.KS | Samsung Electronics | 485 | 210,500 KRW | $77,064 | 8.6% | Strong Buy |
+| IFX.DE | Infineon Technologies | 1,301 | 52.18 EUR | $76,234 | 8.5% | Buy |
 | NVDA | NVIDIA | 294 | 216.48 USD | $63,645 | 7.1% | Buy |
 | AMAT | Applied Materials | 156 | 404.95 USD | $63,172 | 7.1% | Strong Buy |
 | ASX | ASE Technology | 1,332 | 40.78 USD | $54,326 | 6.1% | Buy |
@@ -183,9 +183,9 @@ Click a name to expand the full reasoning behind its rating and quantity.
 | ASML | ASML Holding | 30 | 1,630.84 USD | $48,925 | 5.5% | Hold |
 | KLAC | KLA Corp | 279 | 161.93 USD | $45,177 | 5.1% | Buy |
 | AVGO | Broadcom | 100 | 334.51 USD | $33,451 | 3.7% | Hold |
-| 8035.T | Tokyo Electron | 500 | 10,115 JPY | $31,972 | 3.6% | Hold |
+| 8035.T | Tokyo Electron | 500 | 10,115 JPY | $31,948 | 3.6% | Hold |
 | LRCX | Lam Research | 105 | 263.45 USD | $27,662 | 3.1% | Buy |
-| 6857.T | Advantest | 100 | 33,880 JPY | $21,418 | 2.4% | Hold |
+| 6857.T | Advantest | 100 | 33,880 JPY | $21,402 | 2.4% | Hold |
 
 ## Recent paper trades
 
