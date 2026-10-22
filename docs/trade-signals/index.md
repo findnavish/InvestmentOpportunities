@@ -8,16 +8,16 @@ hide:
 !!! danger "Model output, not investment advice"
     These are **rule-based signals for a paper (simulated) portfolio**, generated automatically from public, possibly delayed data. They do not account for your objectives, taxes, liquidity or risk tolerance, and they can be wrong. Nothing here is a recommendation to buy or sell securities. Consult a licensed adviser before investing.
 
-**Last updated:** 2026-10-22 20:07 UTC (Thu Oct 22, 04:07 PM ET) · refreshes hourly · weekly model inputs as of 2026-10-02
-**Markets:** NYSE/Nasdaq 🔴 closed (Thu 16:07) · Tokyo 🔴 closed (Fri 05:07) · Korea 🔴 closed (Fri 05:07) · Hong Kong 🔴 closed (Fri 04:07) · Xetra 🔴 closed (Thu 22:07) · Euronext Amsterdam 🔴 closed (Thu 22:07)
+**Last updated:** 2026-10-22 23:23 UTC (Thu Oct 22, 07:23 PM ET) · refreshes hourly · weekly model inputs as of 2026-10-02
+**Markets:** NYSE/Nasdaq 🔴 closed (Thu 19:23) · Tokyo 🔴 closed (Fri 08:23) · Korea 🔴 closed (Fri 08:23) · Hong Kong 🔴 closed (Fri 07:23) · Xetra 🔴 closed (Fri 01:23) · Euronext Amsterdam 🔴 closed (Fri 01:23)
 
 ## Portfolio snapshot
 
 | NAV | Cash | Invested | Return since inception | SOXX since inception | Regime (SOXX vs 200-day) | Equity budget |
 |---|---|---|---|---|---|---|
-| **$865,053** | $104,680 (12%) | $760,372 (88%) | -13.49% | -15.90% | 🟢 Risk-on (+1.0%) | 90% |
+| **$865,234** | $104,680 (12%) | $760,554 (88%) | -13.48% | -15.90% | 🟢 Risk-on (+1.0%) | 90% |
 
-Inception 2026-09-24 08:59 UTC with $1,000,000 of paper cash. **Scaling quantities:** multiply by (your capital ÷ $865,053), then round to board lots (Tokyo 100 shares, Hong Kong/SMIC 500).
+Inception 2026-09-24 08:59 UTC with $1,000,000 of paper cash. **Scaling quantities:** multiply by (your capital ÷ $865,234), then round to board lots (Tokyo 100 shares, Hong Kong/SMIC 500).
 
 <canvas id="navChart" height="90"></canvas>
 
@@ -44,7 +44,7 @@ Sorted by score. **Weight** = current → target share of NAV. **Key drivers** =
 |---|--:|---|--:|--:|--:|--:|--:|--:|--:|--:|---|---|
 | 🟢🟢 Strong Buy | +3.11 | **MU**<br><small>Micron Technology</small> | 857.01 USD | +77% | +5.8% | +430% | +18% | 35 | +0.12 | 9.1% → 10.0% | – | momentum +0.53 · analyst α +0.48 · ⚠️ cycle-peak P/E |
 | 🟢🟢 Strong Buy | +2.17 | **Samsung**<br><small>005930.KS</small> | 215,000 KRW | +122% | +17.8% | +182% | -8% | 36 | -0.26 | 9.1% → 10.0% | – | analyst α +0.85 · momentum +0.23 · ⚠️ cycle-peak P/E |
-| 🟢🟢 Strong Buy | +1.56 | **SK hynix**<br><small>000660.KS</small> | 1,223,000 KRW | – | +0.0% | +309% | -17% | 29 | +0.62 | 10.4% → 10.0% | – | momentum +0.41 · quality +0.33 · ⚠️ oversold, cycle-peak P/E, high σ(e) |
+| 🟢🟢 Strong Buy | +1.56 | **SK hynix**<br><small>000660.KS</small> | 1,223,000 KRW | – | +0.0% | +309% | -17% | 29 | +0.62 | 10.5% → 10.0% | – | momentum +0.41 · quality +0.33 · ⚠️ oversold, cycle-peak P/E, high σ(e) |
 | 🟢🟢 Strong Buy | +0.83 | **AMAT**<br><small>Applied Materials</small> | 375.45 USD | +70% | +4.7% | +111% | -15% | 25 | +0.03 | 8.8% → 8.5% | – | analyst α +0.31 · momentum +0.12 · ⚠️ oversold |
 | 🟢 Buy | +0.68 | **Infineon**<br><small>IFX.DE</small> | 49.94 EUR | +74% | +5.0% | +77% | -12% | 33 | -0.04 | 8.4% → 8.1% | – | analyst α +0.36 · trend -0.07 |
 | 🟢 Buy | +0.51 | **LRCX**<br><small>Lam Research</small> | 230.16 USD | +63% | +2.6% | +113% | -19% | 25 | +0.02 | 4.3% → 5.7% | ADD 52 | analyst α +0.23 · trend -0.16 · ⚠️ oversold |
@@ -52,7 +52,7 @@ Sorted by score. **Weight** = current → target share of NAV. **Key drivers** =
 | 🟢 Buy | +0.48 | **ASX**<br><small>ASE Technology</small> | 37.72 USD | +35% | -2.0% | +250% | +16% | 37 | -0.68 | 5.8% → 5.4% | – | momentum +0.35 · quality -0.28 · ⚠️ rich valuation |
 | 🟢 Buy | +0.46 | **KLAC**<br><small>KLA Corp</small> | 147.83 USD | +58% | +1.8% | +65% | -18% | 24 | +0.51 | 3.6% → 5.1% | ADD 89 | quality +0.24 · trend -0.14 · ⚠️ oversold |
 | ⚪ Hold | +0.22 | **Tokyo Electron**<br><small>8035.T</small> | 9,499 JPY | +61% | +2.2% | +83% | -5% | 35 | -0.28 | 3.5% → 3.5% | – | quality -0.18 · analyst α +0.15 |
-| ⚪ Hold | +0.22 | **TSM**<br><small>TSMC</small> | 412.38 USD | +34% | -4.1% | +53% | +4% | 38 | +0.58 | 6.1% → 6.1% | – | quality +0.28 · analyst α -0.19 |
+| ⚪ Hold | +0.22 | **TSM**<br><small>TSMC</small> | 412.39 USD | +34% | -4.1% | +53% | +4% | 38 | +0.58 | 6.1% → 6.1% | – | quality +0.28 · analyst α -0.19 |
 | ⚪ Hold | +0.16 | **AVGO**<br><small>Broadcom</small> | 323.33 USD | +64% | +3.4% | +4% | -12% | 35 | +0.26 | 3.7% → 3.7% | – | analyst α +0.27 · momentum -0.26 |
 | ⚪ Hold | +0.05 | **ASML**<br><small>ASML Holding</small> | 1,561.35 USD | +34% | -4.4% | +71% | -1% | 34 | +0.42 | 5.4% → 5.4% | – | analyst α -0.23 · quality +0.18 |
 | ⚪ Hold | -0.10 | **GFS**<br><small>GlobalFoundries</small> | 43.40 USD | +75% | +5.7% | +31% | -21% | 38 | -0.21 | 0.0% → 0.0% | – | analyst α +0.41 · trend -0.18 |
@@ -110,7 +110,7 @@ Click a name to expand the full reasoning behind its rating and quantity.
     Hold zone: keep any existing position, no new money. Analyst target 15,275 JPY vs 9,499 JPY (+61%, 23 analysts); de-biased α +2.2% vs CAPM hurdle 12.8%. Downtrend -5% vs 200-day avg; 12-1 mom +83%; RSI 35. Quality z -0.28 (ROE 29%).
 
 ??? note "TSM (TSM) — ⚪ Hold, score +0.22"
-    Hold zone: keep any existing position, no new money. Analyst target 552.26 USD vs 412.38 USD (+34%, 20 analysts); de-biased α -4.1% vs CAPM hurdle 10.8%. Uptrend +4% vs 200-day avg; 12-1 mom +53%; RSI 38. Quality z +0.58 (ROE 35%).
+    Hold zone: keep any existing position, no new money. Analyst target 552.26 USD vs 412.39 USD (+34%, 20 analysts); de-biased α -4.1% vs CAPM hurdle 10.8%. Uptrend +4% vs 200-day avg; 12-1 mom +53%; RSI 38. Quality z +0.58 (ROE 35%).
 
 ??? note "AVGO (AVGO) — ⚪ Hold, score +0.16"
     Hold zone: keep any existing position, no new money. Analyst target 531.31 USD vs 323.33 USD (+64%, 47 analysts); de-biased α +3.4% vs CAPM hurdle 11.2%. Downtrend -12% vs 200-day avg; 12-1 mom +4%; RSI 35. Quality z +0.26 (ROE 31%).
@@ -173,20 +173,20 @@ Click a name to expand the full reasoning behind its rating and quantity.
 
 | Ticker | Company | Shares | Price | Value (USD) | Weight | Rating |
 |---|---|---|---|---|---|---|
-| 000660.KS | SK hynix | 98 | 1,223,000 KRW | $90,397 | 10.4% | Strong Buy |
+| 000660.KS | SK hynix | 98 | 1,223,000 KRW | $90,435 | 10.5% | Strong Buy |
 | MU | Micron Technology | 92 | 857.01 USD | $78,845 | 9.1% | Strong Buy |
-| 005930.KS | Samsung Electronics | 485 | 215,000 KRW | $78,647 | 9.1% | Strong Buy |
+| 005930.KS | Samsung Electronics | 485 | 215,000 KRW | $78,680 | 9.1% | Strong Buy |
 | AMAT | Applied Materials | 202 | 375.45 USD | $75,841 | 8.8% | Strong Buy |
-| IFX.DE | Infineon Technologies | 1,301 | 49.94 EUR | $72,880 | 8.4% | Buy |
+| IFX.DE | Infineon Technologies | 1,301 | 49.94 EUR | $72,913 | 8.4% | Buy |
 | NVDA | NVIDIA | 294 | 212.28 USD | $62,411 | 7.2% | Buy |
-| TSM | TSMC | 127 | 412.38 USD | $52,372 | 6.1% | Hold |
+| TSM | TSMC | 127 | 412.39 USD | $52,374 | 6.1% | Hold |
 | ASX | ASE Technology | 1,332 | 37.72 USD | $50,250 | 5.8% | Buy |
 | ASML | ASML Holding | 30 | 1,561.35 USD | $46,840 | 5.4% | Hold |
 | LRCX | Lam Research | 162 | 230.16 USD | $37,286 | 4.3% | Buy |
 | AVGO | Broadcom | 100 | 323.33 USD | $32,333 | 3.7% | Hold |
 | KLAC | KLA Corp | 211 | 147.83 USD | $31,192 | 3.6% | Buy |
-| 8035.T | Tokyo Electron | 500 | 9,499 JPY | $30,277 | 3.5% | Hold |
-| 6857.T | Advantest | 100 | 32,630 JPY | $20,801 | 2.4% | Hold |
+| 8035.T | Tokyo Electron | 500 | 9,499 JPY | $30,322 | 3.5% | Hold |
+| 6857.T | Advantest | 100 | 32,630 JPY | $20,831 | 2.4% | Hold |
 
 ## Recent paper trades
 
