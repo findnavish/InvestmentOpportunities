@@ -8,16 +8,16 @@ hide:
 !!! danger "Model output, not investment advice"
     These are **rule-based signals for a paper (simulated) portfolio**, generated automatically from public, possibly delayed data. They do not account for your objectives, taxes, liquidity or risk tolerance, and they can be wrong. Nothing here is a recommendation to buy or sell securities. Consult a licensed adviser before investing.
 
-**Last updated:** 2026-10-25 01:16 UTC (Sat Oct 24, 09:16 PM ET) · refreshes hourly · weekly model inputs as of 2026-10-02
-**Markets:** NYSE/Nasdaq 🔴 closed (Sat 21:16) · Tokyo 🔴 closed (Sun 10:16) · Korea 🔴 closed (Sun 10:16) · Hong Kong 🔴 closed (Sun 09:16) · Xetra 🔴 closed (Sun 02:16) · Euronext Amsterdam 🔴 closed (Sun 02:16)
+**Last updated:** 2026-10-25 06:14 UTC (Sun Oct 25, 02:14 AM ET) · refreshes hourly · weekly model inputs as of 2026-10-02
+**Markets:** NYSE/Nasdaq 🔴 closed (Sun 02:14) · Tokyo 🔴 closed (Sun 15:14) · Korea 🔴 closed (Sun 15:14) · Hong Kong 🔴 closed (Sun 14:14) · Xetra 🔴 closed (Sun 07:14) · Euronext Amsterdam 🔴 closed (Sun 07:14)
 
 ## Portfolio snapshot
 
 | NAV | Cash | Invested | Return since inception | SOXX since inception | Regime (SOXX vs 200-day) | Equity budget |
 |---|---|---|---|---|---|---|
-| **$869,761** | $96,021 (11%) | $773,740 (89%) | -13.02% | -15.38% | 🟢 Risk-on (+1.5%) | 90% |
+| **$869,807** | $96,021 (11%) | $773,786 (89%) | -13.02% | -15.38% | 🟢 Risk-on (+1.5%) | 90% |
 
-Inception 2026-09-24 08:59 UTC with $1,000,000 of paper cash. **Scaling quantities:** multiply by (your capital ÷ $869,761), then round to board lots (Tokyo 100 shares, Hong Kong/SMIC 500).
+Inception 2026-09-24 08:59 UTC with $1,000,000 of paper cash. **Scaling quantities:** multiply by (your capital ÷ $869,807), then round to board lots (Tokyo 100 shares, Hong Kong/SMIC 500).
 
 <canvas id="navChart" height="90"></canvas>
 
@@ -42,7 +42,7 @@ Sorted by score. **Weight** = current → target share of NAV. **Key drivers** =
 | Rating | Score | Name | Price | Analyst upside | De-biased α | 12-1 mom | vs 200DMA | RSI | Quality z | Weight | Order | Key drivers |
 |---|--:|---|--:|--:|--:|--:|--:|--:|--:|--:|---|---|
 | 🟢🟢 Strong Buy | +3.28 | **SK hynix**<br><small>000660.KS</small> | 1,269,000 KRW | +148% | +22.7% | +355% | -14% | 33 | +0.62 | 10.8% → 10.0% | – | analyst α +0.85 · momentum +0.41 · ⚠️ cycle-peak P/E, high σ(e) |
-| 🟢🟢 Strong Buy | +2.50 | **MU**<br><small>Micron Technology</small> | 877.11 USD | +73% | +4.2% | +424% | +19% | 38 | +0.12 | 9.3% → 10.0% | – | momentum +0.53 · analyst α +0.36 · ⚠️ cycle-peak P/E |
+| 🟢🟢 Strong Buy | +2.50 | **MU**<br><small>Micron Technology</small> | 877.61 USD | +73% | +4.2% | +424% | +19% | 38 | +0.12 | 9.3% → 10.0% | – | momentum +0.53 · analyst α +0.36 · ⚠️ cycle-peak P/E |
 | 🟢🟢 Strong Buy | +1.50 | **Samsung**<br><small>005930.KS</small> | 214,000 KRW | +123% | +17.5% | +202% | -9% | 35 | -0.26 | 9.0% → 10.0% | – | analyst α +0.66 · momentum +0.23 · ⚠️ cycle-peak P/E |
 | 🟢 Buy | +0.72 | **AMAT**<br><small>Applied Materials</small> | 377.24 USD | +69% | +3.9% | +116% | -15% | 26 | +0.03 | 8.8% → 10.0% | – | analyst α +0.27 · momentum +0.14 · ⚠️ oversold |
 | 🟢 Buy | +0.48 | **Infineon**<br><small>IFX.DE</small> | 48.52 EUR | +79% | +5.7% | +67% | -15% | 31 | -0.04 | 8.1% → 7.9% | – | analyst α +0.41 · trend -0.12 |
@@ -82,7 +82,7 @@ Click a name to expand the full reasoning behind its rating and quantity.
     Within rebalance band of target 10.0%: no trade. Analyst target 3,141,025 KRW vs 1,269,000 KRW (+148%, 38 analysts); de-biased α +22.7% vs CAPM hurdle 14.3%. Downtrend -14% vs 200-day avg; 12-1 mom +355%; RSI 33. Quality z +0.62 (ROE 44%). ⚠️ cyclical-peak risk: fwd P/E 3.9 (ch.17-18); high firm-specific risk σ(e) 60% → smaller size.
 
 ??? success "MU (MU) — 🟢🟢 Strong Buy, score +2.50"
-    Within rebalance band of target 10.0%: no trade. Analyst target 1,520.02 USD vs 877.11 USD (+73%, 46 analysts); de-biased α +4.2% vs CAPM hurdle 14.0%. Uptrend +19% vs 200-day avg; 12-1 mom +424%; RSI 38. Quality z +0.12 (ROE 17%). ⚠️ cyclical-peak risk: fwd P/E 5.2 (ch.17-18).
+    Within rebalance band of target 10.0%: no trade. Analyst target 1,520.02 USD vs 877.61 USD (+73%, 46 analysts); de-biased α +4.2% vs CAPM hurdle 14.0%. Uptrend +19% vs 200-day avg; 12-1 mom +424%; RSI 38. Quality z +0.12 (ROE 17%). ⚠️ cyclical-peak risk: fwd P/E 5.2 (ch.17-18).
 
 ??? success "Samsung (005930.KS) — 🟢🟢 Strong Buy, score +1.50"
     Within rebalance band of target 10.0%: no trade. Analyst target 477,517 KRW vs 214,000 KRW (+123%, 36 analysts); de-biased α +17.5% vs CAPM hurdle 11.3%. Downtrend -9% vs 200-day avg; 12-1 mom +202%; RSI 35. Quality z -0.26 (ROE 11%). ⚠️ cyclical-peak risk: fwd P/E 3.9 (ch.17-18).
@@ -173,7 +173,7 @@ Click a name to expand the full reasoning behind its rating and quantity.
 | Ticker | Company | Shares | Price | Value (USD) | Weight | Rating |
 |---|---|---|---|---|---|---|
 | 000660.KS | SK hynix | 98 | 1,269,000 KRW | $93,953 | 10.8% | Strong Buy |
-| MU | Micron Technology | 92 | 877.11 USD | $80,694 | 9.3% | Strong Buy |
+| MU | Micron Technology | 92 | 877.61 USD | $80,740 | 9.3% | Strong Buy |
 | 005930.KS | Samsung Electronics | 485 | 214,000 KRW | $78,411 | 9.0% | Strong Buy |
 | AMAT | Applied Materials | 202 | 377.24 USD | $76,202 | 8.8% | Buy |
 | IFX.DE | Infineon Technologies | 1,301 | 48.52 EUR | $70,728 | 8.1% | Buy |
