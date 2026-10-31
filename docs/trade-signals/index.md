@@ -8,8 +8,8 @@ hide:
 !!! danger "Model output, not investment advice"
     These are **rule-based signals for a paper (simulated) portfolio**, generated automatically from public, possibly delayed data. They do not account for your objectives, taxes, liquidity or risk tolerance, and they can be wrong. Nothing here is a recommendation to buy or sell securities. Consult a licensed adviser before investing.
 
-**Last updated:** 2026-10-31 12:32 UTC (Sat Oct 31, 08:32 AM ET) · refreshes hourly · weekly model inputs as of 2026-10-02
-**Markets:** NYSE/Nasdaq 🔴 closed (Sat 08:32) · Tokyo 🔴 closed (Sat 21:32) · Korea 🔴 closed (Sat 21:32) · Hong Kong 🔴 closed (Sat 20:32) · Xetra 🔴 closed (Sat 13:32) · Euronext Amsterdam 🔴 closed (Sat 13:32)
+**Last updated:** 2026-10-31 17:44 UTC (Sat Oct 31, 01:44 PM ET) · refreshes hourly · weekly model inputs as of 2026-10-02
+**Markets:** NYSE/Nasdaq 🔴 closed (Sat 13:44) · Tokyo 🔴 closed (Sun 02:44) · Korea 🔴 closed (Sun 02:44) · Hong Kong 🔴 closed (Sun 01:44) · Xetra 🔴 closed (Sat 18:44) · Euronext Amsterdam 🔴 closed (Sat 18:44)
 
 ## Portfolio snapshot
 
@@ -58,9 +58,9 @@ Sorted by score. **Weight** = current → target share of NAV. **Key drivers** =
 | ⚪ Hold | -0.02 | **KLAC**<br><small>KLA Corp</small> | 157.94 USD | +48% | -1.4% | +71% | -13% | 40 | +0.51 | 4.8% → 4.8% | – | quality +0.24 · trend -0.10 |
 | ⚪ Hold | -0.04 | **ASML**<br><small>ASML Holding</small> | 1,565.23 USD | +34% | -5.2% | +74% | -2% | 39 | +0.42 | 5.3% → 5.3% | – | analyst α -0.19 · quality +0.18 |
 | ⚪ Hold | -0.04 | **GFS**<br><small>GlobalFoundries</small> | 41.90 USD | +81% | +6.6% | +42% | -24% | 37 | -0.21 | 0.0% → 0.0% | – | analyst α +0.41 · trend -0.16 |
-| ⚪ Hold | -0.06 | **TER**<br><small>Teradyne</small> | 274.33 USD | +63% | +2.0% | +154% | -22% | 29 | -0.31 | 0.0% → 0.0% | – | quality -0.21 · momentum +0.20 · ⚠️ oversold |
 | ⚪ Hold | -0.08 | **LRCX**<br><small>Lam Research</small> | 239.25 USD | +57% | +0.4% | +117% | -16% | 34 | +0.02 | 4.4% → 4.4% | – | trend -0.12 · momentum +0.07 |
-| ⚪ Hold | -0.19 | **AMD**<br><small>Advanced Micro Devices</small> | 505.18 USD | +23% | -8.8% | +149% | +23% | 40 | -0.15 | 0.0% → 0.0% | – | analyst α -0.48 · trend +0.32 |
+| ⚪ Hold | -0.13 | **TER**<br><small>Teradyne</small> | 274.37 USD | +63% | +2.0% | +140% | -21% | 29 | -0.31 | 0.0% → 0.0% | – | quality -0.21 · momentum +0.17 · ⚠️ oversold |
+| ⚪ Hold | -0.13 | **AMD**<br><small>Advanced Micro Devices</small> | 505.18 USD | +23% | -8.8% | +149% | +23% | 40 | -0.15 | 0.0% → 0.0% | – | analyst α -0.48 · trend +0.32 |
 | 🔴 Sell | -0.30 | **Disco**<br><small>6146.T</small> | 49,340 JPY | +66% | +3.0% | +18% | -25% | 38 | +0.06 | 0.0% → 0.0% | – | analyst α +0.23 · trend -0.21 |
 | 🔴 Sell | -0.45 | **ASMI**<br><small>ASM.AS</small> | 726.80 EUR | +55% | -0.1% | +72% | -11% | 40 | -0.10 | 0.0% → 0.0% | – | momentum -0.07 · quality -0.06 |
 | 🔴 Sell | -0.46 | **AVGO**<br><small>Broadcom</small> | 326.17 USD | +63% | +2.4% | -5% | -11% | 41 | +0.26 | 0.0% → 0.0% | – | momentum -0.41 · analyst α +0.15 |
@@ -125,13 +125,13 @@ Click a name to expand the full reasoning behind its rating and quantity.
 ??? note "GFS (GFS) — ⚪ Hold, score -0.04"
     Hold zone: not owned, no entry. Analyst target 76.00 USD vs 41.90 USD (+81%, 22 analysts); de-biased α +6.6% vs CAPM hurdle 12.4%. Downtrend -24% vs 200-day avg; 12-1 mom +42%; RSI 37. Quality z -0.21 (ROE 8%).
 
-??? note "TER (TER) — ⚪ Hold, score -0.06"
-    Hold zone: not owned, no entry. Analyst target 446.47 USD vs 274.33 USD (+63%, 15 analysts); de-biased α +2.0% vs CAPM hurdle 12.3%. Downtrend -22% vs 200-day avg; 12-1 mom +154%; RSI 29. Quality z -0.31 (ROE 20%). ⚠️ oversold.
-
 ??? note "LRCX (LRCX) — ⚪ Hold, score -0.08"
     Hold zone: keep any existing position, no new money. Analyst target 375.06 USD vs 239.25 USD (+57%, 31 analysts); de-biased α +0.4% vs CAPM hurdle 12.6%. Downtrend -16% vs 200-day avg; 12-1 mom +117%; RSI 34. Quality z +0.02 (ROE 65%).
 
-??? note "AMD (AMD) — ⚪ Hold, score -0.19"
+??? note "TER (TER) — ⚪ Hold, score -0.13"
+    Hold zone: not owned, no entry. Analyst target 446.47 USD vs 274.37 USD (+63%, 15 analysts); de-biased α +2.0% vs CAPM hurdle 12.3%. Downtrend -21% vs 200-day avg; 12-1 mom +140%; RSI 29. Quality z -0.31 (ROE 20%). ⚠️ oversold.
+
+??? note "AMD (AMD) — ⚪ Hold, score -0.13"
     Hold zone: not owned, no entry. Analyst target 619.51 USD vs 505.18 USD (+23%, 50 analysts); de-biased α -8.8% vs CAPM hurdle 14.9%. Uptrend +23% vs 200-day avg; 12-1 mom +149%; RSI 40. Quality z -0.15 (ROE 7%).
 
 ??? failure "Disco (6146.T) — 🔴 Sell, score -0.30"
